@@ -2,7 +2,7 @@
 
 _Based on a true story._
 
-Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally have managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
+Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
 
 ## Pest vs. Cholera
 
@@ -48,7 +48,7 @@ Start the Tex Live Utility. It greets you with a window like this.
 
 ![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
 
-Note that the list may be empty, say "No update available" or contain some entries. In any case click the little cirular arrow 
+Note that the list may be empty, say "No update available" or contain some entries. In any case click the little cirular arrow
 
 ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
@@ -61,8 +61,6 @@ It might take some time time to download and ask you things in between. If it fa
 You can close it for now and get some tea.
 
 ### Step 3: Prepare the Document
-
-
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
