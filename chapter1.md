@@ -14,7 +14,7 @@ By now your paper looks like this[^3]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-This is beyound repair. Maybe a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you read is technical and confusing and seems to have been written by greybeards educating you about obscure typesetting practices, celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning this noble craft and join their typesetting guild in addition to being an overworked student. That won't work.
+This is damage beyond repair. Maybe a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you give a quick read is technical and confusing. It seems to have been written by greybeards educating you about obscure typesetting practices while celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning this noble craft and join their typesetting guild in addition to being an overworked student. That won't work.
 
 So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
 
@@ -38,11 +38,11 @@ Go to [http://www.tug.org/mactex/morepackages.html. ](http://www.tug.org/mactex/
 
 Scroll down and klick the link that says [**TeXShop**](http://pages.uoregon.edu/koch/texshop/obtaining.html). This will take you to another page. If your Mac is quite new, download the file [Latest TeXShop Version 3](http://pages.uoregon.edu/koch/texshop/texshop-64/texshop.zip) there. \(If you are in doubt, klick the Apple symbol in top left corner on your Mac, then "About this Mac". It will tell you the version of your Mac. Download the appropriate version.\) Unpack the zip file and drag the App into your Applications folder.
 
-Back on the original page klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/). This will take you to yet another page. 
+Back on the original page klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/). This will take you to yet another page.
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
-[^2]: Some conferences or journals have friendly editors that accept your half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
+[^2]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
 [^3]: [Ah, Picasso!](https://en.wikipedia.org/wiki/File:Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg "Ah, Picasso!")
 
