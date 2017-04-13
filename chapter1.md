@@ -48,7 +48,7 @@ Start the Tex Live Utility. It greets you with a window like this.
 
 ![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
 
-Note that the list may be empty, say "No update available" or contain some entries. In any case click the little cirular arrow
+Note that the list may be empty, say "No update available" or contain some entries. In any case click the little circular arrow
 
 ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
@@ -62,13 +62,18 @@ You can close it for now and get some tea.
 
 ### Step 3: Prepare the Document
 
-You have a folder with the LaTeX templates / example file. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example. 
+You have a folder with the LaTeX templates / example file. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
-Let's look at the files again. 
-
-
+Let's look at the LaTeX files.
 
 ![](/assets/Untitled.png)
+
+Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^7] [^8]:
+
+1. one file with the ending ".tex"
+2. one file with the ending ".bib"
+
+
 
 
 
@@ -87,4 +92,8 @@ Let's look at the files again.
 [^5]: That's for now. Ping me if you want this written for other choices. 
 
 [^6]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
+
+[^7]: "What if not?" you might ask. Then we are in trouble, I answer. Time contact the chair of your conference and ask for the LaTeX templates..
+
+[^8]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting.
 
