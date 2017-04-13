@@ -1,6 +1,6 @@
 # The Emergency Chapter
 
-Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". Clock is ticking[^2] [^4].
+Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
 
 ## Pest vs. Cholera
 
@@ -16,7 +16,7 @@ By now your paper looks like this[^3]:
 
 This is beyound repair. Maybe a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you read is technical and confusing and seems to have been written by greybeards educating you about obscure typesetting practices, celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning this noble craft and join their typesetting guild in addition to being an overworked student. That won't work.
 
-So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight! 
+So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
 
 **Game over**.
 
@@ -24,9 +24,10 @@ So you decide to start over with a fresh copy of the Word template. Two hours la
 
 This assumes:
 
-1. You are on a Mac 
-
-got a get a link to download templates and example files to
+1. You are on a \(fairly recent\) Mac[^5]
+2. You have to submit a formatted paper \(proposal\) and you are on a deadline.
+3. Your paper is not too complicated, mainly text, maybe a table, a few images, references and stuff.   
+4. You got LaTeX templates / example files from the journal/conference like the one pictured above
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
@@ -35,4 +36,6 @@ got a get a link to download templates and example files to
 [^3]: [Ah, Picasso!](https://en.wikipedia.org/wiki/File:Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg "Ah, Picasso!")
 
 [^4]: If you are really in a hurry you might skip the next section and head to "How to do it".
+
+[^5]: That's for now. Ping me if you want this written for other choices. 
 
