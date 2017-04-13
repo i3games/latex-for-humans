@@ -22,12 +22,13 @@ So you decide to start over with a fresh copy of the Word template. Two hours la
 
 ## How to do it
 
-This assumes:
+Let's turn back the clock for a few hours and try again. This assumes:
 
-1. You are on a \(fairly recent\) Mac[^5]
+1. You are on a \(fairly recent\) Mac[^5].
 2. You have to submit a formatted paper \(proposal\) and you are on a deadline.
-3. Your paper is not too complicated, mainly text, maybe a table, a few images, references and stuff.   
-4. You got LaTeX templates / example files from the journal/conference like the one pictured above
+3. You have written your paper, probably in Word, Libre Office, Pages or another editor.
+4. Your paper is not too complicated, mainly text, maybe a table, a few images, references and stuff.   
+5. You have got LaTeX templates / example files from the journal/conference like the ones pictured above.
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
