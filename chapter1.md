@@ -75,7 +75,9 @@ Yours will have different names and some different symbols. There might be more 
 
 Start TeXShop. Use the menu to open the the LaTeX file.
 
-It looks like this.
+It looks similar to this:
+
+![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
