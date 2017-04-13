@@ -32,21 +32,23 @@ Let's turn back the clock for a few hours and try again. This assumes:
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handfull of references and stuff.   
 5. You have got LaTeX templates / example files from the journal/conference like the ones pictured above.
 
-We will go through a number of steps: first install LaTeX, then update it, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 2-3 hours if all goes well, about half of it will be installing software.
+We will go through a number of steps: first install LaTeX, then update it, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
 
-### Step 1: Install Software
+### Step 1: Install LaTeX
 
-Go to [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html). Download the installer [**MacTeX.pkg**](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg). Ignore everything that is written on the page[^6]. The download will take some time. Make tea. 
+Go to [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html). Download the installer [**MacTeX.pkg**](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg). Ignore everything that is written on the page[^6]. The download will take some time. Make tea.
 
 Run the installer. It walks you through the process. The installation will take some time as well. The program might try to scare you:
 
 ![](/assets/Screen Shot 2017-04-13 at 21.08.05.png)
 
- \(in practice more like 30 minutes\). During the installation it might ask you to install another piece of software named "XQuartz". Follow the instructions and install this as well. After the installation is finished you can delete the files you downloaded.
+\(in practice more like 30 minutes\). During the installation it might ask you to install another piece of software named "XQuartz". Follow the instructions and install this as well. After the installation is finished you can delete the files you downloaded.
 
 ### Step 2: Update LaTeX
 
 In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Utility.app` there. It greets you with a window like this.
+
+First ckeck under Preferences if `Tex Live Utility`  itself wants to be updated. If so, follow the instructions.
 
 ![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
 
@@ -54,13 +56,13 @@ Note that the list may be empty, say "No update available" or contain some entri
 
 ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
-.. and wait. There should be entries. The program might tell you it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`
+.. and wait. Then there should be entries. The program might tell you it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-Again, this will take some time to download and update everything. Time to re-read the paper maybe? If it fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+This can take a significant amount of time to download and update everything. Time to re-read the paper maybe? If it fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
-You can close it for now, get some sweets maybe and get ready.
+You can close the program for now, get some sweets maybe and get ready.
 
 ### Step 3: Prepare the Document
 
@@ -70,14 +72,41 @@ Let's look at the LaTeX files.
 
 ![](/assets/Untitled.png)
 
-Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case two[^8]:
+Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^8]:
 
-1. one file with the ending ".tex". This is **the LaTeX file** we are working with. Your paper will go in there. We will work on this first.
-2. one file with the ending ".bib". This is the file for the **bibliography** entries. We will do that second.
+1. a file with the ending ".tex". This is **the LaTeX file** we are working with. Your paper will go in there. We will work on this first.
+2. a file with the ending ".bib". This is the file for the **bibliography** entries. We will do that second.
 
-Start TeXShop. Use the menu to open the the LaTeX file.
+Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
 
-It looks similar to this:![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
+It might jump right in your face and asks to be updated. Follow the instructions.
+
+ Then use the menu to open the LaTeX file.
+
+![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
+
+Yours will look similar but not the same. What you can see is that there is text mixed with commands which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
+
+A yellow window pops up and spews out lots of text. If all goes well, another window pops up with a pdf file. This is the LaTeX  file converted to pdf. Mine looks like this:
+
+![](/assets/Screen Shot 2017-04-13 at 23.10.04.png)
+
+
+
+
+
+Now a couple of things: The expample usually has everything in it which can possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes.
+
+Study your example file to figure out which parts you will need. A minimal paper would have: 
+
+* a title
+* your name and institution somewhere
+* some sections of text
+* citations in the text and a list of references at the end
+
+We focus on these first.
+
+
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
