@@ -36,9 +36,9 @@ We will go through a number of steps: first install and set up some software, th
 
 Go to [http://www.tug.org/mactex/morepackages.html. ](http://www.tug.org/mactex/morepackages.html)The page is labelled "\*\* Smaller Download \*\*". Download the installer  [**BasicTeX.pkg**](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg) and run it. Ignore everything that is written on the page[^6].
 
-Scroll down and klick the link that says [**TeXShop**](http://pages.uoregon.edu/koch/texshop/obtaining.html). This will take you to another page. If your Mac is quite new, download the file [Latest TeXShop Version 3](http://pages.uoregon.edu/koch/texshop/texshop-64/texshop.zip) there. If you are in doubt, klick the Apple symbol, then "About this Mac". It will tell you the version of your Mac.
+Scroll down and klick the link that says [**TeXShop**](http://pages.uoregon.edu/koch/texshop/obtaining.html). This will take you to another page. If your Mac is quite new, download the file [Latest TeXShop Version 3](http://pages.uoregon.edu/koch/texshop/texshop-64/texshop.zip) there. \(If you are in doubt, klick the Apple symbol in top left corner on your Mac, then "About this Mac". It will tell you the version of your Mac. Download the appropriate version.\) Unpack the zip file and drag the App into your Applications folder.
 
-Scroll down and klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/).
+Back on the original page klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/). This will take you to yet another page. 
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
@@ -50,5 +50,5 @@ Scroll down and klick the link that says [**TeX Live Utility**](http://amaxwell.
 
 [^5]: That's for now. Ping me if you want this written for other choices. 
 
-[^6]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\). 
+[^6]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
 
