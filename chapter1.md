@@ -62,18 +62,22 @@ You can close it for now and get some tea.
 
 ### Step 3: Prepare the Document
 
-You have a folder with the LaTeX templates / example file. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
+You have already downloaded a folder with the LaTeX templates / example files of your conference or journal[^7]. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
 Let's look at the LaTeX files.
 
 ![](/assets/Untitled.png)
 
-Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^7] [^8]:
+Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^8]:
 
-1. one file with the ending ".tex"
-2. one file with the ending ".bib"
+1. one file with the ending ".tex". This is **the LaTeX file** we are working with. Your paper will go in there. We will work on this first.
+2. one file with the ending ".bib". This is the file for the **bibliography** entries. We will do that later.
 
+Start TeXShop. Use the menu to open the the LaTeX file. 
 
+It looks like this.
+
+ 
 
 
 
@@ -93,7 +97,7 @@ Yours will have different names and some different symbols. There might be more 
 
 [^6]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
 
-[^7]: "What if not?" you might ask. Then we are in trouble, I answer. Time contact the chair of your conference and ask for the LaTeX templates..
+[^7]: "What if not?" you might ask. "Then we are in trouble", I answer. Time to contact the chair of your conference and ask for the LaTeX templates.
 
-[^8]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting.
+[^8]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
 
