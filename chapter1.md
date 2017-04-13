@@ -1,12 +1,14 @@
 # The Emergency Chapter
 
-Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
+_Based on a true story._
+
+Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally have managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
 
 ## Pest vs. Cholera
 
 What usually happens is that you get a choice between Microsoft Word and LaTeX. You also get a link to download templates and example files to work with. What you see might look like this:![](/assets/Screen Shot 2017-04-13 at 14.23.14.png)
 
-The choice is obvious: they have given you **one** Word template versus **seven** strange files. You dont event want to know what these things are. Also it is likely that you have written your masterpiece in Word already[^1]. So the sensible thing to do is open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain style. Still easy enough, just keep calm and copy/paste. You start... until something happens.
+The choice here is obvious: they have given you **one** Word template versus **seven** strange files. You dont event want to know what these things are. Also it is likely that you have written your masterpiece in Word already[^1]. So the sensible thing to do is open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something happens.
 
 You have just copied some piece of text when you realize the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and copy your image in, but is too large and now it is half on the bottom of page 3 and half outside the page. Also some footnotes are suddenly gone. Attempts to fix this result in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes some text on another page.
 
@@ -30,7 +32,7 @@ Let's turn back the clock for a few hours and try again. This assumes:
 4. Your paper is not too complicated, mainly text, maybe a table, a few images, references and stuff.   
 5. You have got LaTeX templates / example files from the journal/conference like the ones pictured above.
 
-We will go through a number of steps: first install and set up some software, then prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 2 hours if all goes well.
+We will go through a number of steps: first install software, set up LaTeX, then prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 2 hours if all goes well.
 
 ### Step 1: Install Software
 
@@ -38,7 +40,29 @@ Go to [http://www.tug.org/mactex/morepackages.html. ](http://www.tug.org/mactex/
 
 Scroll down and klick the link that says [**TeXShop**](http://pages.uoregon.edu/koch/texshop/obtaining.html). This will take you to another page. If your Mac is quite new, download the file [Latest TeXShop Version 3](http://pages.uoregon.edu/koch/texshop/texshop-64/texshop.zip) there. \(If you are in doubt, klick the Apple symbol in top left corner on your Mac, then "About this Mac". It will tell you the version of your Mac. Download the appropriate version.\) Unpack the zip file and drag the App into your Applications folder.
 
-Back on the original page klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/). This will take you to yet another page.
+Back on the original page klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/). This will take you to yet another page. "Latest release" brings you to another page. There you see something named similar to this: [**TeX.Live.Utility.app-1.26.tar.gz**](https://github.com/amaxwell/tlutility/releases/download/1.26/TeX.Live.Utility.app-1.26.tar.gz) Download and unpack. Inside is ... an App! Drag this App into your Applications folder as well.
+
+### Step 2: Set Up LaTeX
+
+Start the Tex Live Utility. It greets you with a window like this. 
+
+![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
+
+
+
+
+
+
+
+Now the list may be empty or contain a lot of entries. 
+
+
+
+
+
+Wait a little. The program might   tell you it needs to update itself etc. 
+
+
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
