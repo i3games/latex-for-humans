@@ -16,7 +16,7 @@ By now your paper looks like this[^3]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-At this point it seems like damage beyond repair. Maybe a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you are giving a quick read is technical and confusing. It seems to have been written by a bunch of greybeards educating you about obscure typesetting practices while celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning this noble craft and join their typesetting guild in addition to being an overworked student. That won't work.
+At this point it seems like damage beyond repair. Maybe a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you are giving a quick read is technical and confusing. It seems to have been written by a bunch of greybeards educating you about typesetting practices while celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning their noble craft and join an obscure typesetting guild in addition to being an overworked student. That won't work.
 
 So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
 
