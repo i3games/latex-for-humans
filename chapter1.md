@@ -38,31 +38,26 @@ We will go through a number of steps: first install software, set up LaTeX, then
 
 Go to [http://www.tug.org/mactex/morepackages.html. ](http://www.tug.org/mactex/morepackages.html)The page is labelled "\*\* Smaller Download \*\*". Download the installer  [**BasicTeX.pkg**](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg) and run it. Ignore everything that is written on the page[^6].
 
-Scroll down and klick the link that says [**TeXShop**](http://pages.uoregon.edu/koch/texshop/obtaining.html). This will take you to another page. If your Mac is quite new, download the file [Latest TeXShop Version 3](http://pages.uoregon.edu/koch/texshop/texshop-64/texshop.zip) there. \(If you are in doubt, klick the Apple symbol in top left corner on your Mac, then "About this Mac". It will tell you the version of your Mac. Download the appropriate version.\) Unpack the zip file and drag the App into your Applications folder.
+Scroll down and klick the link that says [**TeXShop**](http://pages.uoregon.edu/koch/texshop/obtaining.html). This will take you to another page. If your Mac is quite new, download the file [Latest TeXShop Version 3](http://pages.uoregon.edu/koch/texshop/texshop-64/texshop.zip) there. \(If you are in doubt, klick the Apple symbol in top left corner on your Mac, then `About this Mac`. It will tell you the version of your Mac. Download the appropriate version of TeXShop.\) Unpack the zip file and drag the App into your Applications folder.
 
 Back on the original page klick the link that says [**TeX Live Utility**](http://amaxwell.github.io/tlutility/). This will take you to yet another page. "Latest release" brings you to another page. There you see something named similar to this: [**TeX.Live.Utility.app-1.26.tar.gz**](https://github.com/amaxwell/tlutility/releases/download/1.26/TeX.Live.Utility.app-1.26.tar.gz) Download and unpack. Inside is ... an App! Drag this App into your Applications folder as well.
 
 ### Step 2: Set Up LaTeX
 
-Start the Tex Live Utility. It greets you with a window like this. 
-
-![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
+Start the Tex Live Utility. It greets you with a window like this.
 
 
 
+Now the list may be empty, say "No update available" or contain a lot of entries. Click the little cirular arrow and wait.
 
+ ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
+There should be entries. The program might tell you it needs to update itself etc. Confirm everything.   
+`Actions -> Update all Packages`
 
+What you want to see is: 
 
-Now the list may be empty or contain a lot of entries. 
-
-
-
-
-
-Wait a little. The program might   tell you it needs to update itself etc. 
-
-
+![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
