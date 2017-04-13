@@ -62,6 +62,20 @@ You can close it for now and get some tea.
 
 ### Step 3: Prepare the Document
 
+You have a folder with the LaTeX templates / example file. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example. 
+
+Let's look at the files again. 
+
+
+
+![](/assets/Untitled.png)
+
+
+
+
+
+
+
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
 [^2]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
