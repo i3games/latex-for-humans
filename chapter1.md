@@ -58,11 +58,11 @@ Note that the list may be empty, say "No update available" or contain some entri
 
 .. and wait. Then there should be entries. The program might tell you it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-This can take a significant amount of time to download and update everything. Time to re-read the paper maybe? If it fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+This can take a significant amount of time to download and update everything. Time to re-read the paper maybe? If the update fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
-You can close the program for now, get some sweets maybe and get ready.
+You can close the program for now, consume some sweets maybe and get ready.
 
 ### Step 3: Check the Template
 
@@ -79,7 +79,7 @@ Yours will have different names and some different symbols. There might be more 
 
 Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
 
-It might jump right in your face and asks to be updated. Follow the instructions.
+When it starts, it might jump right in your face and asks to be updated. Follow the instructions.
 
 Then use the menu to open the LaTeX file.
 
@@ -97,6 +97,8 @@ Option C: **If it goes less than half well**, the pdf window does not pop up. Th
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
+
+
 Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend deadline, or allow you to send the document unformatted as-is until they figure out what is wrong.
 
 ### Step 4: Prepare the Document
@@ -105,7 +107,11 @@ The next thing is to get a feel for the document. The beginning of mine looks li
 
 ![](/assets/Screen Shot 2017-04-13 at 23.10.04.png)
 
-Now a couple of things: The expample usually has everything in it which can possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes.
+Now a couple of things: 
+
+
+
+The expample usually has everything in it which can possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes.
 
 Study your example file to figure out which parts you will need. A minimal paper would have:
 
