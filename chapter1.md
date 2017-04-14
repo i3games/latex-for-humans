@@ -34,7 +34,7 @@ Let's rewind the clock for a few hours and try again. This assumes:
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handfull of references and stuff.   
 5. You have received LaTeX templates / example files from the journal/conference like the ones pictured above. This means you may submit a pdf set in LaTeX.
 
-We will go through a number of steps: first install LaTeX, then update it, check the template, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
+We will go through a number of steps: first install LaTeX, then update it, check the template, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take roghly 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
 
 ### Step 1: Install LaTeX
 
