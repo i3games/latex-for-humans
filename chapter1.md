@@ -10,7 +10,7 @@ When you submit academic stuff, you usually get a choice between Microsoft Word 
 
 ![](/assets/Screen Shot 2017-04-13 at 14.23.14.png)
 
-The choice is obvious: they have given you **one** Word template versus **seven** strange files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have written your masterpiece in Word already[^1]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do by the authors of these files[^10]. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
+The choice is obvious: they have given you **one** Word template versus **seven** strange files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have written your masterpiece in Word already[^1]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do according to the authors of these files[^10]. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
 
 You have just copied some piece of text when you realize the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and copy your image in, but is too large and now it is half on the bottom of page 3 and half outside the page. Also some footnotes are suddenly gone. Attempts to fix this result in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes some text on another page.
 
@@ -18,11 +18,11 @@ By now your paper looks like this[^3]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-At this point it looks like damage beyond repair. This is not your fault. There is no \(time\) to blame. By now you are going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining you were tempted to look at the other alternative. You google "LaTeX" and the results does not look promising. Everything you are giving a quick read is technical and confusing. It seems to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They assume that you want to spend months learning their noble craft and join an obscure guild in addition to being an overworked student. This won't work.
+This is not your fault. There is no time for guilt or blame. But by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX" and the results did not look promising. Everything you were giving a quick read was technical and confusing. That stuff seems to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They assume that you want to spend months learning their noble craft and join an obscure guild in addition to being an overworked student. This won't work.
 
-So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
+So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your single image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
 
-**Game over**.
+**GAME OVER**
 
 ## How to do it
 
@@ -129,10 +129,6 @@ Study the example file to figure out which parts you will need for your draft. M
 * citations in the text and a list of references at the end
 
 We focus on these first.
-
-
-
-
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
