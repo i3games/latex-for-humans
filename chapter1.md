@@ -81,7 +81,7 @@ Yours will have different names and some different symbols. There might be more 
 
 Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
 
-When it starts, it might jump right in your face and asks to be updated. Follow the instructions.
+When it starts, it might jump right in your face and ask to be updated. Follow the instructions.
 
 Then use the menu to open the LaTeX file.
 
@@ -91,19 +91,31 @@ Yours will look similar but not the same. What you can see is that there is text
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
-Option A:** If all goes well**, another window pops up with a pdf file. This is the LaTeX file converted to pdf. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing [^9]. Jump to the next section.
+Option A:** If all goes well**, another window pops up with a pdf file. This is the LaTeX file converted to pdf. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing[^9]. Jump to the next section.
 
 Option B:** If it goes pretty well**, the pdf window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
-Option C: **If it goes less than half well**, the pdf window does not pop up. The console should be still in front. Press return. Maybe you neeed to press it a couple of times. The pdf window pops up now. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
+Option C \(the tricky one\): **If it goes less than half well**, the pdf window does not pop up. The console should be still in front. Press return. Maybe you need to press it a couple of times. The pdf window pops up now. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
-Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend deadline, or allow you to send the document unformatted as-is until they figure out what is wrong.
+See the `Goto Error` button? It brings you to the location in the LaTeX file where the error happens. In my case, this is in line 204:
+
+
+
+![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
+
+and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you get this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset ` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't have a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
+
+Find the culprit image file with the  `.ps ` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save it in the same directory with the other files.
+
+Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: aisb01.pdf. Now try  `Typeset` again. It should work this time and you should see the image in your pdf. Jump to the next section.
+
+Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong. 
 
 ### Step 4: Prepare the Document
 
-The next thing is to get a feel for the document. The beginning of mine looks like this:
+The next thing is to get a feel for the document. The beginning of my pdf looks like this:
 
 ![](/assets/Screen Shot 2017-04-13 at 23.10.04.png)
 
