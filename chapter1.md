@@ -50,8 +50,6 @@ Run the installer. It walks you through the process. The installation will take 
 
 In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Utility.app` there. It greets you with a window like this:
 
-
-
 ![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
 
 First check under Preferences if `Tex Live Utility`  itself wants to be updated. If so, follow the instructions.
@@ -70,7 +68,7 @@ You can close `Tex Live Utility` for now, consume some sweets maybe and get read
 
 ### Step 3: Check the Template
 
-I assume you have already a folder with the LaTeX templates / example files of your conference or journal[^7]. If not, do it now. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
+I assume you have already a folder with the LaTeX templates / example files from your conference or journal[^7]. If not, get it now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
 Let's look at the LaTeX files.
 
@@ -79,7 +77,7 @@ Let's look at the LaTeX files.
 Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^8]:
 
 1. a file with the ending ".tex". This is **the LaTeX file** we are working with. Your paper will go in there. We will work on this first.
-2. a file with the ending ".bib". This is the file for the **bibliography** entries. We will do that second.
+2. a file with the ending ".bib". This is the file for the **bibliography** entries. We will do that next.
 
 Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
 
