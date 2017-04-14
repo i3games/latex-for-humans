@@ -87,17 +87,15 @@ Then use the menu to open the LaTeX file.
 
 Yours will look similar but not the same. What you can see is that there is text mixed with commands which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
 
-A yellow window pops up and spews out lots of text.
+A yellow window, the **console**,  pops up and spews out lots of text.
 
 Option A:** If all goes well**, another window pops up with a pdf file. This is the LaTeX file converted to pdf. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing [^9]. Jump to the next section.
 
 Option B:** If it goes pretty well**, the pdf window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
-Option C: **If it goes less than half well**, the pdf window does not pop up. The yellow window should be in front. Press return. The pdf window pops up now. There will be some part of the document missing, maybe a figure/image. There will also be a mention of a `LaTeX Error` This actually happened in my case, as you can see here:
+Option C: **If it goes less than half well**, the pdf window does not pop up. The console should be still in front. Press return. Maybe you neeed to press it a couple of times. The pdf window pops up now. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
-
-
 
 Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend deadline, or allow you to send the document unformatted as-is until they figure out what is wrong.
 
@@ -107,9 +105,7 @@ The next thing is to get a feel for the document. The beginning of mine looks li
 
 ![](/assets/Screen Shot 2017-04-13 at 23.10.04.png)
 
-Now a couple of things: 
-
-
+Now a couple of things:
 
 The expample usually has everything in it which can possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes.
 
