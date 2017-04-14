@@ -8,11 +8,9 @@ Picture yourself like this: You have to submit a paper to this fancy conference 
 
 When you submit academic stuff, you usually get a choice between Microsoft Word and LaTeX. You also get a link to download templates and example files to work with. What you see might look like this:
 
-
-
 ![](/assets/Screen Shot 2017-04-13 at 14.23.14.png)
 
-The choice is obvious: they have given you **one** Word template versus **seven** strange files. You don't even want to know what these bib, bbl, blg... things are. It is also likely that you have written your masterpiece in Word already[^1]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something happens.
+The choice is obvious: they have given you **one** Word template versus **seven** strange files. You don't even want to know what these bib, bbl, blg... things are. It is also likely that you have written your masterpiece in Word already[^1]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do by the authors of these files[^10]. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
 
 You have just copied some piece of text when you realize the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and copy your image in, but is too large and now it is half on the bottom of page 3 and half outside the page. Also some footnotes are suddenly gone. Attempts to fix this result in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes some text on another page.
 
@@ -139,4 +137,6 @@ We focus on these first.
 [^8]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
 
 [^9]: If that joke doesn't make sense, please read the section "Pest vs. Cholera".
+
+[^10]:  Else they would have provided actual formatting templates, which exist in Word, and would have given instructions how to use those. I will not go into that here.  
 
