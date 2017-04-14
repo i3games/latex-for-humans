@@ -87,7 +87,7 @@ Then use the menu to open the LaTeX file.
 
 ![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
 
-Yours will look similar but not the same. What you can see is that there is text mixed with commands which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
+Yours will look similar but not the same. What you can see is text mixed with commands which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
@@ -119,9 +119,9 @@ The next thing is to get a feel for the document. The beginning of my pdf looks 
 
 Now a couple of things:
 
-The expample usually contains everything which may possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. You don't want or need to acknowledge anyone. Then it is just to delete these parts. The rule of thumb is simple: you can always safely delete the complete paragraph, that is the content between two empty lines. This is different from the situation in Word \("Pest vs. Cholera"\). 
+The expample usually contains everything which may possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. You don't want or need to acknowledge anyone. Then it is just to delete these parts. The rule of thumb is simple: you can always safely delete the complete paragraph, that is the content between two empty lines. This is different from the situation in Word \("Pest vs. Cholera"\).
 
-Study the example file to figure out which parts you will need for your draft. Maybe make some notes about it. A minimal paper[^11] would have:
+Study the example file to figure out which parts you will need for your draft. Maybe jot down some notes. A minimal paper[^11] would have:
 
 * a title
 * your name and institution somewhere
@@ -129,6 +129,10 @@ Study the example file to figure out which parts you will need for your draft. M
 * citations in the text and a list of references at the end
 
 We focus on these first.
+
+
+
+
 
 [^1]: I am working with a number of assumptions here that might or might not be working for you. 
 
@@ -150,5 +154,5 @@ We focus on these first.
 
 [^10]:  Else they would have provided actual formatting templates, which exist in Word, and would have given instructions how to use those. I will not go into that here.  
 
-[^11]:  Philosophy comes to mind. 
+[^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc. Poor you.
 
