@@ -101,17 +101,15 @@ Option C \(the tricky one\): **If it goes less than half well**, the pdf window 
 
 See the `Goto Error` button? It brings you to the location in the LaTeX file where the error happens. In my case, this is in line 204:
 
-
-
 ![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
 
-and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you get this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset ` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't have a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
+and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you get this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't have a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
-Find the culprit image file with the  `.ps ` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save it in the same directory with the other files.
+Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save it in the same directory with the other files.
 
 Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: aisb01.pdf. Now try  `Typeset` again. It should work this time and you should see the image in your pdf. Jump to the next section.
 
-Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong. 
+Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong.
 
 ### Step 4: Prepare the Document
 
@@ -121,13 +119,13 @@ The next thing is to get a feel for the document. The beginning of my pdf looks 
 
 Now a couple of things:
 
-The expample usually has everything in it which can possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes.
+The expample usually contains everything which may possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. You don't want or need to acknowledge anyone. Then it is just to delete these parts. The rule of thumb is simple: you can always safely delete the complete paragraph, that is the content between two empty lines. This is different from the situation in Word \("Pest vs. Cholera"\). 
 
-Study your example file to figure out which parts you will need. A minimal paper would have:
+Study the example file to figure out which parts you will need for your draft. Maybe make some notes about it. A minimal paper[^11] would have:
 
 * a title
 * your name and institution somewhere
-* some sections of text
+* sections of text
 * citations in the text and a list of references at the end
 
 We focus on these first.
@@ -151,4 +149,6 @@ We focus on these first.
 [^9]: If that joke doesn't make sense, please read the section "Pest vs. Cholera".
 
 [^10]:  Else they would have provided actual formatting templates, which exist in Word, and would have given instructions how to use those. I will not go into that here.  
+
+[^11]:  Philosophy comes to mind. 
 
