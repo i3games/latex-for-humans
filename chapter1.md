@@ -95,7 +95,7 @@ Option A:** If all goes well**, another window pops up with a pdf file. This is 
 
 Option B:** If it goes pretty well**, the pdf window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
-Option C \(the tricky one\): **If it goes less than half well**, the pdf window does not pop up. The console should be still in front. Press return. Maybe you need to press it a couple of times. The pdf window pops up now. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
+Option C \(the tricky one\): **If it goes less than half well**, the pdf window does not pop up. The console should be still in front. Press return. Maybe you need to press it a couple of times. The pdf window pops up now. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^12]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
@@ -150,5 +150,5 @@ We focus on these first.
 
 [^10]:  Else they would have provided actual formatting templates, which exist in Word, and would have given instructions how to use those. I will not go into that here.  
 
-[^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc. Poor you.
+[^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
