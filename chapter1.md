@@ -44,27 +44,29 @@ Run the installer. It walks you through the process. The installation will take 
 
 ![](/assets/Screen Shot 2017-04-13 at 21.08.05.png)
 
-\(in practice more like 30 minutes\). During the installation it might ask you to install another piece of software named "XQuartz". Follow the instructions and install this as well. After the installation is finished you can delete the files you downloaded.
+\(in practice it is more like 30 minutes\). During the installation it might ask you to install another piece of software named "XQuartz". Follow the instructions and install this as well. After the installation is finished you can delete the files you have downloaded.
 
 ### Step 2: Update LaTeX
 
-In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Utility.app` there. It greets you with a window like this.
+In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Utility.app` there. It greets you with a window like this:
 
-First ckeck under Preferences if `Tex Live Utility`  itself wants to be updated. If so, follow the instructions.
+
 
 ![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
 
-Note that the list may be empty, say "No update available" or contain some entries. In any case click the little circular arrow
+First check under Preferences if `Tex Live Utility`  itself wants to be updated. If so, follow the instructions.
+
+Note that the list may be empty, says "No update available" or contains some entries. In any case, click the little circular arrow
 
 ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
 .. and wait. Then there should be entries. The program might tell you it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-This can take a significant amount of time to download and update everything. Time to re-read the paper maybe? If the update fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+It can take a significant amount of time to download and update everything. Time to re-read the paper maybe? If the update fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
-You can close the program for now, consume some sweets maybe and get ready.
+You can close `Tex Live Utility` for now, consume some sweets maybe and get ready.
 
 ### Step 3: Check the Template
 
