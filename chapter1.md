@@ -2,7 +2,7 @@
 
 _Based on a true story._
 
-Picture yourself: You have to submit a paper to this conference and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
+Picture yourself like this: You have to submit a paper to this fancy conference \(or journal\) and the deadline is **tonight**. Yes, you had two months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^2] [^4].
 
 ## Pest vs. Cholera
 
@@ -16,7 +16,7 @@ By now your paper looks like this[^3]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-At this point it seems like damage beyond repair. This is not your fault. Maybe you'll have a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you are giving a quick read is technical and confusing. It seems to have been written by a bunch of greybeards educating you about typesetting practices while celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning their noble craft and join an obscure typesetting guild in addition to being an overworked student. That won't work.
+At this point it seems like damage beyond repair. This is not your fault. Maybe you'll have a short glance to the other alternative. You google "LaTeX" and the results does not look promising. Everything you are giving a quick read is technical and confusing. It seems to have been written by a bunch of greybeards educating you about typesetting practices while celebrating themselves about enabling Umlauts like it's 1999. They assume that you want to spend months learning their noble craft and join an obscure  guild in addition to being an overworked student. That won't work.
 
 So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
 
@@ -24,15 +24,15 @@ So you decide to start over with a fresh copy of the Word template. Two hours la
 
 ## How to do it
 
-Let's turn back the clock for a few hours and try again. This assumes:
+Let's rewind the clock for a few hours and try again. This assumes:
 
-1. You are on a \(fairly recent\) Mac[^5]. You have 10 Gigabyte \(GB\) free space on your harddisk. You should be on a fast internet and you must have the password for your account.
+1. You are on a \(fairly recent\) Mac[^5]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handfull of references and stuff.   
-5. You have got LaTeX templates / example files from the journal/conference like the ones pictured above.
+5. You have got LaTeX templates / example files from the journal/conference like the ones pictured above. This means you can submit a pdf set in LaTeX.
 
-We will go through a number of steps: first install LaTeX, then update it, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
+We will go through a number of steps: first install LaTeX, then update it, check the template, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take about 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
 
 ### Step 1: Install LaTeX
 
@@ -64,7 +64,7 @@ This can take a significant amount of time to download and update everything. Ti
 
 You can close the program for now, get some sweets maybe and get ready.
 
-### Step 3: Ckeck the Template
+### Step 3: Check the Template
 
 I assume you have already a folder with the LaTeX templates / example files of your conference or journal[^7]. If not, do it now. First make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
@@ -87,23 +87,17 @@ Then use the menu to open the LaTeX file.
 
 Yours will look similar but not the same. What you can see is that there is text mixed with commands which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
 
-A yellow window pops up and spews out lots of text. 
+A yellow window pops up and spews out lots of text.
 
 Option A:** If all goes well**, another window pops up with a pdf file. This is the LaTeX file converted to pdf. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing [^9]. Jump to the next section.
 
-Option B:** If it goes pretty well**, the pdf window pops up but some parts are empty. Click `Typeset ` again and see what happens. If the document looks fine now, jump to the next section.  
+Option B:** If it goes pretty well**, the pdf window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
 Option C: **If it goes less than half well**, the pdf window does not pop up. The yellow window should be in front. Press return. The pdf window pops up now. There will be some part of the document missing, maybe a figure/image. There will also be a mention of a `LaTeX Error` This actually happened in my case, as you can see here:
 
-
-
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
-
-
-
-
-Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend deadline, or allow you to send the document unformatted as-is until they figure out what is wrong.  
+Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend deadline, or allow you to send the document unformatted as-is until they figure out what is wrong.
 
 ### Step 4: Prepare the Document
 
