@@ -32,7 +32,7 @@ Let's rewind the clock for a few hours and try again. This assumes:
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handfull of references and stuff.   
-5. You have received LaTeX templates / example files from the journal/conference like the ones pictured above. This means you may submit a pdf set in LaTeX.
+5. You have received LaTeX templates / example files from the journal/conference like the ones pictured above. This means you may submit a PDF set in LaTeX.
 
 We will go through a number of steps: first install LaTeX, then update it, check the template, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take roghly 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
 
@@ -91,11 +91,11 @@ Yours will look similar but not the same. What you can see is text mixed with co
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
-Option A:** If all goes well**, another window pops up with a pdf file. This is the LaTeX file converted to pdf. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing[^10]. Jump to the next section.
+Option A:** If all goes well**, another window pops up with a PDF file. This is the LaTeX file converted to PDF. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing[^10]. Jump to the next section.
 
-Option B:** If it goes pretty well**, the pdf window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
+Option B:** If it goes pretty well**, the PDF window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
-Option C \(the tricky one\): **If it goes less than half well**, the pdf window does not pop up. The console should be still in front. Press return. Maybe you need to press it a couple of times. The pdf window pops up now. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^11]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
+Option C \(the tricky one\): **If it goes less than half well**, the PDF window does not pop up. The console should be still in front. Press return. Maybe you need to press it a couple of times. The PDF window finally opens. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^11]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
@@ -107,28 +107,78 @@ and the error says "Unknown graphics extension: .ps". It does not recognize the 
 
 Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save it in the same directory with the other files.
 
-Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: aisb01.pdf. Now try  `Typeset` again. It should work this time and you should see the image in your pdf. Jump to the next section.
+Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: `aisb01.pdf`. Now try  `Typeset` again. It should work this time and you should see the image in your PDF. Jump to the next section.
 
-Option D: **If it goes terribly bad**, the pdf window does not pop up at all, after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong.
+Option D: **If it goes terribly bad**, the PDF window does not pop up at all, after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong.
 
 ### Step 4: Prepare the Document
 
-The next thing is to get a feel for the document. The beginning of my pdf looks like this:
+The next step is to take 10 minutes and get a feel for the document. The beginning of my PDF looks like this:
 
 ![](/assets/Screen Shot 2017-04-13 at 23.10.04.png)
 
-Now a couple of things:
+Now a couple of things: 
 
-The expample usually contains everything which may possibly be in a paper: abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. You don't want or need to acknowledge anyone. Then it is just to delete these parts. The rule of thumb is simple: you can always safely delete the complete paragraph, that is the content between two empty lines. This is different from the situation in Word \("Pest vs. Cholera"\).
+When we look at the LaTeX source file in TexShop and at the PDF we look at the **same document**. So we can see for example there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In my source file these elements are: 
 
-Study the example file to figure out which parts you will need for your draft. Maybe jot down some notes. A minimal paper[^12] would have:
+```
+\title{Guidelines for Preparing a Paper for the \\ 
+European Conference on Artificial Intelligence}
+```
+
+```
+\author{Name1 Surname1 \and Name2 Surname2 \and Name3 Surname3\institute{University of Leipzig,
+Germany, email: somename@informatik.uni-leipzig.de} }
+```
+
+```
+\begin{abstract}
+The purpose of this paper is to show a contributor the required
+style for a paper for AISB 2008. The specifications
+for layout are described so that non-\LaTeX\ users can create their
+own style sheet to achieve the same layout. The source for the
+sample file is available for \LaTeX\ users. The PostScript and the
+PDF file is available for all.
+\end{abstract}
+```
+
+Yours will be different again, but you will find those elements. There are commands that begin with a backslash `\` , arguments that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. 
+
+Study both views to identify these elements. The expample file usually contains everything which may possibly appear in a paper: title, authors, abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone. 
+
+For now just ignore these parts. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now. 
+
+Instead check your paper to figure out which parts you will need for your draft. A minimal paper[^12] usually would have: 
 
 * a title
-* your name and institution somewhere
+* your name\(s\) and institution\(s\) somewhere
+* abstract
 * sections of text
 * citations in the text and a list of references at the end
 
-We focus on these first.
+We focus on these four now.
+
+#### Title
+
+You already located the title element in TexShop. Replace the text between curly braces `{ }` with your title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit-&gt; Undo \( `cmd-Z)`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\). 
+
+Does it work? Congratulations.
+
+_A journey of a thousand miles begins with a single step _\(Laozi\). You have taken that step. Let's move on.
+
+#### Name\(s\) and Institution\(s\) 
+
+Now do the same with the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template, I did not have to say "put them in the footnote". When we work with a template provided to us
+
+#### Abstract
+
+#### Text
+
+#### Citations and References 
+
+### Footnotes, Images and Tables
+
+### 
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
