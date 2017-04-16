@@ -87,7 +87,7 @@ Then use the menu to open the LaTeX file.
 
 ![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
 
-Yours will look similar but not the same. What you can see is text mixed with commands which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
+Yours will look similar but not the same. What you can see is text mixed with commands, which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
@@ -117,9 +117,9 @@ The next step is to take 10 minutes and get a feel for the document. The beginni
 
 ![](/assets/Screen Shot 2017-04-13 at 23.10.04.png)
 
-Now a couple of things: 
+Now a couple of things:
 
-When we look at the LaTeX source file in TexShop and at the PDF we look at the **same document**. So we can see for example there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In my source file these elements are: 
+When we look at the LaTeX source file in TexShop and at the PDF we look at the **same document**. So we can see for example there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In my source file these elements are:
 
 ```
 \title{Guidelines for Preparing a Paper for the \\ 
@@ -142,13 +142,13 @@ PDF file is available for all.
 \end{abstract}
 ```
 
-Yours will be different again, but you will find those elements. There are commands that begin with a backslash `\` , arguments that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. 
+Yours will be different again, but you will find those elements. There are commands that begin with a backslash `\` , arguments that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
 
-Study both views to identify these elements. The expample file usually contains everything which may possibly appear in a paper: title, authors, abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone. 
+Study both views to identify these elements. The expample file usually contains everything which may possibly appear in a paper: title, authors, abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
-For now just ignore these parts. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now. 
+For now just ignore these parts. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now.
 
-Instead check your paper to figure out which parts you will need for your draft. A minimal paper[^12] usually would have: 
+Instead check your paper to figure out which parts you will need for your draft. A minimal paper[^12] usually would have:
 
 * a title
 * your name\(s\) and institution\(s\) somewhere
@@ -160,21 +160,23 @@ We focus on these four now.
 
 #### Title
 
-You already located the title element in TexShop. Replace the text between curly braces `{ }` with your title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit-&gt; Undo \( `cmd-Z)`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\). 
+You already located the title element in TexShop. Replace the text between curly braces `{ }` with your title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit-&gt; Undo \( `cmd-Z)`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\).
 
-Does it work? Congratulations.
+Does it work? Do you see your title in the PDF? Congratulations.
 
-_A journey of a thousand miles begins with a single step _\(Laozi\). You have taken that step. Let's move on.
+_A journey of a thousand miles begins with a single step _\(Lao-Tse\). 
 
-#### Name\(s\) and Institution\(s\) 
+You have taken that step. Let's move on.
 
-Now do the same with the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template, I did not have to say "put them in the footnote". When we work with a template provided to us
+#### Name\(s\) and Institution\(s\)
+
+Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template provided to us, we just need to replace the content, not layout the paper. This has been done for us already.
 
 #### Abstract
 
 #### Text
 
-#### Citations and References 
+#### Citations and References
 
 ### Footnotes, Images and Tables
 
@@ -186,7 +188,7 @@ Now do the same with the names and institutions of the author\(s\). Check carefu
 
 [^3]: I am working with a number of assumptions here that might or might not be working for you. 
 
-[^4]:  Else they would have provided actual formatting templates, which exist in Word, and would have given instructions how to use those. I will not go into that here.  
+[^4]:  If this was not the case, they would have provided actual formatting templates, which exist in Word, and would have given instructions how to use those. I will not go into that here.  
 
 [^5]: [Ah, Picasso!](https://en.wikipedia.org/wiki/File:Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg "Ah, Picasso!")
 
