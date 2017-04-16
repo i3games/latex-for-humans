@@ -164,7 +164,7 @@ You already located the title element in TexShop. Replace the text between curly
 
 Does it work? Do you see your title in the PDF? Congratulations.
 
-_A journey of a thousand miles begins with a single step _\(Lao-Tse\). 
+_A journey of a thousand miles begins with a single step _\(Lao-Tse\).
 
 You have taken that step. Let's move on.
 
@@ -174,7 +174,31 @@ Now replace the names and institutions of the author\(s\). Check carefully what 
 
 #### Abstract
 
+The abstract of your paper goes between 
+
+```
+\begin{abstract}
+```
+
+and
+
+```
+\end{abstract}
+```
+
+If you don't need an abstract \(for example when you are submitting an extended abstract, you won't need a, well, abstract of the abstract\), just delete the whole paragraph including the `\begin{abstract}` and `\end{abstract}` commands.
+
 #### Text
+
+Now the main text. You will have sections with headings
+
+This is straightforward. 
+
+When you the text you should have your papaer followed by the example stuff. 
+
+If you don't have footnotes, images and tables, you may delete the.
+
+
 
 #### Citations and References
 
