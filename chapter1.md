@@ -32,9 +32,9 @@ Let's rewind the clock for a few hours and try again. This assumes:
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff.   
-5. **You have received LaTeX templates / example files from the journal/conference like the ones pictured above.** This means you may submit a PDF which is typeset in LaTeX. 
+5. **You have received LaTeX templates / example files from the journal/conference like the ones pictured above.**
 
-We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take roughly 3-4 hours if all goes well. The first half of it will be spent installing and updating LaTeX.
+Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take 3-4 hours if all goes well. Roughly the first half of it will be spent installing and updating LaTeX \(while you can do other things in between\).
 
 ### Step 1: Install LaTeX
 
@@ -60,7 +60,9 @@ Note that the list it displays may be empty, says "No update available" or conta
 
 .. and wait. Then there should be a list of entries. The program might tell you that it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper? If the update fails: try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper? 
+
+If the update fails: try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
