@@ -105,7 +105,7 @@ See the `Goto Error` button? It brings you to the location in the LaTeX file whe
 
 and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you get this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't have a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
-Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save it in the same directory with the other files.
+Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save the PDF in the same directory with the other files.
 
 Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: `aisb01.pdf`. Now try  `Typeset` again. It should work this time and you should see the image in your PDF. Jump to the next section.
 
@@ -119,7 +119,7 @@ The next step is to take 10 minutes and get a feel for the document. The beginni
 
 Now a couple of things:
 
-When we look at the LaTeX source file in TexShop and at the PDF we look at the **same document**. So we can see for example there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In my source file these elements are:
+When you look at the LaTeX source file in TexShop and at the PDF, you are looking at the **same document**. The first one is the source and the second one the result of the layout process. So you can see in my example that there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In the source file these elements are:
 
 ```
 \title{Guidelines for Preparing a Paper for the \\ 
@@ -142,9 +142,9 @@ PDF file is available for all.
 \end{abstract}
 ```
 
-Yours will be different again, but you will find those elements. There are commands that begin with a backslash `\` , arguments that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
+Yours will be different, but you will find the same or similar elements. You can see text, commands that begin with a backslash `\` , parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
 
-Study both views to identify these elements. The expample file usually contains everything which may possibly appear in a paper: title, authors, abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
+Study your LaTeX source and you PDF to identify these elements. The example usually contains everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
 For now just ignore these parts. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now.
 
@@ -170,11 +170,11 @@ You have taken that step. Let's move on.
 
 #### Name\(s\) and Institution\(s\)
 
-Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template provided to us, we just need to replace the content, not layout the paper. This has been done for us already.
+Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template provided to us, we just need to replace the content, not layout the paper. This has been done for us already[^12].
 
 #### Abstract
 
-The abstract of your paper goes between 
+The abstract of your paper goes between
 
 ```
 \begin{abstract}
@@ -182,27 +182,61 @@ The abstract of your paper goes between
 
 and
 
-```
 \end{abstract}
-```
 
-If you don't need an abstract \(for example when you are submitting an extended abstract, you won't need a, well, abstract of the abstract\), just delete the whole paragraph including the `\begin{abstract}` and `\end{abstract}` commands.
+If you don't need an abstract \(for example when you are submitting an extended abstract, you won't need an abstract of the abstract\), just delete the whole paragraph including the `\begin{abstract}` and `\end{abstract}` commands.
 
 #### Text
 
-Now the main text. You will have sections with headings
+Now to the main text. You will have a number of sections with headings. Replace the heading between the curly braces with yours: 
 
-This is straightforward. 
+```
+\section{HEADING}
+```
 
-When you the text you should have your papaer followed by the example stuff. 
+Then, starting immediately on the next line, add the paragraps of text that go into the section. Leave an empty line between paragraphs and before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`. 
 
-If you don't have footnotes, images and tables, you may delete the.
+When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff. 
 
+If you do have any of the elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
 
+```
+\bibliography{aisb}
 
-#### Citations and References
+\end{document}
+```
 
-### Footnotes, Images and Tables
+but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset `  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat. 
+
+Well done, coffee break. Come back for "Citations and references" below. 
+
+#### Acknowledgement
+
+The acknowledgement comes at the end of the paper and contains heartfelt thank you's to supervisors, referees, editors or partners \(who kept being friendly and supportive during the Word breakdown mentioned above\). Also shoutouts to your funding, which is sometimes required. Thankfully this is straightforward: `\ack` command, followed by the text on the next line. Note that the acknowlegement is usually not numbered, even if your other headings are. 
+
+#### Footnotes
+
+You will find at least one footnote in the example, and it looks like this  `\footnote{Text of the footnote.} ` All you have to do is to insert this command where you want the footnote sign to appear and write your footnote text between the curly braces. LaTeX will automatically enumerate, format and place your footnotes, and it will work.
+
+#### Enumerations
+
+Follow the same approach with enumerations, that is is numbered lists or bulletpoints.
+
+#### Images
+
+#### Tables
+
+#### Crossreferences
+
+#### Bold and Italic Text
+
+#### Special Characters
+
+#### Linebreaks
+
+### Citations and References
+
+### 
 
 ### 
 
@@ -227,4 +261,6 @@ If you don't have footnotes, images and tables, you may delete the.
 [^10]: If that joke doesn't make sense, please read the section "Pest vs. Cholera".
 
 [^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
+
+[^12]: If you wonder how LaTeX knows about the style of your paper, it is in one of the files mentioned in "Pest vs. Cholera", namely the file with the ending `.cls`. You don't need to touch this file but if you had to change how things look, it would be there.
 
