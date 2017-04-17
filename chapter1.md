@@ -232,7 +232,7 @@ This replace-content-then-copy-then-delete-the original-section has become our w
 
 #### Images
 
-Including illustrations in a paper sounds daunting and can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of the image in the LaTeX file. Often there are different examples of images given, full-sized ones, and smaller ones, for example that spans a column in a two column layout. In my paper it looks like this:
+Including figures and illustrations in a paper sounds daunting and can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of the image in the LaTeX file. Often there are different examples of figures given, full-sized ones, and smaller ones, that span one column in a two column layout for example. In my paper it looks like this:
 
 ```latex
 \begin{figure}
@@ -246,13 +246,13 @@ As mentioned in [Step 3: Check the Template](#step-3-check-the-template), LaTeX 
 
 Then replace the example filename with your image filename. Here this is within the command  `\includegraphics[height=3.5in]{aisbf01.pdf}}`. In your case this might be a different command but there will be a filename of the image to be included. Run `Typeset` and if the image doesn't show up, run it again. If it still does not show up, check the console for errors like I did in [Step 3: Check the Template](#step-3-check-the-template). The error might tell you something, maybe it just didn't find the image. In this case double check that the image file is actually in the directory and that the filenames match. If it appears that there are other problems, try the following. Find a `.jpg`file on the internet and try to include this one. If that works then maybe something is wrong with your image. Try to open it in another program and export/save a new version. If all this doesn't help, consult some of the resources in chapter [Where to Get Help](/where-to-get-help.md).
 
-If all went well, edit the `\caption`, replacing the text between the curly braces. By now this process should be familiar. Finally move the whole block where you want the image to appear. You might have to experiment a little, but you can see that your text will flow nicely around the image. Keep an empty line above and below the image command block.
+If all went well, edit the `\caption ` by replacing the text between the curly braces. By now this process should be familiar. Finally move the whole block to the position where you want the image to appear. You might have to experiment a little, and LaTeX will re-position your image if you attempt something frivoulous, like putting an image at the bottom of a page. But you can see that text and image will live in harmony, the text flowing nicely around the image. Just keep an empty line above and below the `figure` command block.
 
 Do this with your other images and don't forget to delete leftovers of the example content when you are done.
 
 #### Tables
 
-If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most most weird and convoluted tables out there and the example table in your LaTeX file will be proof of that. 
+If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most most weird and convoluted tables out there and the example table in your LaTeX file will be proof of that.
 
 #### Crossreferences
 
