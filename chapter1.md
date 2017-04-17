@@ -210,9 +210,7 @@ If you do have any of the elements like acknowledgement, footnotes, enumerations
 
 but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset`  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat.
 
-Well done, take a coffee break. Come back for "Citations and references" below. 
-
-
+Well done, take a coffee break. Come back for "Citations and references" below.
 
 #### Acknowledgement
 
@@ -246,7 +244,7 @@ Follow the same approach with enumerations, that is is numbered lists or bulletp
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
-[^2]: If you are really in a hurry you might skip the next section and head to "How to do it".
+[^2]: If you are really in a hurry you might skip the next section and head to "How to do it". Also, ignore the footnotes from now on.
 
 [^3]: I am working with a number of assumptions here that might or might not be working for you. 
 
