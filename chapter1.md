@@ -144,7 +144,7 @@ PDF file is available for all.
 
 Yours will be different, but you will find the same or similar elements. You can see text, commands that begin with a backslash `\` , parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
 
-Study your LaTeX source and you PDF to identify these elements. The example usually contains everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
+Study your LaTeX source and the PDF it generated to identify these elements. The example usually contains everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
 For now just ignore these parts. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now.
 
@@ -182,21 +182,23 @@ The abstract of your paper goes between
 
 and
 
+```
 \end{abstract}
+```
 
 If you don't need an abstract \(for example when you are submitting an extended abstract, you won't need an abstract of the abstract\), just delete the whole paragraph including the `\begin{abstract}` and `\end{abstract}` commands.
 
 #### Text
 
-Now to the main text. You will have a number of sections with headings. Replace the heading between the curly braces with yours: 
+Now to the main text. You will have a number of sections with headings. Replace the heading between the curly braces with yours:
 
 ```
 \section{HEADING}
 ```
 
-Then, starting immediately on the next line, add the paragraps of text that go into the section. Leave an empty line between paragraphs and before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`. 
+Then, starting immediately on the next line, add the paragraps of text that go into the section. Leave an empty line between paragraphs and before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
-When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff. 
+When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
 If you do have any of the elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
 
@@ -206,17 +208,17 @@ If you do have any of the elements like acknowledgement, footnotes, enumerations
 \end{document}
 ```
 
-but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset `  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat. 
+but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset`  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat.
 
-Well done, coffee break. Come back for "Citations and references" below. 
+Well done, coffee break. Come back for "Citations and references" below.
 
 #### Acknowledgement
 
-The acknowledgement comes at the end of the paper and contains heartfelt thank you's to supervisors, referees, editors or partners \(who kept being friendly and supportive during the Word breakdown mentioned above\). Also shoutouts to your funding, which is sometimes required. Thankfully this is straightforward: `\ack` command, followed by the text on the next line. Note that the acknowlegement is usually not numbered, even if your other headings are. 
+The acknowledgement comes at the end of the paper and contains heartfelt thank you's to supervisors, referees, editors or partners \(who kept being friendly and supportive during the Word breakdown mentioned above\). Also shoutouts to your funding, which is sometimes required. Thankfully this is straightforward: `\ack` command, followed by the text on the next line. Note that the acknowlegement is usually not numbered, even if your other headings are.
 
 #### Footnotes
 
-You will find at least one footnote in the example, and it looks like this  `\footnote{Text of the footnote.} ` All you have to do is to insert this command where you want the footnote sign to appear and write your footnote text between the curly braces. LaTeX will automatically enumerate, format and place your footnotes, and it will work.
+You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command where you want the footnote sign to appear and write the text of your footnote between the curly braces. LaTeX will automatically enumerate, format and place your footnotes, and it will work.
 
 #### Enumerations
 
