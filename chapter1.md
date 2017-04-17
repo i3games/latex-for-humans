@@ -246,13 +246,13 @@ As mentioned in [Step 3: Check the Template](#step-3-check-the-template), LaTeX 
 
 Then replace the example filename with your image filename. Here this is within the command  `\includegraphics[height=3.5in]{aisbf01.pdf}}`. In your case this might be a different command but there will be a filename of the image to be included. Run `Typeset` and if the image doesn't show up, run it again. If it still does not show up, check the console for errors like I did in [Step 3: Check the Template](#step-3-check-the-template). The error might tell you something, maybe it just didn't find the image. In this case double check that the image file is actually in the directory and that the filenames match. If it appears that there are other problems, try the following. Find a `.jpg`file on the internet and try to include this one. If that works then maybe something is wrong with your image. Try to open it in another program and export/save a new version. If all this doesn't help, consult some of the resources in chapter [Where to Get Help](/where-to-get-help.md).
 
-Now edit the `\caption`, replacing the text between the curly braces . By now this process should be familiar. Finally move the whole block where you want the image to appear. You will have to experiment a little, but you can see that your text will flow nicely around the image.
+If all went well, edit the `\caption`, replacing the text between the curly braces. By now this process should be familiar. Finally move the whole block where you want the image to appear. You might have to experiment a little, but you can see that your text will flow nicely around the image. Keep an empty line above and below the image command block.
 
 Do this with your other images and don't forget to delete leftovers of the example content when you are done.
 
 #### Tables
 
-If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most most weird and convoluted tables out there and the example table in your LaTeX file will be proof of that. You are not a proper
+If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most most weird and convoluted tables out there and the example table in your LaTeX file will be proof of that. 
 
 #### Crossreferences
 
@@ -262,7 +262,7 @@ If working with images looked a bit intimidating, tables can be really frighteni
 
 #### Linebreaks
 
-### Citations and References
+### Citations and Bibliography
 
 ### 
 
