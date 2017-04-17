@@ -54,17 +54,17 @@ In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Ut
 
 First check under Preferences if `Tex Live Utility`  itself wants to be updated. If so, follow the instructions.
 
-Note that the list may be empty, says "No update available" or contains some entries. In any case, click the little circular arrow
+Note that the list it displays may be empty, says "No update available" or contains some entries. In these cases, click the little circular arrow
 
 ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
-.. and wait. Then there should be entries. The program might tell you it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
+.. and wait. Then there should be a list of entries. The program might tell you that it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-It can take a significant amount of time to download and update everything. Time to re-read the paper maybe? If the update fails, try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper? If the update fails: try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
-You can close `Tex Live Utility` for now, consume some sweets maybe and get ready.
+You can close `Tex Live Utility` for now, consume some sweets and get ready.
 
 ### Step 3: Check the Template
 
@@ -76,7 +76,7 @@ Let's look at the LaTeX files.
 
 Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^9]:
 
-1. a file with the ending ".tex". This is **the LaTeX file** we are working with. Your paper will go in there. We will work on this first.
+1. a file with the ending ".tex". This is **the LaTeX file** we will work with. Your paper will go in there. We will focus on this first.
 2. a file with the ending ".bib". This is the file for the **bibliography** entries. We will do that next.
 
 Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
@@ -95,21 +95,21 @@ Option A:** If all goes well**, another window pops up with a PDF file. This is 
 
 Option B:** If it goes pretty well**, the PDF window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
-Option C \(the tricky one\): **If it goes less than half well**, the PDF window does not pop up. The console should be still in front. Press return. Maybe you need to press it a couple of times. The PDF window finally opens. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^11]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
+Option C \(the tricky one\): **If it goes not so well**, the PDF window does not pop up. Click on the console, then press return. Maybe you need to press return a couple of times. The PDF window finally opens. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^11]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
-See the `Goto Error` button? It brings you to the location in the LaTeX file where the error happens. In my case, this is in line 204:
+See the `Goto Error` button? It brings you to the location in the LaTeX file where the error happens. In my case, this was in line 204:
 
 ![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
 
-and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you get this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't have a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
+and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
 Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save the PDF in the same directory with the other files.
 
 Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: `aisb01.pdf`. Now try  `Typeset` again. It should work this time and you should see the image in your PDF. Jump to the next section.
 
-Option D: **If it goes terribly bad**, the PDF window does not pop up at all, after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong.
+Option D: **If it goes terribly bad**, the PDF window does not pop up at all, even after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong with their template.
 
 ### Step 4: Prepare the Document
 
@@ -119,7 +119,7 @@ The next step is to take 10 minutes and get a feel for the document. The beginni
 
 Now a couple of things:
 
-When you look at the LaTeX source file in TexShop and at the PDF, you are looking at the **same document**. The first one is the source and the second one the result of the layout process. So you can see in my example that there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In the source file these elements are:
+When you look at the LaTeX source file in TexShop and you look at the PDF, you are looking at the **same document**. The first one is the source and the second one the result of the layout process. So you can see in my example that there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In the source file these elements are:
 
 ```
 \title{Guidelines for Preparing a Paper for the \\ 
@@ -142,31 +142,31 @@ PDF file is available for all.
 \end{abstract}
 ```
 
-Yours will be different, but you will find the same or similar elements. You can see text, commands that begin with a backslash `\` , parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
+Yours will be different, but you will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
 
 Study your LaTeX source and the PDF it generated to identify these elements. The example usually contains everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
-For now just ignore these parts. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now.
+For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now.
 
-Instead check your paper to figure out which parts you will need for your draft. A minimal paper[^12] usually would have:
+Instead check your paper to figure out the parts you do need for your draft. A minimal paper[^12] usually would have:
 
 * a title
 * your name\(s\) and institution\(s\) somewhere
-* abstract
+* an abstract
 * sections of text
 * citations in the text and a list of references at the end
 
-We focus on these four now.
+We focus on these five now.
 
 #### Title
 
-You already located the title element in TexShop. Replace the text between curly braces `{ }` with your title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit-&gt; Undo \( `cmd-Z)`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\).
+You already located the title element in TexShop. Replace the text between curly braces `{ }` with your actual title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit-&gt; Undo \( `cmd-Z)`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\).
 
 Does it work? Do you see your title in the PDF? Congratulations.
 
 _A journey of a thousand miles begins with a single step _\(Lao-Tse\).
 
-You have taken that step. Let's move on.
+You just have taken that step. Let's move on.
 
 #### Name\(s\) and Institution\(s\)
 
