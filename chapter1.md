@@ -18,7 +18,7 @@ By now your paper looks like this[^5]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX", and the results did not look promising. Everything you were giving a quick read was technical and confusing. That stuff seems to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assume that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^13] in addition to being an overworked student. This won't work.
+Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX", and the results did not look promising. Everything you were giving a quick read was technical and confusing. That stuff seems to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assume that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^6] in addition to being an overworked student. This won't work.
 
 So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your single image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. And it's only five pages! Suddenly a shrill alarm sounds. Midnight!
 
@@ -28,7 +28,7 @@ So you decide to start over with a fresh copy of the Word template. Two hours la
 
 Let's rewind the clock for a few hours and try again. This assumes:
 
-1. You are on a \(fairly recent\) Mac[^6]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
+1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff.   
@@ -38,7 +38,7 @@ Our goal is to submit a PDF which is typeset in LaTeX. We will go through a numb
 
 ### Step 1: Install LaTeX
 
-Go to [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html). Download the installer [**MacTeX.pkg**](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg). Ignore everything that is written on the page[^7]. The download will take some time. Make tea.
+Go to [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html). Download the installer [**MacTeX.pkg**](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg). Ignore everything that is written on the page[^8]. The download will take some time. Make tea.
 
 Run the installer. It walks you through the process. The installation will take some time as well. The program might try to scare you:
 
@@ -70,13 +70,13 @@ You can close `Tex Live Utility` for now, consume some sweets and get ready.
 
 ### Step 3: Check the Template
 
-I assume you have already a folder with the LaTeX templates / example files from your conference or journal[^8]. If not, get it now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
+I assume you have already a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, get it now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
 Let's look at the LaTeX files.
 
 ![](/assets/Untitled.png)
 
-Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^9]:
+Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^10]:
 
 1. a file with the ending ".tex". This is **the LaTeX file** we will work with. Your paper will go in there. We will focus on this first.
 2. a file with the ending ".bib". This is the file for the **bibliography** entries. We will do that next.
@@ -93,11 +93,11 @@ Yours will look similar but not the same. What you can see is text mixed with co
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
-Option A:** If all goes well**, another window pops up with a PDF file. This is the LaTeX file converted to PDF. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing[^10]. Jump to the next section.
+Option A:** If all goes well**, another window pops up with a PDF file. This is the LaTeX file converted to PDF. It works! Rejoice! Celebrate the power of LaTeX. Almost feel a grey beard growing[^11]. Jump to the next section.
 
 Option B:** If it goes pretty well**, the PDF window pops up but some parts are empty. Click `Typeset` again and see what happens. If the document looks fine now, jump to the next section.
 
-Option C \(the tricky one\): **If it goes not so well**, the PDF window does not pop up. Click on the console, then press return. Maybe you need to press return a couple of times. The PDF window finally opens. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^11]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
+Option C \(the tricky one\): **If it goes not so well**, the PDF window does not pop up. Click on the console, then press return. Maybe you need to press return a couple of times. The PDF window finally opens. There will be some part\(s\) of the document missing, maybe a figure/image, maybe more[^12]. There will also be one or more mentions of  `LaTeX Error` in the console. This actually happened in my case, as you can see here:
 
 ![](/assets/Screen Shot 2017-04-14 at 00.50.17.png)
 
@@ -150,7 +150,7 @@ Study your LaTeX source and the PDF it generated to identify these elements. The
 
 For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \(see [Pest vs. Cholera](#pest-vs-cholera)\). Just don't delete anything now.
 
-Instead check your paper to figure out the parts you do need for your draft. A minimal paper[^12] usually would have:
+Instead check your paper to figure out the parts you do need for your draft. A minimal paper[^13] usually would have:
 
 * a title
 * your name\(s\) and institution\(s\) somewhere
@@ -172,7 +172,7 @@ You just have taken that step. Let's move on.
 
 #### Name\(s\) and Institution\(s\)
 
-Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^12].
+Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^undefined].
 
 #### Abstract
 
@@ -278,19 +278,19 @@ If working with images looked a bit intimidating, tables can be really frighteni
 
 [^5]: [Ah, Picasso!](https://en.wikipedia.org/wiki/File:Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg "Ah, Picasso!")
 
-[^6]: That's for now. Ping me if you want this written for other choices. 
+[^6]:  I made this up, there are no "Ligaturists". But it feels like there could be.
 
-[^7]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
+[^7]: That's for now. Ping me if you want this written for other choices. 
 
-[^8]: "What if not?" you might ask. "Then we are in trouble", I answer. Time to contact the chair of your conference and ask for the LaTeX templates.
+[^8]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
 
-[^9]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
+[^9]: "What if not?" you might ask. "Then we are in trouble", I answer. Time to contact the chair of your conference and ask for the LaTeX templates.
 
-[^10]: If that joke doesn't make sense, please read the section [Pest vs. Cholera](#pest-vs-cholera).
+[^10]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
 
-[^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
+[^11]: If that joke doesn't make sense, please read the section [Pest vs. Cholera](#pest-vs-cholera).
 
-[^12]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
+[^12]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
-[^13]:  I made this up, there are no "Ligaturists". But it feels like there could be.
+[^13]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
 
