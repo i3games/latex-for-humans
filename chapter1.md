@@ -34,7 +34,7 @@ Let's rewind the clock for a few hours and try again. This assumes:
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff.   
 5. **You have received LaTeX templates / example files from the journal/conference like the ones pictured above.**
 
-Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take 3-4 hours if all goes well. Roughly the first half of it will be spent installing and updating LaTeX \(while you can do other things in between\).
+Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-4 hours if all goes well. Roughly the first half of it will be spent installing and updating LaTeX \(while you can do other things in between\).
 
 ### Step 1: Install LaTeX
 
@@ -244,15 +244,15 @@ processes } \label{procstructfig}
 
 As mentioned in [Step 3: Check the Template](#step-3-check-the-template), LaTeX wants images in either  `.pdf`, `.png` or `.jpg` formats. Your template may accept different ones as well, but these three are usually safe to use. If you haven't done it yet, prepare your image and copy the image file into the directory with the other files. Give it a simple file name without spaces or fancy characters in it.
 
-Replace the example filename with your image filename. Here this is within the command  ` \includegraphics[height=3.5in]{aisbf01.pdf}}`. In your case this might be a different command but there will be a filename of the image to be included. Run `Typeset` and if you image doesn't show up, run it again. If it still does not show up, check the console for errors like I did in [Step 3: Check the Template](#step-3-check-the-template). The error might tell you something, maybe it just didn't find the image. In this case doublecheck that the image file is in the directory and that the filenames match. 
+Then replace the example filename with your image filename. Here this is within the command  `\includegraphics[height=3.5in]{aisbf01.pdf}}`. In your case this might be a different command but there will be a filename of the image to be included. Run `Typeset` and if the image doesn't show up, run it again. If it still does not show up, check the console for errors like I did in [Step 3: Check the Template](#step-3-check-the-template). The error might tell you something, maybe it just didn't find the image. In this case double check that the image file is actually in the directory and that the filenames match. If it appears that there are other problems, try the following. Find a `.jpg`file on the internet and try to include this one. If that works then maybe something is wrong with your image. Try to open it in another program and export/save a new version. If all this doesn't help, consult some of the resources in chapter [Where to Get Help](/where-to-get-help.md).
 
-Now edit the `\caption`, replacing the text between the curly braces . By now this process should be familiar. Finally move the whole block where you want the image to appear. You will have to experiment a little, but you can see that your text will flow nicely around the image. 
+Now edit the `\caption`, replacing the text between the curly braces . By now this process should be familiar. Finally move the whole block where you want the image to appear. You will have to experiment a little, but you can see that your text will flow nicely around the image.
 
 Do this with your other images and don't forget to delete leftovers of the example content when you are done.
 
 #### Tables
 
-If images were frightening, tables are realyy frightening. The reason is 
+If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most most weird and convoluted tables out there and the example table in your LaTeX file will be proof of that. You are not a proper
 
 #### Crossreferences
 
