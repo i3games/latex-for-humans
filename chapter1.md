@@ -60,7 +60,7 @@ Note that the list it displays may be empty, says "No update available" or conta
 
 .. and wait. Then there should be a list of entries. The program might tell you that it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper? 
+It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper?
 
 If the update fails: try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
@@ -202,7 +202,7 @@ Then, starting immediately on the next line, add the paragraps of text that go i
 
 When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you do have any of the elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
+If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just pick the ones you need. If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
 
 ```
 \bibliography{aisb}
@@ -220,13 +220,19 @@ The acknowledgement comes at the end of the paper and contains heartfelt thank y
 
 #### Footnotes
 
-You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command where you want the footnote sign to appear and write the text of your footnote between the curly braces. LaTeX will automatically enumerate, format and place your footnotes, and it will work.
+You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command where you want the footnote sign to appear and write the text of your footnote between the curly braces. LaTeX will automatically enumerate, layout and place your footnotes, and it will work.
 
 #### Enumerations
 
-Follow the same approach with enumerations, that is is numbered lists or bulletpoints.
+Follow the same approach with enumerations, that is is numbered lists or bulletpoints. Find them in the example LaTeX file and replace the content, then copy/paste the result. When you are done delete the original section.
+
+Numbered lists begin with `\begin{enumerate}` and end with `\end{enumerate}`. Bullertpoint lists begin with `\begin{itemize}` and end with `\end{itemize}`. Each of the list items starts with `\item` followed by the text.
+
+This replace-content-then-copy-then-delete-the original-section has become our workflow, but you can just as well write the commands yourself if you prefer by now. Each time you run `Typeset, `the console window will tell you if you made errors and the PDF that pops up will 
 
 #### Images
+
+Images are if your template file has two columns, like mine, there are usually  
 
 #### Tables
 
