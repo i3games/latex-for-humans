@@ -170,7 +170,7 @@ You just have taken that step. Let's move on.
 
 #### Name\(s\) and Institution\(s\)
 
-Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template provided to us, we just need to replace the content, not layout the paper. This has been done for us already[^12].
+Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^12].
 
 #### Abstract
 
@@ -196,7 +196,7 @@ Now to the main text. You will have a number of sections with headings. Replace 
 \section{HEADING}
 ```
 
-Then, starting immediately on the next line, add the paragraps of text that go into the section. Leave an empty line between paragraphs and before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
+Then, starting immediately on the next line, add the paragraps of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
 When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
@@ -210,7 +210,9 @@ If you do have any of the elements like acknowledgement, footnotes, enumerations
 
 but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset`  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat.
 
-Well done, coffee break. Come back for "Citations and references" below.
+Well done, take a coffee break. Come back for "Citations and references" below. 
+
+
 
 #### Acknowledgement
 
@@ -264,7 +266,7 @@ Follow the same approach with enumerations, that is is numbered lists or bulletp
 
 [^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
-[^12]:  If you wonder how LaTeX knows about the style of your paper, it is in one of the files mentioned in "Pest vs. Cholera", namely the file with the ending `.cls`. You don't need to touch this file but if you had to change how things look, it would be in there.
+[^12]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in "Pest vs. Cholera", namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
 
 [^13]:  I made this up, there are no "Ligaturists". But it feels like there could be.
 
