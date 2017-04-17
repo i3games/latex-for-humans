@@ -111,7 +111,7 @@ Find the culprit image file with the  `.ps` ending in the directory with your te
 
 Then change the name in the LaTeX file from  `.ps` to  `.pdf`. In my case in line 204: `aisb01.pdf`. Now try  `Typeset` again. It should work this time and you should see the image in your PDF. Jump to the next section.
 
-Option D: **If it goes terribly bad**, the PDF window does not pop up at all, even after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to "Pest vs. Cholera"\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong with their template.
+Option D: **If it goes terribly bad**, the PDF window does not pop up at all, even after pressing return repeatedly. If this is the case, it is legit to contact the editors and demand that they send you a template that works. The worst thing that can happen is that they advise to use Word \(and go back to [Pest vs. Cholera](#pest-vs-cholera)\). The sensible thing to happen is that they extend the deadline, or allow you to send your draft as-is until they figure out what is wrong with their template.
 
 ### Step 4: Prepare the Document
 
@@ -123,17 +123,17 @@ Now a couple of things:
 
 When you look at the LaTeX source file in TexShop and you look at the PDF, you are looking at the **same document**. The first one is the source and the second one the result of the layout process. So you can see in my example that there is a title in the PDF and placeholders for the authors' names, followed by an abstract. In the source file these elements are:
 
-```
+```latex
 \title{Guidelines for Preparing a Paper for the \\ 
 European Conference on Artificial Intelligence}
 ```
 
-```
+```latex
 \author{Name1 Surname1 \and Name2 Surname2 \and Name3 Surname3\institute{University of Leipzig,
 Germany, email: somename@informatik.uni-leipzig.de} }
 ```
 
-```
+```latex
 \begin{abstract}
 The purpose of this paper is to show a contributor the required
 style for a paper for AISB 2008. The specifications
@@ -144,11 +144,11 @@ PDF file is available for all.
 \end{abstract}
 ```
 
-Yours will be different, but you will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end.
+Yours will be different, but you will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. Notice also how the coloring in TexShop \(which might have slightly different colors than the ones shown here\) helps to spot the commands.
 
 Study your LaTeX source and the PDF it generated to identify these elements. The example usually contains everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
-For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \("Pest vs. Cholera"\). Just don't delete anything now.
+For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \(see [Pest vs. Cholera](#pest-vs-cholera)\). Just don't delete anything now.
 
 Instead check your paper to figure out the parts you do need for your draft. A minimal paper[^12] usually would have:
 
@@ -178,13 +178,13 @@ Now replace the names and institutions of the author\(s\). Check carefully what 
 
 The abstract of your paper goes between
 
-```
+```latex
 \begin{abstract}
 ```
 
 and
 
-```
+```latex
 \end{abstract}
 ```
 
@@ -192,19 +192,19 @@ If you don't need an abstract \(for example when you are submitting an extended 
 
 #### Text
 
-Now to the main text. You will have a number of sections with headings. Replace the heading between the curly braces with yours:
+Now to the main text. You will have a number of sections with headings. Replace the text between the curly braces with your heading:
 
-```
-\section{HEADING}
+```latex
+\section{HEADING TEXT}
 ```
 
-Then, starting immediately on the next line, add the paragraps of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
+Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
 When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
 If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just pick the ones you need. If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
 
-```
+```latex
 \bibliography{aisb}
 
 \end{document}
@@ -228,13 +228,31 @@ Follow the same approach with enumerations, that is is numbered lists or bulletp
 
 Numbered lists begin with `\begin{enumerate}` and end with `\end{enumerate}`. Bullertpoint lists begin with `\begin{itemize}` and end with `\end{itemize}`. Each of the list items starts with `\item` followed by the text.
 
-This replace-content-then-copy-then-delete-the original-section has become our workflow, but you can just as well write the commands yourself if you prefer by now. Each time you run `Typeset, `the console window will tell you if you made errors and the PDF that pops up will 
+This replace-content-then-copy-then-delete-the original-section has become our workflow, but you can just as well write the commands yourself if you prefer by now. Each time you run `Typeset,`the console window will tell you if you made errors and the PDF that pops up will show if everything is as planned.
 
 #### Images
 
-Images are if your template file has two columns, like mine, there are usually  
+Including illustrations in a paper sounds daunting and can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of the image in the LaTeX file. Often there are different examples of images given, full-sized ones, and smaller ones, for example that spans a column in a two column layout. In my paper it looks like this:
+
+```latex
+\begin{figure}
+\centerline{\includegraphics[height=3.5in]{aisbf01.pdf}}
+\caption{Network of transputers and the structure of individual
+processes } \label{procstructfig}
+\end{figure}
+```
+
+As mentioned in [Step 3: Check the Template](#step-3-check-the-template), LaTeX wants images in either  `.pdf`, `.png` or `.jpg` formats. Your template may accept different ones as well, but these three are usually safe to use. If you haven't done it yet, prepare your image and copy the image file into the directory with the other files. Give it a simple file name without spaces or fancy characters in it.
+
+Replace the example filename with your image filename. Here this is within the command  ` \includegraphics[height=3.5in]{aisbf01.pdf}}`. In your case this might be a different command but there will be a filename of the image to be included. Run `Typeset` and if you image doesn't show up, run it again. If it still does not show up, check the console for errors like I did in [Step 3: Check the Template](#step-3-check-the-template). The error might tell you something, maybe it just didn't find the image. In this case doublecheck that the image file is in the directory and that the filenames match. 
+
+Now edit the `\caption`, replacing the text between the curly braces . By now this process should be familiar. Finally move the whole block where you want the image to appear. You will have to experiment a little, but you can see that your text will flow nicely around the image. 
+
+Do this with your other images and don't forget to delete leftovers of the example content when you are done.
 
 #### Tables
+
+If images were frightening, tables are realyy frightening. The reason is 
 
 #### Crossreferences
 
@@ -268,11 +286,11 @@ Images are if your template file has two columns, like mine, there are usually
 
 [^9]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
 
-[^10]: If that joke doesn't make sense, please read the section "Pest vs. Cholera".
+[^10]: If that joke doesn't make sense, please read the section [Pest vs. Cholera](#pest-vs-cholera).
 
 [^11]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
-[^12]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in "Pest vs. Cholera", namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
+[^12]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
 
 [^13]:  I made this up, there are no "Ligaturists". But it feels like there could be.
 
