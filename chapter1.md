@@ -31,10 +31,10 @@ Let's rewind the clock for a few hours and try again. This assumes:
 1. You are on a \(fairly recent\) Mac[^6]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
-4. Your work is not too complicated, mainly text, maybe a table, a few images, a handfull of references and stuff.   
-5. You have received LaTeX templates / example files from the journal/conference like the ones pictured above. This means you may submit a PDF set in LaTeX.
+4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff.   
+5. **You have received LaTeX templates / example files from the journal/conference like the ones pictured above.** This means you may submit a PDF which is typeset in LaTeX. 
 
-We will go through a number of steps: first install LaTeX, then update it, check the template, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take roghly 3 hours if all goes well. The first half of it will be installing and updating LaTeX.
+We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and references. This should take roughly 3-4 hours if all goes well. The first half of it will be spent installing and updating LaTeX.
 
 ### Step 1: Install LaTeX
 
