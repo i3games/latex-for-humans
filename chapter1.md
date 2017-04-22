@@ -89,7 +89,7 @@ Then use the menu to open the LaTeX file.
 
 ![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
 
-Yours will look similar but not the same. What you can see is text mixed with commands, which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`. 
+Yours will look similar but not the same. What you can see is text mixed with commands, which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`.
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
@@ -152,13 +152,13 @@ For now just ignore the parts you don't need. We will delete them later. The rul
 
 Instead check your paper to figure out the parts you do need for your draft. A minimal paper[^13] usually would have:
 
-* a title
-* your name\(s\) and institution\(s\) somewhere
-* an abstract
-* sections of text
-* citations in the text and a list of references at the end
+1. a title
+2. your name\(s\) and institution\(s\) somewhere
+3. an abstract
+4. sections of text
+5. citations in the text and a biblography / list of references at the end
 
-We focus on these five now.
+We focus on the first four now.
 
 #### Title
 
@@ -230,9 +230,9 @@ Numbered lists begin with `\begin{enumerate}` and end with `\end{enumerate}`. Bu
 
 This replace-content-then-copy-then-delete-the original-section has become our workflow, but you can just as well write the commands yourself if you prefer by now. Each time you run `Typeset,`the console window will tell you if you made errors and the PDF that pops up will show if everything is as planned.
 
-#### Images
+#### Figures
 
-Including figures and illustrations in a paper sounds daunting and can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of the image in the LaTeX file. Often there are different examples of figures given, full-sized ones, and smaller ones, that span one column in a two column layout for example. In my paper it looks like this:
+Including images and illustrations in a paper sounds daunting and it can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of the image in the LaTeX file. Often there are different examples of figures given, full-sized ones, and smaller ones, that span one column in a two column layout for example. In my paper it looks like this:
 
 ```latex
 \begin{figure}
@@ -252,7 +252,7 @@ Do this with your other images and don't forget to delete leftovers of the examp
 
 #### Tables
 
-Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Then, the example table in your LaTeX file will be proof of that. Because the table has to be constructed with commands like the other stuff, it will look horrible. This is the code for the table in my example file: 
+Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Then, the example table in your LaTeX file will be proof of that. Because the table has to be constructed with commands like the other stuff, it will look horrible. This is the code for the table in my example file:
 
 ```latex
 \begin{table}
@@ -290,35 +290,33 @@ And it looks like this:
 
 ![](/assets/Screen Shot 2017-04-22 at 02.03.54.png)
 
+I assume you don't have a masters in table. 
 
-
-
+#### 
 
 #### Crossreferences
 
-In order for crossreferences to work, you must run  `Typeset ` **twice**[^14].
+In order for crossreferences to work, you must run  `Typeset` **twice**[^14].
 
-You might want to reference a table, image or section in your paper. There are three parts to a reference. First, give it a name. Then put a label with this name `\label{name}a`after the element you want to reference. Finally put the reference `\ref{name}` or page reference `\pageref{name} ` into your text. 
+You might want to reference a table, image or section in your paper. There are three parts to a reference. First, you have to give it a **name**. Then you put a **label** with this name `\label{name}`after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` into your text.
 
-Examples:
-
-You want to reference a section. Place the label right after the section command like this:
+Example 1: You want to mention your conlusion section. Place the label right after the section command like this:
 
 ```latex
-\section{Introduction}\label{intro}
+\section{Conclusion}\label{conclusion}
 ```
 
-Then: 
+Then somewhere else in your text:
 
 ```latex
-See also Section \ref{intro} on page \pageref{intro}.
+See also Section \ref{conclusion} on page \pageref{conclusion}.
 ```
 
-The result will be \(assumed the introduction is your first section on the first page\): 
+The result will be \(assumed the conclusion is your fifth section on page 4\):
 
-See also Section 1 on page 1.
+See also Section 5 on page 4.
 
-You want to reference a table or figure. Look at the figure example from [Images](#images). The label is inside the table or figure command: 
+Example 2: You want to reference a table or figure. Look again at the figure example from [Images](#images). The label is inside the table or figure, right after the caption command:
 
 ```latex
 \begin{figure}
@@ -334,9 +332,11 @@ Then, somewhere else in the text:
 See Figure \ref{procstructfig}.
 ```
 
-will produce: 
+will produce:
 
 See  Figure 1.
+
+The same approach will work with a table.
 
 #### Bold and Italic Text
 
@@ -346,7 +346,7 @@ See  Figure 1.
 
 ### Citations and Bibliography
 
-### 
+At this point you should have your complete paper typeset in LaTeX. Gratulation. There is one more step to do.
 
 ### 
 
