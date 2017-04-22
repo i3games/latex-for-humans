@@ -89,7 +89,7 @@ Then use the menu to open the LaTeX file.
 
 ![](/assets/Screen Shot 2017-04-13 at 19.45.41.png)
 
-Yours will look similar but not the same. What you can see is text mixed with commands, which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`
+Yours will look similar but not the same. What you can see is text mixed with commands, which look like this one: `\section{GENERAL SPECIFICATIONS}`. In the upper left corner there is a button called `Typeset`, next to it a dropdown which says `LaTeX`. Let's try and click `Typeset`. 
 
 A yellow window, the **console**,  pops up and spews out lots of text.
 
@@ -220,7 +220,7 @@ The acknowledgement comes at the end of the paper and contains heartfelt thank y
 
 #### Footnotes
 
-You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command where you want the footnote sign to appear and write the text of your footnote between the curly braces. LaTeX will automatically enumerate, layout and place your footnotes, and it will work.
+You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command right after the word or sente nce where the footnote sign should appear. Write the text of your footnote between the curly braces. LaTeX will automatically enumerate, layout and place your footnotes, and it will work.
 
 #### Enumerations
 
@@ -246,15 +246,97 @@ As mentioned in [Step 3: Check the Template](#step-3-check-the-template), LaTeX 
 
 Then replace the example filename with your image filename. Here this is within the command  `\includegraphics[height=3.5in]{aisbf01.pdf}}`. In your case this might be a different command but there will be a filename of the image to be included. Run `Typeset` and if the image doesn't show up, run it again. If it still does not show up, check the console for errors like I did in [Step 3: Check the Template](#step-3-check-the-template). The error might tell you something, maybe it just didn't find the image. In this case double check that the image file is actually in the directory and that the filenames match. If it appears that there are other problems, try the following. Find a `.jpg`file on the internet and try to include this one. If that works then maybe something is wrong with your image. Try to open it in another program and export/save a new version. If all this doesn't help, consult some of the resources in chapter [Where to Get Help](/where-to-get-help.md).
 
-If all went well, edit the `\caption ` by replacing the text between the curly braces. By now this process should be familiar. Finally move the whole block to the position where you want the image to appear. You might have to experiment a little, and LaTeX will re-position your image if you attempt something frivoulous, like putting an image at the bottom of a page. But you can see that text and image will live in harmony, the text flowing nicely around the image. Just keep an empty line above and below the `figure` command block.
+If all went well, edit the `\caption` by replacing the text between the curly braces. By now this process should be familiar. Finally move the whole block to the position where you want the image to appear. You might have to experiment a little, and LaTeX will re-position your image if you attempt something frivoulous, like putting an image at the bottom of a page. But you can see that text and image will live in harmony, the text flowing nicely around the image. Just keep an empty line above and below the `figure` command block.
 
 Do this with your other images and don't forget to delete leftovers of the example content when you are done.
 
 #### Tables
 
-If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most most weird and convoluted tables out there and the example table in your LaTeX file will be proof of that.
+Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Then, the example table in your LaTeX file will be proof of that. Because the table has to be constructed with commands like the other stuff, it will look horrible. This is the code for the table in my example file: 
+
+```latex
+\begin{table}
+\begin{center}
+{\caption{The table caption is centered on the table measure. If it
+extends to two lines each is centered.}\label{table1}}
+\begin{tabular}{lccccccc}
+\hline
+\rule{0pt}{12pt}
+&\multicolumn{7}{c}{Processors}\\
+&1&\multicolumn{3}{c}{2}&\multicolumn{3}{c}{4}\\
+\cline{2-8}
+\rule{0pt}{12pt}
+Window&$\Diamond$&$\Diamond$&$\Box$&$\bigtriangleup$&$\Diamond$&$\Box$&$\bigtriangleup$
+\\
+\hline
+\\[-6pt]
+\quad1&1273&110&21.79&89\%&6717&22.42&61\%\\
+\quad2&2145&116&10.99&50\%&5386&10.77&19\%\\
+\quad3&3014&117&41.77&89\%&7783&42.31&58\%\\
+\quad4&4753&151&71.55&77\%&7477&61.97&49\%\\
+\quad5&5576&148&61.60&80\%&7551&91.80&45\%
+\\
+\hline
+\\[-6pt]
+\multicolumn{8}{l}{$\Diamond$ execution time in ticks\ \
+$\Box$ speed-up values\ \
+$\bigtriangleup$ efficiency values}
+\end{tabular}
+\end{center}
+\end{table}
+```
+
+And it looks like this:
+
+![](/assets/Screen Shot 2017-04-22 at 02.03.54.png)
+
+
+
+
 
 #### Crossreferences
+
+In order for crossreferences to work, you must run  `Typeset ` **twice**[^14].
+
+You might want to reference a table, image or section in your paper. There are three parts to a reference. First, give it a name. Then put a label with this name `\label{name}a`after the element you want to reference. Finally put the reference `\ref{name}` or page reference `\pageref{name} ` into your text. 
+
+Examples:
+
+You want to reference a section. Place the label right after the section command like this:
+
+```latex
+\section{Introduction}\label{intro}
+```
+
+Then: 
+
+```latex
+See also Section \ref{intro} on page \pageref{intro}.
+```
+
+The result will be \(assumed the introduction is your first section on the first page\): 
+
+See also Section 1 on page 1.
+
+You want to reference a table or figure. Look at the figure example from [Images](#images). The label is inside the table or figure command: 
+
+```latex
+\begin{figure}
+\centerline{\includegraphics[height=3.5in]{aisbf01.pdf}}
+\caption{Network of transputers and the structure of individual
+processes } \label{procstructfig}
+\end{figure}
+```
+
+Then, somewhere else in the text:
+
+```latex
+See Figure \ref{procstructfig}.
+```
+
+will produce: 
+
+See  Figure 1.
 
 #### Bold and Italic Text
 
@@ -293,4 +375,6 @@ If working with images looked a bit intimidating, tables can be really frighteni
 [^12]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
 [^13]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
+
+[^14]: This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out how to automate this. 
 
