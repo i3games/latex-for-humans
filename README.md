@@ -14,5 +14,5 @@ License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) This me
 
 The only restrictions are: you have to give credit to the original author \(me\) and you can't make money from it. Details: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/).
 
-Motivated by the similar ideas but not associated with: [https://latexforhumans.wordpress.com/](https://latexforhumans.wordpress.com/)
+Motivated by similar ideas but not associated with: [https://latexforhumans.wordpress.com/](https://latexforhumans.wordpress.com/).
 
