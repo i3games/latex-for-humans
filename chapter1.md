@@ -192,25 +192,17 @@ If you don't need an abstract \(for example when you are submitting an extended 
 
 #### Text
 
-Now to the main text. You will have a number of sections with headings. Replace the text between the curly braces with your heading:
+Now to the main text. It will have a number of sections with headings. For a section, replace the text between the curly braces with your heading:
 
 ```latex
 \section{HEADING TEXT}
 ```
 
-Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section, run `Typeset` and save each time it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
+Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section. Run `Typeset` after each section, look at the PDF,  and save the file if it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
 When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just pick the ones you need. If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
-
-```latex
-\bibliography{aisb}
-
-\end{document}
-```
-
-but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset`  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat.
+If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just pick the ones you need. 
 
 Well done, take a coffee break. Come back for "Citations and references" below.
 
@@ -232,7 +224,7 @@ This replace-content-then-copy-then-delete-the original-section has become our w
 
 #### Figures
 
-Including images and illustrations in a paper sounds daunting and it can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of the image in the LaTeX file. Often there are different examples of figures given, full-sized ones, and smaller ones, that span one column in a two column layout for example. In my paper it looks like this:
+Including images and illustrations in a paper sounds daunting and it can be a bit more complicated in LaTeX if you do it from scratch. Fortunately this does not apply here. First find the location of an image in the LaTeX example file. Often there are different examples of figures given, full-sized ones, and smaller ones that span one column in a two column layout for example. In my paper it looks like this:
 
 ```latex
 \begin{figure}
@@ -290,7 +282,7 @@ And it looks like this:
 
 ![](/assets/Screen Shot 2017-04-22 at 02.03.54.png)
 
-I assume you don't have a masters in table. 
+I assume you don't have a masters in table-making. At I least I don't have one. Our goal is to include an, I assume more simple table in the paper and we got a more complicated one as an example. What to to do? 
 
 #### 
 
@@ -346,7 +338,19 @@ The same approach will work with a table.
 
 ### Citations and Bibliography
 
-At this point you should have your complete paper typeset in LaTeX. Gratulation. There is one more step to do.
+At this point you should have your complete paper typeset in LaTeX. Gratulation. 
+
+If you don't, you can delete the example contents between your text and the bibliography now. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
+
+```latex
+\bibliography{aisb}
+
+\end{document}
+```
+
+but you might have other commands at the end. If in doubt, leave them in, hit  `Typeset`  and check if there is still stuff in the PDF that you don't need. If so, delete it, repeat.
+
+There is one more step to do.
 
 ### 
 
