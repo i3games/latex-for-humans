@@ -2,7 +2,7 @@
 
 _Based on a true story._
 
-Picture yourself like this: You have to submit a paper / paper draft to this fancy conference \(or prestigous journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
+Picture yourself like this: You have to submit a paper or draft to this fancy conference \(or prestigous journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity has only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
 
 ## Pest vs. Cholera
 
@@ -78,8 +78,8 @@ Let's look at the LaTeX files.
 
 Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^10]:
 
-1. a file with the ending ".tex". This is **the LaTeX file** we will work with. Your paper will go in there. We will focus on this first.
-2. a file with the ending ".bib". This is the file for the **bibliography** entries. We will do that next.
+1. a file with the extension ".tex". This is **the LaTeX file** we will work with. Your paper will go in there. We will focus on this first.
+2. a file with the extension ".bib". This is the file for the **bibliography** entries. We will do that later.
 
 Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
 
@@ -200,11 +200,16 @@ Now to the main text. It will have a number of sections with headings. For a sec
 
 Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section. Run `Typeset` after each section, look at the PDF,  and save the file if it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
-When you are done with this, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
+If you encounter errors after inserting a block of text, look at the content. It is very likely that your text contains
 
-If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just pick the ones you need.
+* special characters, described below in [Special Characters](#special-characters), or
+* characters in a international language, see [International Languages](#international-languages).
 
-Well done, take a coffee break. Come back for "Citations and references" below.
+If you cannot locate the problem, divide the text that you insert in half, see which part triggers an error and repeat.
+
+When you are done without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
+
+If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just select the ones you need. When finished, head to [Citations and Bibliography](#citations-and-bibliography) below.
 
 #### Acknowledgement
 
@@ -244,7 +249,7 @@ Do this with your other images and don't forget to delete leftovers of the examp
 
 #### Tables
 
-Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Then, the example table in your LaTeX file will be proof of that. Because the table has to be constructed with commands like the other stuff, it will look horrible. This is the code for the table in my example file:
+Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Also, the example table in your LaTeX file will be proof of that. Because a table in LaTeX has to be constructed by commands, it will look horrible. This is the code for the table in my example file:
 
 ```latex
 \begin{table}
@@ -282,26 +287,59 @@ And it looks like this:
 
 ![](/assets/Screen Shot 2017-04-22 at 02.03.54.png)
 
-I assume you don't have a masters in table-making. At I least I don't. The code above looks terribly complicated. Our goal is to include a, as I assume, more simple table in the paper and we have a more complicated one as an example. What to to do?
+I assume you don't have a master's degree in table-making. At I least I don't. I know that tables are made of cells that are arranged in rows and columns. There might be special looking row and column headers, and sometimes the  content spans multiple cells. Cells can, but don't have to be separated by lines. A table in a publication normally has a caption.
 
-Let's analyze the thing first. The whole table is between `\begin{table}` and `\end{table}`. Then what is inside is centered with `\begin{center}` and `\end{center}`. We will leave that. The next thing is the caption 
+In the light of this, the code above LaTeX snippet looks terribly complicated. Our goal is to include a table in the paper and we have a more complicated one as an example. What to to do?
+
+Let's analyze the thing first. The whole table is between `\begin{table}` and `\end{table}`. Then what is inside the table is centered with `\begin{center}` and `\end{center}`. The next thing is the caption:
 
 ```latex
 {\caption{The table caption is centered on the table measure. If it 
 extends to two lines each is centered.}\label{table1}}
 ```
 
-There you just replace the caption text. The next thing is a label which is used for crossreferencing, explained in the next section. No harm in leaving it as it is. The actual table content is between `\begin{tabular}{lccccccc}` and `\end{tabular}`. The `lccccccc` parameter says: make a table with 8 columns, the first one where the content is left justified and 7 more where the text is centered. You can see in the rows that contain numbers, that the table has 8 columns indeed.
+There you just replace the caption text. It has a label which is invisible in the paper but used for crossreferencing, explained in the next section. No harm in leaving it in. The actual table content is between `\begin{tabular}{lccccccc}` and `\end{tabular}`. The `lccccccc` parameter says: make a table with 8 columns, the first one where the content is left justified and 7 more where the text is centered. You might also see ` r` which means the text is right justified, and there might be vertical dashes` |`which tell LaTeX to draw a vertical lines between the columns.  
 
-A horizontal line is `\hline`.
+* `&` starts the next cell / column
+* `\\` starts a new line and
+* `\hline` inserts a horizontal line
 
+Ok, now we can build our table, here a simple one with \(I used the part with the numbers in the table above\).
 
+```latex
+\begin{table}
+\begin{center}
+\caption{The table caption is centered on the table measure. If it
+extends to two lines each is centered.} \label{table1}
+\bigskip
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+1&1273&110&21.79&89\%&6717&22.42&61\%\\
+\hline
+2&2145&116&10.99&50\%&5386&10.77&19\%\\
+\hline
+3&3014&117&41.77&89\%&7783&42.31&58\%\\
+\hline
+4&4753&151&71.55&77\%&7477&61.97&49\%\\
+\hline
+5&5576&148&61.60&80\%&7551&91.80&45\%\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+```
+
+which now looks like:
+
+![](/assets/Screen Shot 2017-04-22 at 21.24.17.png)
+
+I used `\bigskip` to create a space between the label and the table. In zour template there might be other commands. Note that in LaTeX a percentage sign is written as `\%`. This and other special characters are mentioned in [Special Characters](#special-characters).
 
 #### Crossreferences
 
-In order for crossreferences to work, you must run  `Typeset` **twice**[^14].
+In order for crossreferences to work, you must run `Typeset` **twice**[^14].
 
-You might want to reference a table, image or section in your paper. There are three parts to a reference. First, it has to have  a **name**. Then you put a **label** with this name `\label{name}`after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` into your text.
+You might want to reference a table, image or section in your paper. There are three parts to a reference. First, it has to have  a **name**. Then you put a **label** with this name `\label{name}`after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` into your text. 
 
 Example 1: You want to mention your conlusion section. Place the label right after the section command like this:
 
@@ -339,7 +377,7 @@ will produce:
 
 See  Figure 1.
 
-The same approach will work with a table.
+The same approach will work with a [table](#tables).
 
 #### Emphasized Text
 
@@ -347,13 +385,15 @@ Use `\emph{text}`.
 
 #### Special Characters
 
-#### Linebreaks
+#### International Languages
 
-Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`.
+#### Line Breaks
 
-### Time for a Break \(and a Check\)
+Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line. 
 
-At this point your complete paper, including illustrations, tables, footnotes etc, should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the above sections and finish the work. You might still have some of the example contents. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
+### Time for a Break
+
+At this point your complete paper, including illustrations, tables, footnotes etc, should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the above sections and finish the work. You might still have some of the example content in the paper. Now it is time to delete it, except for the bibliograpy. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
 
 ```latex
 \bibliography{aisb}
@@ -361,11 +401,9 @@ At this point your complete paper, including illustrations, tables, footnotes et
 \end{document}
 ```
 
-The `\bibliography` command will be our final topic.
+You should still see the example bibliograpy which is inserted by the `\bibliography` command. The final task is now to replace it with your literature. Time for a coffee break.
 
 ### Citations and Bibliography
-
-There is one more step to do, the bibliography. Let's first look at the example file again.
 
 
 
@@ -379,7 +417,7 @@ There is one more step to do, the bibliography. Let's first look at the example 
 
 [^5]: [Ah, Picasso!](https://en.wikipedia.org/wiki/File:Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg "Ah, Picasso!")
 
-[^6]:  I made this up, there are no "Ligaturists". But it feels like there could be.
+[^6]: I made this up, there are no "Ligaturists". But it feels like there could be.
 
 [^7]: That's for now. Ping me if you want this written for other choices. 
 
@@ -387,13 +425,13 @@ There is one more step to do, the bibliography. Let's first look at the example 
 
 [^9]: "What if not?" you might ask. "Then we are in trouble", I answer. Time to contact the chair of your conference and ask for the LaTeX templates.
 
-[^10]: Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
+[^10]:  Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
 
-[^11]: If that joke doesn't make sense, please read the section [Pest vs. Cholera](#pest-vs-cholera).
+[^11]:  If that joke doesn't make sense, please read the section [Pest vs. Cholera](#pest-vs-cholera).
 
 [^12]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
 [^13]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
 
-[^14]: This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out how to automate this. 
+[^14]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this. 
 
