@@ -105,7 +105,7 @@ See the `Goto Error` button? It brings you to the location in the LaTeX file whe
 
 ![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
 
-and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you feel in the mood for experimentation, and you want to get rid of this error, do the following:
+and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you do have this error in your template, feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
 Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save the PDF in the same directory with the other files.
 
@@ -298,13 +298,13 @@ Let's analyze the thing first. The whole table is between `\begin{table}` and `\
 extends to two lines each is centered.}\label{table1}}
 ```
 
-There you just replace the caption text. It has a label which is invisible in the paper but used for crossreferencing, explained in the next section. No harm in leaving it in. The actual table content is between `\begin{tabular}{lccccccc}` and `\end{tabular}`. The `lccccccc` parameter says: make a table with 8 columns, the first one where the content is left justified and 7 more where the text is centered. You might also see ` r` which means the text is right justified, and there might be vertical dashes` |`which tell LaTeX to draw a vertical lines between the columns.  
+There you just replace the caption text. It has a label which is invisible in the paper but used for crossreferencing, explained in the next section. No harm in leaving it in. The actual table content is between `\begin{tabular}{lccccccc}` and `\end{tabular}`. The `lccccccc` parameter says: make a table with 8 columns, the first one where the content is left justified and 7 more where the text is centered. You might also see `r` which means the text is right justified, and there might be vertical dashes`|`which tell LaTeX to draw a vertical lines between the columns.
 
 * `&` starts the next cell / column
 * `\\` starts a new line and
 * `\hline` inserts a horizontal line
 
-Ok, now we can build our table, here a simple one with \(I used the part with the numbers in the table above\).
+Ok, now we can build our table \(I used the part with the numbers from the table above\).
 
 ```latex
 \begin{table}
@@ -313,6 +313,8 @@ Ok, now we can build our table, here a simple one with \(I used the part with th
 extends to two lines each is centered.} \label{table1}
 \bigskip
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{8}{|c|}{Lots of numbers}\\
 \hline
 1&1273&110&21.79&89\%&6717&22.42&61\%\\
 \hline
@@ -331,15 +333,17 @@ extends to two lines each is centered.} \label{table1}
 
 which now looks like:
 
-![](/assets/Screen Shot 2017-04-22 at 21.24.17.png)
+![](/assets/Screen Shot 2017-04-23 at 00.48.06.png)
 
-I used `\bigskip` to create a space between the label and the table. In zour template there might be other commands. Note that in LaTeX a percentage sign is written as `\%`. This and other special characters are mentioned in [Special Characters](#special-characters).
+I used `\bigskip` to create a space between the label and the table. In your template there might be a different command located between `\caption` and `\begin{tabular}` to achieve the same goal. The line `\multicolumn{8}{|c|}{Lots of numbers}\\`shows the text "Lots of numbers" spanning 8 columns, centered and with vertical lines like the rest of our table. 
+
+Note that in LaTeX a percentage sign must be written as `\%`. To learn about this and other special characters, check out [Special Characters](#special-characters).
 
 #### Crossreferences
 
 In order for crossreferences to work, you must run `Typeset` **twice**[^14].
 
-You might want to reference a table, image or section in your paper. There are three parts to a reference. First, it has to have  a **name**. Then you put a **label** with this name `\label{name}`after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` into your text. 
+You might want to reference a table, image or section in your paper. There are three parts to a reference. First, it has to have  a **name**. Then you put a **label** with this name `\label{name}`after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` into your text.
 
 Example 1: You want to mention your conlusion section. Place the label right after the section command like this:
 
@@ -385,11 +389,28 @@ Use `\emph{text}`.
 
 #### Special Characters
 
+Some characters are part of LaTeX commands, others have to be input via special commands. If you copy them from your Word text, LaTeX will throw errors at you, do silly things, or passiv-aggressively not display the character in the PDF.
+
+Consult the table and replace the left with the right. Often you simply need to put a backslash `\` in front.
+
+| To display this character in the PDF... | ...insert this into your LaTeX file: |
+| :--- | :--- |
+| \# | \\# |
+| $ | \$ |
+| % | \% |
+| ^ | \^ |
+| & | \& |
+| \_ | \\_ |
+| { | \{ |
+| } | \} |
+| ~ | $\sim$ |
+| \ | \textbackslash |
+
 #### International Languages
 
 #### Line Breaks
 
-Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line. 
+Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line.
 
 ### Time for a Break
 
@@ -404,8 +425,6 @@ At this point your complete paper, including illustrations, tables, footnotes et
 You should still see the example bibliograpy which is inserted by the `\bibliography` command. The final task is now to replace it with your literature. Time for a coffee break.
 
 ### Citations and Bibliography
-
-
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
