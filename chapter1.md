@@ -172,7 +172,7 @@ You just have taken that step. Let's move on.
 
 #### Name\(s\) and Institution\(s\)
 
-Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^undefined].
+Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^15]
 
 #### Abstract
 
@@ -200,16 +200,16 @@ Now to the main text. It will have a number of sections with headings. For a sec
 
 Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section. Run `Typeset` after each section, look at the PDF,  and save the file if it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
-If you encounter errors after inserting a block of text, look at the content. It is very likely that your text contains
+If you encounter problems after inserting a block of text, look at the content. It is likely that your text contains
 
 * special characters, described below in [Special Characters](#special-characters), or
 * characters in a international language, see [International Languages](#international-languages).
 
 If you cannot locate the problem, divide the text that you insert in half, see which part triggers an error and repeat.
 
-When you are done without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
+When you are done and without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you do have any of the other elements like acknowledgement, footnotes, enumerations \(lists\), images or tables, continue below. Just select the ones you need. When finished, head to [Citations and Bibliography](#citations-and-bibliography) below.
+If you have any of the other elements \(acknowledgement, footnotes, enumerations, figures, tables, crossreferences, emphasized text, line breaks, special characters, or international languages\) continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up) below.
 
 #### Acknowledgement
 
@@ -335,7 +335,7 @@ which now looks like:
 
 ![](/assets/Screen Shot 2017-04-23 at 00.48.06.png)
 
-I used `\bigskip` to create a space between the label and the table. In your template there might be a different command located between `\caption` and `\begin{tabular}` to achieve the same goal. The line `\multicolumn{8}{|c|}{Lots of numbers}\\`shows the text "Lots of numbers" spanning 8 columns, centered and with vertical lines like the rest of our table. 
+I used `\bigskip` to create a space between the label and the table. In your template there might be a different command located between `\caption` and `\begin{tabular}` to achieve the same goal. The line `\multicolumn{8}{|c|}{Lots of numbers}\\`shows the text "Lots of numbers" spanning 8 columns, centered and with vertical lines like the rest of our table.
 
 Note that in LaTeX a percentage sign must be written as `\%`. To learn about this and other special characters, check out [Special Characters](#special-characters).
 
@@ -343,9 +343,9 @@ Note that in LaTeX a percentage sign must be written as `\%`. To learn about thi
 
 In order for crossreferences to work, you must run `Typeset` **twice**[^14].
 
-You might want to reference a table, image or section in your paper. There are three parts to a reference. First, it has to have  a **name**. Then you put a **label** with this name `\label{name}`after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` into your text.
+You might want to reference a table \(like: see section [Tables](#tables)\), image or section in your paper. There are three parts to a reference. First, you must give it a **name**. Then you put a **label** with that name `\label{name}` right after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` where the reference should appear in your text.
 
-Example 1: You want to mention your conlusion section. Place the label right after the section command like this:
+Example 1: You want to mention your conclusion section. Place the label right after the section command like this:
 
 ```latex
 \section{Conclusion}\label{conclusion}
@@ -379,24 +379,28 @@ See Figure \ref{procstructfig}.
 
 will produce:
 
-See  Figure 1.
+See Figure 1.
 
-The same approach will work with a [table](#tables).
+The same approach will work with a [table](#tables). LaTeX will take care about the numbering of these items automatically. 
 
 #### Emphasized Text
 
 Use `\emph{text}`.
 
+#### Line Breaks
+
+Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line.
+
 #### Special Characters
 
-Some characters are part of LaTeX commands, others have to be input via special commands. If you copy them from your Word text, LaTeX will throw errors at you, do silly things, or passiv-aggressively not display the character in the PDF.
+Some characters are part of LaTeX, others have to be input via special commands. If you copy them directlz from your Word text, LaTeX will either throw errors at you, do silly things, or passiv-aggressively refuse to display the character in the PDF.
 
-Consult the table and replace the left with the right. Often you simply need to put a backslash `\` in front.
+Consult the table and replace the item on the left side with the one on the right. Often you just need to put a backslash `\` in front of it.
 
 | To display this character in the PDF... | ...insert this into your LaTeX file: |
 | :--- | :--- |
 | \# | \\# |
-| $ | \$ |
+| $ | $ |
 | % | \% |
 | ^ | \^ |
 | & | \& |
@@ -408,13 +412,11 @@ Consult the table and replace the left with the right. Often you simply need to 
 
 #### International Languages
 
-#### Line Breaks
 
-Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line.
 
-### Time for a Break
+### Clean up
 
-At this point your complete paper, including illustrations, tables, footnotes etc, should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the above sections and finish the work. You might still have some of the example content in the paper. Now it is time to delete it, except for the bibliograpy. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file it looks like this:
+At this point your complete paper, including illustrations, tables, footnotes etc, should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the sections above and finish the work. At the end you might still have some of the example content in the paper. Now it is time to delete it, except for the bibliography. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file the ones to keep look like this:
 
 ```latex
 \bibliography{aisb}
@@ -425,6 +427,10 @@ At this point your complete paper, including illustrations, tables, footnotes et
 You should still see the example bibliograpy which is inserted by the `\bibliography` command. The final task is now to replace it with your literature. Time for a coffee break.
 
 ### Citations and Bibliography
+
+
+
+[^15]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this.
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
@@ -452,5 +458,5 @@ You should still see the example bibliograpy which is inserted by the `\bibliogr
 
 [^13]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
 
-[^14]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this. 
+[^15]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this.
 
