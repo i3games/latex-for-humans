@@ -4,7 +4,7 @@ _Based on a true story._
 
 Picture yourself like this: You have to submit a paper or draft to this fancy conference \(or prestigous journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity has only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
 
-## Pest vs. Cholera
+## Pest or Cholera?
 
 When you submit academic stuff, you usually get a choice between Microsoft Word and LaTeX. You also get a link to download templates and example files to work with. What you see might look like this:
 
@@ -31,7 +31,7 @@ Let's rewind the clock for a few hours and try again. This assumes:
 1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
-4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff.   
+4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].  
 5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above.**
 
 Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-4 hours if all goes well. Roughly the first half of it will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
@@ -146,7 +146,7 @@ PDF file is available for all.
 
 Yours will be different, but you will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. Notice also how the coloring in TexShop \(which might have slightly different colors than the ones shown here\) helps to spot the commands.
 
-Study your LaTeX source and the PDF it generated to identify these elements. The example usually contains everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
+Study your LaTeX source and the PDF it generated to identify these elements. The people who prepared the example usually want to demonstrate everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
 For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \(see [Pest vs. Cholera](#pest-vs-cholera)\). Just don't delete anything now.
 
@@ -209,7 +209,7 @@ If you cannot locate the problem, divide the text that you insert in half, see w
 
 When you are done and without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you have any of the other elements \(acknowledgement, footnotes, enumerations, figures, tables, crossreferences, emphasized text, line breaks, special characters, or international languages\) continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up) below.
+If you have any of the other elements \(acknowledgement, footnotes, enumerations, figures, tables, crossreferences, emphasized text, line breaks, special characters, or international languages\), please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
 
 #### Acknowledgement
 
@@ -381,7 +381,7 @@ will produce:
 
 See Figure 1.
 
-The same approach will work with a [table](#tables). LaTeX will take care about the numbering of these items automatically. 
+The same approach will work with a [table](#tables). LaTeX will take care about the numbering of these items automatically.
 
 #### Emphasized Text
 
@@ -405,18 +405,16 @@ Consult the table and replace the item on the left side with the one on the righ
 | ^ | \^ |
 | & | \& |
 | \_ | \\_ |
-| { | \{ |
-| } | \} |
+| { | { |
+| } | } |
 | ~ | $\sim$ |
 | \ | \textbackslash |
 
 #### International Languages
 
-
-
 ### Clean up
 
-At this point your complete paper, including illustrations, tables, footnotes etc, should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the sections above and finish the work. At the end you might still have some of the example content in the paper. Now it is time to delete it, except for the bibliography. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file the ones to keep look like this:
+At this point your complete paper, possibly including illustrations, tables, footnotes etc. should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the sections above and finish the work. At the end you might still have some of the example content in the paper. Now it is time to delete it, except for the bibliography. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file the ones to keep look like this:
 
 ```latex
 \bibliography{aisb}
@@ -424,13 +422,19 @@ At this point your complete paper, including illustrations, tables, footnotes et
 \end{document}
 ```
 
-You should still see the example bibliograpy which is inserted by the `\bibliography` command. The final task is now to replace it with your literature. Time for a coffee break.
+Remember the rule of thumb about deleting sample content in LaTeX: you can always safely delete a complete paragraph, that is the content between two empty lines.
+
+Time for a coffee break. One more to go.
 
 ### Citations and Bibliography
 
+A list of Bibliography is 
+
+You should still see the example bibliograpy which is inserted by the `\bibliography` command. The final task is now to replace this with your literature. 
+
+### Proofread
 
 
-[^15]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this.
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
@@ -452,11 +456,13 @@ You should still see the example bibliograpy which is inserted by the `\bibliogr
 
 [^10]:  Some people have set up their Finder that they can't see the endings. To fix that, go to `Finder -> Preferences -> Advanced` and change the setting \(forever\).
 
-[^11]:  If that joke doesn't make sense, please read the section [Pest vs. Cholera](#pest-vs-cholera).
+[^11]:  If that joke doesn't make sense, please read the section [Pest or Cholera?](#pest-vs-cholera).
 
 [^12]:  Culture studies or theoretical philosophy comes to mind. If you are in an "empirical" field, you probably need tables, illustrations, etc., to make a point. Poor you.
 
 [^13]:  If you wonder how LaTeX knows about the style of your paper, this is in one of the files mentioned in [Pest vs. Cholera](#pest-vs-cholera), namely the file with the ending `.cls`. You don't need to touch this file, but if you had to change how things look, it would be there.
 
 [^15]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this.
+
+[^15]:  My \(crude\) reasoning is that if you would have formulas in your paper, you would know LaTeX already. I willl cover formulas in [How to Write a Thesis](/how-to-write-a-thesis.md)
 
