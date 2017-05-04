@@ -148,7 +148,7 @@ Yours will be different, but you will find the same or similar elements. You can
 
 Study your LaTeX source and the PDF it generated to identify these elements. The people who prepared the example usually want to demonstrate everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
-For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \(see [Pest vs. Cholera](#pest-vs-cholera)\). Just don't delete anything now.
+For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \(see [Pest or Cholera?](#pest-vs-cholera)\). Just don't delete anything now.
 
 Instead check your paper to figure out the parts you do need for your draft. A minimal paper[^13] usually would have:
 
@@ -156,7 +156,7 @@ Instead check your paper to figure out the parts you do need for your draft. A m
 2. your name\(s\) and institution\(s\) somewhere
 3. an abstract
 4. sections of text
-5. citations in the text and a biblography / list of references at the end
+5. a bibliography with citations in the text and list of references at the end
 
 We focus on the first four now.
 
@@ -207,19 +207,63 @@ If you encounter problems after inserting a block of text, look at the content. 
 
 If you cannot locate the problem, divide the text that you insert in half, see which part triggers an error and repeat.
 
-Another potential source for problems is that LaTeX creates some additional files during the whole process. We normally do not care about them but they might disturb the machinery. In [Step 3: Check the Template](#step-3-check-the-template) we saw the console window. It has a button in the upper right corner that says: `Trash Aux Files`. Click it and try to `Typeset` again. 
+Another potential source for problems is that LaTeX creates some additional files during the whole process. We normally do not care about them but they might disturb the machinery. In [Step 3: Check the Template](#step-3-check-the-template) we saw the console window. It has a button in the upper right corner that says: `Trash Aux Files`. Click it and try to `Typeset` again.
 
 When you are done and without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you have any of the other elements \(acknowledgement, crossreferences, emphasized text, enumerations, figures, footnotes, international languages, line breaks, special characters, tables\), please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
+If you have any of the elements: acknowledgement, crossreferences, emphasized text, enumerations, figures, footnotes, international languages, line breaks, special characters, or tables, please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
 
 #### Acknowledgement
 
 The acknowledgement comes at the end of the paper and contains heartfelt a thank you to supervisors, referees, editors or partners \(who kept being friendly and supportive during the breakdown mentioned above\). Also shoutouts to your funding, which is sometimes required. Thankfully this is straightforward: `\ack` command, followed by the text on the next line. Note that the acknowlegement is usually not numbered, even if your other headings are.
 
-#### Footnotes
+#### Crossreferences
 
-You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command right after the word or sente nce where the footnote sign should appear. Write the text of your footnote between the curly braces. LaTeX will automatically enumerate, layout and place your footnotes, and it will work.
+In order for crossreferences to work, you must run `Typeset` **twice**[^14].
+
+You might want to reference a table \(like: see section [Tables](#tables)\), image or section in your paper. There are three parts to a reference. First, you must give it a **name**. Then you put a **label** with that name `\label{name}` right after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` where the reference should appear in your text.
+
+Example 1: You want to mention your conclusion section. Place the label right after the section command like this:
+
+```latex
+\section{Conclusion}\label{conclusion}
+```
+
+Then somewhere else in your text:
+
+```latex
+See also Section \ref{conclusion} on page \pageref{conclusion}.
+```
+
+The result will be \(assumed the conclusion is your fifth section on page 4\):
+
+See also Section 5 on page 4.
+
+Example 2: You want to reference a table or figure. Let's look again at the figure example from [Images](#images). The label is inside the table or figure, right after the caption command:
+
+```latex
+\begin{figure}
+\centerline{\includegraphics[height=3.5in]{aisbf01.pdf}}
+\caption{Network of transputers and the structure of individual
+processes } \label{procstructfig}
+\end{figure}
+```
+
+Then, somewhere else in the text:
+
+```latex
+See Figure \ref{procstructfig}.
+```
+
+will produce:
+
+See Figure 1.
+
+The same approach will work with a [table](#tables). LaTeX will take care about the numbering of these items automatically.
+
+#### Emphasized Text
+
+Use `\emph{text}`.
 
 #### Enumerations
 
@@ -249,9 +293,38 @@ If all went well, edit the `\caption` by replacing the text between the curly br
 
 Do this with your other images and don't forget to delete leftovers of the example content when you are done.
 
+#### Footnotes
+
+You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command right after the word or sente nce where the footnote sign should appear. Write the text of your footnote between the curly braces. LaTeX will automatically enumerate, layout and place your footnotes, and it will work.
+
+#### International Languages
+
+#### Line Breaks
+
+Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line.
+
+#### Special Characters
+
+Some characters are part of LaTeX, others have to be input via special commands. If you copy them directlz from your Word text, LaTeX will either throw errors at you, do silly things, or passiv-aggressively refuse to display the character in the PDF.
+
+Consult the table and replace the item on the left side with the one on the right. Often you just need to put a backslash `\` in front of it.
+
+| To display this character in the PDF... | ...insert this into your LaTeX file: |
+| :--- | :--- |
+| \# | \\# |
+| $ | $ |
+| % | \% |
+| ^ | \^ |
+| & | \& |
+| \_ | \\_ |
+| { | { |
+| } | } |
+| ~ | $\sim$ |
+| \ | \textbackslash |
+
 #### Tables
 
-Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Also, the example table in your LaTeX file will be proof of that. Because a table in LaTeX has to be constructed by commands, it will look horrible. This is the code for the table in my example file:
+Brace yourself. If working with images looked a bit intimidating, tables can be really frightening. There are two reasons. First, academics need to produce the most weird and convoluted tables out there. You won't get a PhD if you include a table which just consists of rows and columns. Also, the example table in your LaTeX file will be proof of that. Then, because a table in LaTeX has to be constructed by commands, it will look horrible. This is the code for the table in my example file:
 
 ```latex
 \begin{table}
@@ -285,7 +358,7 @@ $\bigtriangleup$ efficiency values}
 \end{table}
 ```
 
-And it looks like this:
+And it produces a table like this:
 
 ![](/assets/Screen Shot 2017-04-22 at 02.03.54.png)
 
@@ -340,79 +413,6 @@ which now looks like:
 I used `\bigskip` to create a space between the label and the table. In your template there might be a different command located between `\caption` and `\begin{tabular}` to achieve the same goal. The line `\multicolumn{8}{|c|}{Lots of numbers}\\`shows the text "Lots of numbers" spanning 8 columns, centered and with vertical lines like the rest of our table.
 
 Note that in LaTeX a percentage sign must be written as `\%`. To learn about this and other special characters, check out [Special Characters](#special-characters).
-
-#### Crossreferences
-
-In order for crossreferences to work, you must run `Typeset` **twice**[^14].
-
-You might want to reference a table \(like: see section [Tables](#tables)\), image or section in your paper. There are three parts to a reference. First, you must give it a **name**. Then you put a **label** with that name `\label{name}` right after the element you want to reference. Finally you put the **reference** `\ref{name}` or page reference `\pageref{name}` where the reference should appear in your text.
-
-Example 1: You want to mention your conclusion section. Place the label right after the section command like this:
-
-```latex
-\section{Conclusion}\label{conclusion}
-```
-
-Then somewhere else in your text:
-
-```latex
-See also Section \ref{conclusion} on page \pageref{conclusion}.
-```
-
-The result will be \(assumed the conclusion is your fifth section on page 4\):
-
-See also Section 5 on page 4.
-
-Example 2: You want to reference a table or figure. Let's look again at the figure example from [Images](#images). The label is inside the table or figure, right after the caption command:
-
-```latex
-\begin{figure}
-\centerline{\includegraphics[height=3.5in]{aisbf01.pdf}}
-\caption{Network of transputers and the structure of individual
-processes } \label{procstructfig}
-\end{figure}
-```
-
-Then, somewhere else in the text:
-
-```latex
-See Figure \ref{procstructfig}.
-```
-
-will produce:
-
-See Figure 1.
-
-The same approach will work with a [table](#tables). LaTeX will take care about the numbering of these items automatically.
-
-#### Emphasized Text
-
-Use `\emph{text}`.
-
-#### Line Breaks
-
-Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line.
-
-#### Special Characters
-
-Some characters are part of LaTeX, others have to be input via special commands. If you copy them directlz from your Word text, LaTeX will either throw errors at you, do silly things, or passiv-aggressively refuse to display the character in the PDF.
-
-Consult the table and replace the item on the left side with the one on the right. Often you just need to put a backslash `\` in front of it.
-
-| To display this character in the PDF... | ...insert this into your LaTeX file: |
-| :--- | :--- |
-| \# | \\# |
-| $ | $ |
-| % | \% |
-| ^ | \^ |
-| & | \& |
-| \_ | \\_ |
-| { | { |
-| } | } |
-| ~ | $\sim$ |
-| \ | \textbackslash |
-
-#### International Languages
 
 ### Step 5: Clean up
 
@@ -477,15 +477,17 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They have different information but the structure is similar. The type of the reference, like `@book`, and a structure with a name \( `kn:Golub89`\) followed by a number of fields \( `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
+Take a deep breath and get familiar with your entries. They will have different information but the structure is similar. The type of the reference, like `@book ` is followed by a structure with a name \( `kn:Golub89`\) and a number of fields \( `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
 
-The next steps depend on one thing: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier. If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
+The next steps depend on one thing: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier, skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
 #### Bibliography the Manual Way
 
 #### 
 
 #### Bibliography with a Reference Manager
+
+
 
 ### Step 7: Proofread and Submit
 
