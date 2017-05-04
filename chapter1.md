@@ -207,9 +207,11 @@ If you encounter problems after inserting a block of text, look at the content. 
 
 If you cannot locate the problem, divide the text that you insert in half, see which part triggers an error and repeat.
 
+Another potential source for problems is that LaTeX creates some additional files during the whole process. We normally do not care about them but they might disturb the machinery. In [Step 3: Check the Template](#step-3-check-the-template) we saw the console window. It has a button in the upper right corner that says: `Trash Aux Files`. Click it and try to `Typeset` again. 
+
 When you are done and without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you have any of the other elements \(acknowledgement, footnotes, enumerations, figures, tables, crossreferences, emphasized text, line breaks, special characters, or international languages\), please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
+If you have any of the other elements \(acknowledgement, crossreferences, emphasized text, enumerations, figures, footnotes, international languages, line breaks, special characters, tables\), please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
 
 #### Acknowledgement
 
@@ -473,7 +475,6 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
     year = "1985",
     kwds = "cg, precon, poly"
 }
-
 ```
 
 Take a deep breath and get familiar with your entries. They have different information but the structure is similar. The type of the reference, like `@book`, and a structure with a name \( `kn:Golub89`\) followed by a number of fields \( `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
@@ -482,11 +483,9 @@ The next steps depend on one thing: Are you already using a reference manager so
 
 #### Bibliography the Manual Way
 
-####  
+#### 
 
 #### Bibliography with a Reference Manager
-
-
 
 ### Step 7: Proofread and Submit
 
