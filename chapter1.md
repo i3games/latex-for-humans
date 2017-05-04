@@ -559,12 +559,15 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They have different information but the structure is similar. You can @book @inbook @article . If you here is an overview that also lists the required of otional fields: [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types).
+Take a deep breath and get familiar with your entries. They have different information but the structure is similar. The type of the reference, like `@book` and a structure with a name, here: `kn:Golub89` , followed by a number of fields \(e.g. `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook ` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones thet you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
 
-The next steps depend on two things.
+The next steps depend on things. Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? This will make things easier. If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\). 
 
-1. How many items are in your bibliography? If the answer is "just a handful", we will continue with the approach we have taken so far. You will replace content in the . If you have a lot of bibliography \(I had 80 items in a conference contribution\), I would recommend to go with the reference manager approach \(see below\). If it is in between and you are running out of time, replacement might be faster but **you need to focus not to make mistakes**.
-2. Are you using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? This will make things easier. If you don't I would recommend to do so in the future. Zotero is free and open source, Mendeley is free and Endnote is commercial, but your Uni might have a deal.
+  
+
+
+
+
 
 ### Step 7: Proofread and Submit
 
