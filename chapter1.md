@@ -430,7 +430,7 @@ Time for a coffee break. One more to go.
 
 At this point you should still see the example bibliograpy that came with your template. Maybe you have wondered where the entries come from. You can't see them in your LaTeX file. Where are they 🤔?
 
-Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file with the name `aisb.bib` \(called a "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries:
+Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file with the name `aisb.bib` \(called a "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left some of them out\):
 
 ```bibtex
 @book{kn:Golub89,
@@ -441,45 +441,6 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
     address = "Baltimore",
     year = "1989",
     kwds = "la"
-}
-
-@book{kn:deCarlini91,
-    author = "{de Carlini}, U. and Villano, U.",
-    title = "Transputers and parallel architectures -- message-passing
-              distributed systems",
-    publisher = "Ellis Horwood",
-    address = "Chichester",
-    year = "1991",
-    kwds = "par, arch, trans"
-}
-
-@book{kn:Modi88,
-    author = "Modi, J.J.",
-    title = "Parallel Algorithms and Matrix Computation",
-    publisher = "Oxford University Press",
-    address = "Oxford",
-    year = "1988",
-    kwds = "par, la"
-}
-
-@book{kn:Smith85,
-    author = "Smith, G.D.",
-    title = "Numerical Solution of Partial Differential Equations:
-              Finite Difference Methods",
-    edition = "3rd",
-    publisher = "Oxford University Press",
-    address = "Oxford",
-    year = "1985",
-    kwds = "pde"
-}
-
-@book{kn:Schofield89,
-    author = "Schofield, C.F.",
-    title = "Optimising {FORTRAN} programs",
-    publisher = "Ellis Horwood Publishing",
-    address = "Chichester",
-    year = "1989",
-    kwds = "lang, for"
 }
 
 @inbook{kn:daCunha92a,
@@ -493,19 +454,6 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
     year = "1992",
     note = "Also as Report No. 16/92, Computing Laboratory, University of Kent at Canterbury, U.K.",
     kwds = "par, iter"
-}
-
-@inbook{kn:daCunha92b,
-    author = "{da Cunha}, R.D. and Hopkins, T.R.",
-    title = "The Parallel Solution of Partial Differential Equations
-              on Transputer Networks",
-    series = "Transputing for Numerical and Neural Network Applications",
-    pages = "96-109",
-    publisher = "IOS Press",
-    address = "Amsterdam",
-    year = "1992",
-    note = "Also as Report No. 17/92, Computing Laboratory, University of Kent at Canterbury, U.K.",
-    kwds = "par, pde"
 }
 
 @misc{kn:Atkin,
@@ -526,46 +474,19 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
     kwds = "cg, precon, poly"
 }
 
-@article{kn:Eisenstat81,
-    author = "Eisenstat, S.C.",
-    title = "Efficient implementation of a class of preconditioned 
-              {Conjugate Gradient} methods",
-    journal = "SIAM Journal of Scientific and Statistical Computing",
-    volume = "2",
-    pages = "1-4",
-    year = "1981",
-    kwds = "cg, precon"
-}
-
-@article{kn:Adams85,
-    author = "Adams, L.",
-    title = "{m-Step} preconditioned {Gradient} methods",
-    journal = "SIAM Journal of Scientific and Statistical Computing",
-    volume = "6",
-    pages = "452-463",
-    year = "1985",
-    kwds = "cg, precon, poly"
-}
-
-@article{kn:Johnson83,
-    author = "Johnson, O.G. and Micchelli, C.A. and Paul, G.",
-    title = "Polynomial preconditioners for {Conjugate Gradient} 
-              calculations",
-    journal = "SIAM Journal of Numerical Analysis",
-    volume = "20",
-    pages = "362-376",
-    year = "1983",
-    kwds = "cg, precon, poly"
-}
 ```
 
-Take a deep breath and get familiar with your entries. They have different information but the structure is similar. The type of the reference, like `@book` and a structure with a name, here: `kn:Golub89` , followed by a number of fields \(e.g. `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones thet you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
+Take a deep breath and get familiar with your entries. They have different information but the structure is similar. The type of the reference, like `@book`, and a structure with a name \( `kn:Golub89`\) followed by a number of fields \( `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
 
 The next steps depend on one thing: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier. If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
-#### Manual Bibliography
+#### Bibliography the Manual Way
+
+####  
 
 #### Bibliography with a Reference Manager
+
+
 
 ### Step 7: Proofread and Submit
 
