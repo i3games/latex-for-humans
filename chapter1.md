@@ -428,9 +428,17 @@ Remember the rule of thumb about deleting sample content in LaTeX: you can alway
 
 Time for a coffee break. One more to go.
 
-### Step 6: Citations and Bibliography
+### Step 6: Bibliography
 
-At this point you should still see the example bibliograpy that came with your template. Maybe you have wondered where the entries come from. You can't see them in your LaTeX file. Where are they 🤔?
+Everyone in academia loves bibliography. Without it, nobody would be able to trust what you write. It could be your own ideas! Ok, back to work. A bibliography consists of: 
+
+1. a list of references at the end of your paper
+2. citations in the text which point to references
+3. a style which is applied to citations and references. The style determines for example if the citations are numbers or name and year, if first names are abbreviated and in which order the elements of the reference appear. You may have heard APA, Harvard referencing style, and so on. There are a few thousand styles out there, and formatting the bibliography can be a pain. The good news: you don't need to care. LaTeX does this for you.    
+
+Let's take a look at the bibliography in my example:![](/assets/Screen Shot 2017-05-04 at 21.50.54.png)
+
+Now, in your PDF file you should still see the example bibliograpy that came with your template. Maybe you have wondered where those entries come from. You can't find them in your LaTeX file. Where are they 🤔?
 
 Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file with the name `aisb.bib` \(called a "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left some of them out\):
 
@@ -477,15 +485,19 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They will have different information but the structure is similar. The type of the reference, like `@book ` is followed by a structure with a name \( `kn:Golub89`\) and a number of fields \( `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
+Take a deep breath and get familiar with your entries. They will have different information but the structure is similar. The type of the reference, like `@book` is followed by a structure with a name \( `kn:Golub89`\) and a number of fields \( `author = "Golub, G.H. and {Van Loan}, C.F."`\). You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields.
 
 The next steps depend on one thing: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier, skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
 #### Bibliography the Manual Way
 
-#### 
+Ok, time to copy / paste again. Replace the contents \(names and field entries\) for each item. 
 
 #### Bibliography with a Reference Manager
+
+
+
+citations
 
 
 
