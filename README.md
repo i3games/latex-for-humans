@@ -1,6 +1,10 @@
-# LaTeX For Humans \(with a Mac\)
+LaTeX For Humans \(with a Mac\)
 
-by [@crcdng](https://twitter.com/crcdng)
+![](/assets/startup-593341_1920.jpg)by [@crcdng](https://twitter.com/crcdng)
+
+
+
+
 
 This is an attempt to create a practical and human readable tutorial for LaTeX. For now it is for humans with a Mac only.
 
@@ -19,4 +23,6 @@ License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) This me
 The only restrictions are: you have to give credit to the original author \(me\) and you can't make money from it. Details: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/).
 
 Motivated by similar ideas but not associated with: [https://latexforhumans.wordpress.com/](https://latexforhumans.wordpress.com/).
+
+Tiitle Image pixabay / CC0 Public Domain.
 
