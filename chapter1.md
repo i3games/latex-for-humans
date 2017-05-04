@@ -213,7 +213,7 @@ If you have any of the other elements \(acknowledgement, footnotes, enumerations
 
 #### Acknowledgement
 
-The acknowledgement comes at the end of the paper and contains heartfelt thank you's to supervisors, referees, editors or partners \(who kept being friendly and supportive during the Word breakdown mentioned above\). Also shoutouts to your funding, which is sometimes required. Thankfully this is straightforward: `\ack` command, followed by the text on the next line. Note that the acknowlegement is usually not numbered, even if your other headings are.
+The acknowledgement comes at the end of the paper and contains heartfelt a thank you to supervisors, referees, editors or partners \(who kept being friendly and supportive during the breakdown mentioned above\). Also shoutouts to your funding, which is sometimes required. Thankfully this is straightforward: `\ack` command, followed by the text on the next line. Note that the acknowlegement is usually not numbered, even if your other headings are.
 
 #### Footnotes
 
@@ -566,8 +566,6 @@ The next steps depend on one thing: Are you already using a reference manager so
 #### Manual Bibliography
 
 #### Bibliography with a Reference Manager
-
-
 
 ### Step 7: Proofread and Submit
 
