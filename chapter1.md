@@ -430,7 +430,7 @@ Time for a coffee break. One more to go.
 
 At this point you should still see the example bibliograpy that came with your template. Maybe you have wondered where the entries come from. You can't see them in your LaTeX file. Where are they 🤔?
 
-Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. This means that there is a file with the name `aisb.bib` that has the bibliographical entries. You will have a similar entry. Let's open the file in TeXShop with `File -> Open`. Ok, here are the entries:
+Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file with the name `aisb.bib` \(called a "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries:
 
 ```bibtex
 @book{kn:Golub89,
@@ -559,12 +559,12 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They have different information but the structure is similar.
+Take a deep breath and get familiar with your entries. They have different information but the structure is similar. You can @book @inbook @article . If you here is an overview that also lists the required of otional fields: [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types).
 
 The next steps depend on two things.
 
-1. How many items do you have in your bibliography? If the answer is "just a handful", we will continue with the approach we have taken so far. You will replace content in the . If you have a lot of bibliography \(I had 80 items in a conference contribution\), I would recommend to go with the reference manager approach \(see below\). If it is in between and you are running out of time, replacement might be faster but **you need to focus not to make mistakes**.
-2. Are you using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), [or Endnote](http://endnote.com/)? If you don't I would recommend you do in the future. Zotero is free and open source, Mendeley is free and Endnote is commercial, but your Uni might have a deal.
+1. How many items are in your bibliography? If the answer is "just a handful", we will continue with the approach we have taken so far. You will replace content in the . If you have a lot of bibliography \(I had 80 items in a conference contribution\), I would recommend to go with the reference manager approach \(see below\). If it is in between and you are running out of time, replacement might be faster but **you need to focus not to make mistakes**.
+2. Are you using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? This will make things easier. If you don't I would recommend to do so in the future. Zotero is free and open source, Mendeley is free and Endnote is commercial, but your Uni might have a deal.
 
 ### Step 7: Proofread and Submit
 
