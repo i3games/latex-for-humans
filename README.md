@@ -1,10 +1,6 @@
-LaTeX For Humans \(with a Mac\)
+# LaTeX For Humans \(with a Mac\)
 
 ![](/assets/startup-593341_1920.jpg)by [@crcdng](https://twitter.com/crcdng)
-
-
-
-
 
 This is an attempt to create a practical and human readable tutorial for LaTeX. For now it is for humans with a Mac only.
 
