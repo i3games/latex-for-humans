@@ -422,7 +422,7 @@ At this point your complete paper, possibly including illustrations, tables, foo
 \end{document}
 ```
 
-Remember the rule of thumb about deleting sample content in LaTeX: you can always safely delete a complete paragraph, that is the content between two empty lines.
+Remember the rule of thumb about deleting sample content in LaTeX: you can always safely delete a complete paragraph, that is the content between two empty lines. Then run `Typeset` and check the results. Repeat until done.
 
 Time for a coffee break. One more to go.
 
