@@ -31,7 +31,7 @@ Let's rewind the clock for a few hours and try again. This assumes:
 1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
-4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].  
+4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].
 5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above.**
 
 Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-4 hours if all goes well. Roughly the first half of it will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
@@ -412,7 +412,7 @@ Consult the table and replace the item on the left side with the one on the righ
 
 #### International Languages
 
-### Clean up
+### Step 5: Clean up
 
 At this point your complete paper, possibly including illustrations, tables, footnotes etc. should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the sections above and finish the work. At the end you might still have some of the example content in the paper. Now it is time to delete it, except for the bibliography. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file the ones to keep look like this:
 
@@ -426,15 +426,147 @@ Remember the rule of thumb about deleting sample content in LaTeX: you can alway
 
 Time for a coffee break. One more to go.
 
-### Citations and Bibliography
+### Step 6: Citations and Bibliography
 
-A list of Bibliography is 
+At this point you should still see the example bibliograpy that came with your template. Maybe you have wondered where the entries come from. You can't see them in your LaTeX file. Where are they 🤔?
 
-You should still see the example bibliograpy which is inserted by the `\bibliography` command. The final task is now to replace this with your literature. 
+Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. This means that there is a file with the name `aisb.bib` that has the bibliographical entries. You will have a similar entry. Let's open the file in TeXShop with `File -> Open`. Ok, here are the entries:
 
-### Proofread
+```bibtex
+@book{kn:Golub89,
+    author = "Golub, G.H. and {Van Loan}, C.F.",
+    title = "Matrix Computations",
+    edition = "2nd",
+    publisher = "Johns Hopkins University Press",
+    address = "Baltimore",
+    year = "1989",
+    kwds = "la"
+}
 
+@book{kn:deCarlini91,
+    author = "{de Carlini}, U. and Villano, U.",
+    title = "Transputers and parallel architectures -- message-passing
+              distributed systems",
+    publisher = "Ellis Horwood",
+    address = "Chichester",
+    year = "1991",
+    kwds = "par, arch, trans"
+}
 
+@book{kn:Modi88,
+    author = "Modi, J.J.",
+    title = "Parallel Algorithms and Matrix Computation",
+    publisher = "Oxford University Press",
+    address = "Oxford",
+    year = "1988",
+    kwds = "par, la"
+}
+
+@book{kn:Smith85,
+    author = "Smith, G.D.",
+    title = "Numerical Solution of Partial Differential Equations:
+              Finite Difference Methods",
+    edition = "3rd",
+    publisher = "Oxford University Press",
+    address = "Oxford",
+    year = "1985",
+    kwds = "pde"
+}
+
+@book{kn:Schofield89,
+    author = "Schofield, C.F.",
+    title = "Optimising {FORTRAN} programs",
+    publisher = "Ellis Horwood Publishing",
+    address = "Chichester",
+    year = "1989",
+    kwds = "lang, for"
+}
+
+@inbook{kn:daCunha92a,
+    author = "{da Cunha}, R.D. and Hopkins, T.R.",
+    title = "The Parallel Solution of Systems of Linear Equations using
+              Iterative Methods on Transputer Networks",
+    series = "Transputing for Numerical and Neural Network Applications",
+    pages = "1-13",
+    publisher = "IOS Press",
+    address = "Amsterdam",
+    year = "1992",
+    note = "Also as Report No. 16/92, Computing Laboratory, University of Kent at Canterbury, U.K.",
+    kwds = "par, iter"
+}
+
+@inbook{kn:daCunha92b,
+    author = "{da Cunha}, R.D. and Hopkins, T.R.",
+    title = "The Parallel Solution of Partial Differential Equations
+              on Transputer Networks",
+    series = "Transputing for Numerical and Neural Network Applications",
+    pages = "96-109",
+    publisher = "IOS Press",
+    address = "Amsterdam",
+    year = "1992",
+    note = "Also as Report No. 17/92, Computing Laboratory, University of Kent at Canterbury, U.K.",
+    kwds = "par, pde"
+}
+
+@misc{kn:Atkin,
+    author = "Atkin, P.",
+    title = "Performance Maximisation",
+    howpublished = "INMOS Technical Note 17",
+    kwds = "perf, trans, loop"
+}
+
+@article{kn:Saad85,
+    author = "Saad, Y.",
+    title = "Practical use of polynomial preconditionings for the
+              {Conjugate Gradient} method",
+    journal = "SIAM Journal of Scientific and Statistical Computing",
+    volume = "6",
+    pages = "865-881",
+    year = "1985",
+    kwds = "cg, precon, poly"
+}
+
+@article{kn:Eisenstat81,
+    author = "Eisenstat, S.C.",
+    title = "Efficient implementation of a class of preconditioned 
+              {Conjugate Gradient} methods",
+    journal = "SIAM Journal of Scientific and Statistical Computing",
+    volume = "2",
+    pages = "1-4",
+    year = "1981",
+    kwds = "cg, precon"
+}
+
+@article{kn:Adams85,
+    author = "Adams, L.",
+    title = "{m-Step} preconditioned {Gradient} methods",
+    journal = "SIAM Journal of Scientific and Statistical Computing",
+    volume = "6",
+    pages = "452-463",
+    year = "1985",
+    kwds = "cg, precon, poly"
+}
+
+@article{kn:Johnson83,
+    author = "Johnson, O.G. and Micchelli, C.A. and Paul, G.",
+    title = "Polynomial preconditioners for {Conjugate Gradient} 
+              calculations",
+    journal = "SIAM Journal of Numerical Analysis",
+    volume = "20",
+    pages = "362-376",
+    year = "1983",
+    kwds = "cg, precon, poly"
+}
+```
+
+Take a deep breath and get familiar with your entries. They have different information but the structure is similar.
+
+The next steps depend on two things.
+
+1. How many items do you have in your bibliography? If the answer is "just a handful", we will continue with the approach we have taken so far. You will replace content in the . If you have a lot of bibliography \(I had 80 items in a conference contribution\), I would recommend to go with the reference manager approach \(see below\). If it is in between and you are running out of time, replacement might be faster but **you need to focus not to make mistakes**.
+2. Are you using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), [or Endnote](http://endnote.com/)? If you don't I would recommend you do in the future. Zotero is free and open source, Mendeley is free and Endnote is commercial, but your Uni might have a deal.
+
+### Step 7: Proofread and Submit
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
