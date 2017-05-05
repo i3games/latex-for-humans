@@ -555,9 +555,11 @@ Now insert information for one of your references[^17]. First the citation key. 
 }
 ```
 
-Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. In my case this is  `\cite{golub1989}`. 
+Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. In my case this is  `\cite{golub1989}`.
 
 Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. The one with the LaTeX file, the one with the BibTeX file we are working on , one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized.
+
+
 
 #### Bibliography with a Reference Manager
 
