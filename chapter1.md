@@ -483,15 +483,15 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They will have different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional like `kwds` above, which is a list of keywords that does not show up in the output.
+Take a deep breath and get familiar with your entries. They will contain different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional, like `kwds` above, which is a list of keywords that does not show up in the output.
 
-You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew [at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists required and optional fields for each type of entry.
+You can probably see types like `@book`, `@inbook` \(a book chapter\), `@article` \(a journal article\), and others. If you do not find the ones that you need in your example, there is an overwiew [at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields for each type of entry.
 
 The next step depends on this: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
 #### Bibliography the Manual Way
 
-Ok, time to do the bibliography. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Prepare the respective number of empty entries \(you can copy them from here or remove content from the examples in your templates\)[^18]. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for different  entry types and possible fields. Finally delete the example entries that are still in the file and save it. You should have exactly one empty template for each ouf your references at this point.
+Ok, time to do the bibliography. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Prepare a number of empty entries accordingly \(you can copy them from here or remove content from the examples in your templates\)[^18]. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for different  entry types and possible fields. Finally delete the example entries that are still in the file and save it. You should have exactly one empty template for each ouf your references at this point.
 
 ```bibtex
 @book{,
@@ -542,7 +542,7 @@ Ok, time to do the bibliography. Make a list of your references \(let's say you 
 }
 ```
 
-Now insert information for one of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989` and it comes between the opening curly brace and the first comma. Fill in the field values between the quotation marks. Finally you have something like this:
+Now insert information for one \(and just one\) of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989` and it comes between the opening curly brace and the first comma. Fill in the field values between the quotation marks. Finally you have something like this:
 
 ```bibtex
 @book{golub89,
@@ -555,9 +555,17 @@ Now insert information for one of your references[^17]. First the citation key. 
 }
 ```
 
-Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. In my case this is  `\cite{golub1989}`.
+Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. The one with the LaTeX file, the one with the BibTeX file we are currently working on, one console window for messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. 
 
-Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. The one with the LaTeX file, the one with the BibTeX file we are working on , one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized.
+Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the 4-step BibTex shuffle:
+
+1. Run `Typeset`. Watch the console, the usual mumble should scroll by. If it says "Error", doublecheck your citation.
+2. Switch the dropdown menu to BibTeX. Run `Typeset.`
+3. Switch the dropdown menu back to LaTeX. Run `Typeset. `  
+
+4. Run `Typeset` again. Yes you are reading correctly[^19].
+
+![](/assets/Screen Shot 2017-05-05 at 14.56.24.png)
 
 
 
@@ -600,4 +608,6 @@ Just a quick reminder for orientation. At this point you have 4 different window
 [^17]:  The order in which you in the .bib file doesn't matter, BibTeX will figure that out and put the references in the right order .
 
 [^18]:  You are more like to make a mistake if you copy your information directly into the example entries. That's why we use empty ones.  
+
+[^19]:  At this point you might be asking yourself what you have gotten into, but it's too late. Sorry. The good news is we ara almost done.
 
