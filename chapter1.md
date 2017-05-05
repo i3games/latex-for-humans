@@ -2,15 +2,15 @@
 
 _Based on a true story._
 
-Picture yourself like this: You have to submit a paper or draft to this fancy conference \(or prestigous journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity has only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
+Picture yourself in this situation: You have to submit a paper or draft to this fancy conference \(or prestigous journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity has only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
 
 ## Pest or Cholera?
 
-When you submit academic stuff, you usually get a choice between Microsoft Word and LaTeX. You also get a link to download templates and example files to work with. What you see might look like this:
+When you submit some academic stuff, you usually get a choice between Microsoft Word and LaTeX. You also get a link to download templates and example files to work with. What you see might look like this:
 
 ![](/assets/Screen Shot 2017-04-13 at 14.23.14.png)
 
-The choice is obvious: they have given you **one** Word template versus **seven** strangely named files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have laid down your thoroughly crafted words in Word already[^3]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do according to the authors of these files[^4]. Sure there are pesky things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
+The choice is obvious: they have given you **one** Word template versus **seven** strangely named files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have laid down your thoroughly crafted thoughts in Word already[^3]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do according to the authors of these files[^4]. Sure there are pesky looking things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
 
 You have just copied some piece of text when you realize the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and copy your image in, but is too large and now it is half on the bottom of page 3 and half outside the page. Also, some of your footnotes are suddenly gone. Attempts to fix this results in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes a paragraph on another page.
 
@@ -18,7 +18,7 @@ By now your paper looks like this[^5]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX", and the results did not look promising. Everything you were giving a quick read was technical and confusing. That stuff seems to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assume that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^6] in addition to being an overworked student. This won't work.
+Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX", however the results did not look promising. Everything you gave a quick read sounded technical and confusing. That stuff seemed to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assumed that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^6] in addition to being an overworked student. This won't work.
 
 So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your single image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. Suddenly a shrill alarm sounds. Midnight!
 
@@ -30,11 +30,11 @@ Let's rewind the clock for a few hours and try again. This assumes:
 
 1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
-3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
+3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. You also should have prepared your bibliography, either in Word, a reference manager, or on a piece of paper. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].
-5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above. If you don't, now is the time to get them / look for them on their website. This guide assumes you have them !1!! **
+5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above. If you don't, now is the time to get them / look for them on their website. This guide assumes that you have them !1!! **
 
-Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-5 hours for a 6-8 page paper if all goes well. Roughly 1 1/2 hour will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
+Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-5 hours for a 6-10 page paper if all goes well. Roughly 1 1/2 hour will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
 
 ### Step 1: Install LaTeX
 
@@ -68,9 +68,9 @@ If the update fails: try again. Try closing Tex Live Utility and starting it aga
 
 You can close `Tex Live Utility` for now, consume some sweets and get ready.
 
-### Step 3: Check the Template
+### Step 3: Check your Templates
 
-I assume you have already a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, get it now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
+I assume you have already a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, do that  now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
 Let's look at the LaTeX files.
 
@@ -79,7 +79,7 @@ Let's look at the LaTeX files.
 Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^10]:
 
 1. a file with the extension ".tex". This is **the LaTeX file** we will work with. Your paper will go in there. We will focus on this first.
-2. a file with the extension ".bib". This is the file for the **bibliography** entries. We will do that later.
+2. a file with the extension ".bib". This is the **BibTeX file** for the bibliography entries. We will do that later.
 
 Start `TeXShop.app`. It is in the same place as `Tex Live Utility.app`
 
@@ -144,7 +144,7 @@ PDF file is available for all.
 \end{abstract}
 ```
 
-Yours will be different, but you will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. Notice also how the coloring in TexShop \(which might have slightly different colors than the ones shown here\) helps to spot the commands.
+You will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. Notice also how the coloring in TexShop \(which might have slightly different colors than the ones shown here\) helps to spot the commands.
 
 Study your LaTeX source and the PDF it generated to identify these elements. The people who prepared the example usually want to demonstrate everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
@@ -487,11 +487,11 @@ Take a deep breath and get familiar with your entries. They will have different 
 
 You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew [at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists required and optional fields for each type of entry.
 
-The next step depends on one question: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
+The next step depends on this: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
 #### Bibliography the Manual Way
 
-Ok, time to prepare the bibliography. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Insert the respective number of empty entries \(you can copy them from here\) into your BibTeX file. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for these and other types and possible fields. Finally delete the example entries that are still in the file and save it. You should have one empty template for each reference at this point.
+Ok, time to do the bibliography. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Prepare the respective number of empty entries \(you can copy them from here or remove content from the examples in your templates\)[^18]. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for different  entry types and possible fields. Finally delete the example entries that are still in the file and save it. You should have exactly one empty template for each ouf your references at this point.
 
 ```bibtex
 @book{,
@@ -542,9 +542,21 @@ Ok, time to prepare the bibliography. Make a list of your references \(let's say
 }
 ```
 
-Now enter data for one of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989 ` and it comes between the opening curly brace and the first comma. Fill in the field values between the quotation marks.
+Now insert information for one of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989` and it comes between the opening curly brace and the first comma. Fill in the field values between the quotation marks. Finally you have something like this:
 
-Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. One with the LaTeX file, the one with the BibTeX file we are working on right now, one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized. 
+```bibtex
+@book{golub89,
+    author = "Golub, G.H. and {Van Loan}, C.F.",
+    title = "Matrix Computations",
+    edition = "2nd",
+    publisher = "Johns Hopkins University Press",
+    address = "Baltimore",
+    year = "1989",
+}
+
+```
+
+Save the BibTeX file. Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. One with the LaTeX file, the one with the BibTeX file we are working on right now, one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized.
 
 #### Bibliography with a Reference Manager
 
@@ -583,4 +595,6 @@ Just a quick reminder for orientation. At this point you have 4 different window
 [^16]:  There is a joke in the choice of this key, but I can't tell it here.
 
 [^17]:  The order in which you in the .bib file doesn't matter, BibTeX will figure that out and put the references in the right order .
+
+[^18]:  You are more like to make a mistake if you copy your information directly into the example entries. That's why we use empty ones.  
 
