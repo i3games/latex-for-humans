@@ -489,11 +489,9 @@ You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@arti
 
 The next step depends on one question: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
-Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. One with the LaTeX file, one with the BibTeX file we are working with right now, one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized.  
-
 #### Bibliography the Manual Way
 
-Ok, time to prepare the bibliography. Make a list of your references \(lets say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Insert the respective number of empty entries \(you can copy them from here\) into your BibTeX file. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for these and other types and possible fields. Finally delete the example entries that are still in the file and save it. You should have one empty template for each reference at this point. 
+Ok, time to prepare the bibliography. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Insert the respective number of empty entries \(you can copy them from here\) into your BibTeX file. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for these and other types and possible fields. Finally delete the example entries that are still in the file and save it. You should have one empty template for each reference at this point.
 
 ```bibtex
 @book{,
@@ -544,11 +542,9 @@ Ok, time to prepare the bibliography. Make a list of your references \(lets say 
 }
 ```
 
-Now complete your first reference. First make a citation key You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989`. Now fill out the field values.
+Now enter data for one of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989 ` and it comes between the opening curly brace and the first comma. Fill in the field values between the quotation marks.
 
-
-
-
+Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. One with the LaTeX file, the one with the BibTeX file we are working on right now, one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized. 
 
 #### Bibliography with a Reference Manager
 
@@ -584,5 +580,7 @@ Now complete your first reference. First make a citation key You can name the ke
 
 [^15]:  My \(crude\) reasoning is that if you would have formulas in your paper, you would know LaTeX already. I willl cover formulas in [How to Write a Thesis](/how-to-write-a-thesis.md)
 
-[^16]:  There is a joke in this choice of key, but I can't tell it here.
+[^16]:  There is a joke in the choice of this key, but I can't tell it here.
+
+[^17]:  The order in which you in the .bib file doesn't matter, BibTeX will figure that out and put the references in the right order .
 
