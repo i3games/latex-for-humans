@@ -32,9 +32,9 @@ Let's rewind the clock for a few hours and try again. This assumes:
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].
-5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above.**
+5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above. If you don't, now is the time to get them / look for them on their website. This guide assumes you have them !1!! **
 
-Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, then update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-4 hours if all goes well. Roughly the first half of it will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
+Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-5 hours for a 6-8 page paper if all goes well. Roughly 1 1/2 hour will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
 
 ### Step 1: Install LaTeX
 
@@ -48,7 +48,7 @@ Run the installer. It walks you through the process. The installation will take 
 
 ### Step 2: Update LaTeX
 
-In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Utility.app` there. It greets you with a window like this:
+In your `Applications` you now have a folder named `TeX`. Start the `Tex Live Utility.app` from there. It greets you with a window like this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.39.01.png)
 
@@ -58,7 +58,7 @@ Note that the list it displays may be empty, says "No update available" or conta
 
 ![](/assets/Screen Shot 2017-04-13 at 18.43.26.png)
 
-.. and wait. Then there should be a list of entries. The program might tell you that it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
+.. and wait. Then there should be a list of entries. The program might tell you again that it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
 It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper?
 
@@ -434,7 +434,7 @@ Everyone in academia loves bibliography. Without it, nobody would be able to tru
 
 1. a list of references at the end of your paper
 2. citations in the text which point to references
-3. a style which is applied to citations and references. The style determines for example if the citations are numbers or name and year, if first names are abbreviated and in which order the elements of the reference appear. You may have heard APA, Harvard referencing style, and so on. There are a few thousand styles out there, and formatting the bibliography can be a pain. The good news: you don't need to care. LaTeX does this for you.    
+3. a style which is applied to citations and references. The style determines for example if the citations are numbers or name and year, if first names are abbreviated and in which order the elements of the reference appear. You may have heard about APA, Chicago, ACM, or Harvard referencing style. Truth is there are a few thousand styles out there, "Harvard style" can mean anything under the sun, and formatting the bibliography can be a pain. The good news: you don't need to care. LaTeX does this for you.    
 
 Let's take a look at the bibliography in my example:![](/assets/Screen Shot 2017-05-04 at 21.50.54.png)
 
@@ -485,39 +485,72 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They will have different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`\) and a number of fields, e.g. \( `author = "Saad, Y."`\). Field entries are between quotation marks or maybe in your BibTeX file also between curly braces. Some fields are optional like `kwds` above, which is a list of keywords that does not show up in the output. 
+Take a deep breath and get familiar with your entries. They will have different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional like `kwds` above, which is a list of keywords that does not show up in the output.
 
 You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists required and optional fields for each type of entry.
 
-The next step depends on one thing: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier, please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
+The next step depends on one question: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
 #### Bibliography the Manual Way
 
-Ok, time to copy / paste again. Start with your first reference, lets say it is a book.
+Ok, time to prepare. Start with your first reference, lets say it is a book.
+
+
+
+```bibtex
+@book{,
+    author = "",
+    title = "",
+    edition = "",
+    publisher = "",
+    address = "",
+    year = ""
+}
+
+@inbook{,
+    author = "",
+    title = "",
+    series = "",
+    pages = "",
+    publisher = "",
+    address = "",
+    year = ""
+}
+
+@article{,
+    author = "",
+    title = "",
+    journal = "",
+    volume = "",
+    pages = "",
+    year = ""
+}
+
+@article{,
+    author = "",
+    title = "",
+    journal = "",
+    volume = "",
+    pages = "",
+    year = ""
+}
+```
 
 
 
 
 
- and replace the citation key and the field entries. In my example it is a prefix, colon, then the name of the first author with the year of the publication like `kn:Golub89`. You can name the key as you like, going with something like author and year helps to stay consistent.
+and replace the citation key and the field entries.  You can name the key as you like. I recommend going with something like first author and year, which helps to stay consistent. In my example this would be `golub1989`
 
-
-
-What happens? Nothing. 
+What happens? Nothing.
 
 #### Bibliography with a Reference Manager
-
-
-
-
-
-
 
 ### Step 7: Proofread and Submit
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
-[^2]: If you are really in a hurry you might skip the next section and head to "How to do it". Also, ignore the footnotes from now on.
+[^2]: If you are really in a hurry you might skip the next section and head to "How to do it". Also, ignore the footnotes from now on. They contain non-critical information.
 
 [^3]: I am working with a number of assumptions here that might or might not be working for you. 
 
@@ -544,4 +577,6 @@ What happens? Nothing.
 [^15]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this.
 
 [^15]:  My \(crude\) reasoning is that if you would have formulas in your paper, you would know LaTeX already. I willl cover formulas in [How to Write a Thesis](/how-to-write-a-thesis.md)
+
+[^16]:  There is a joke in this choice of key, but I can't tell it here.
 
