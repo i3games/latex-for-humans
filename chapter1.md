@@ -555,17 +555,23 @@ Now insert information for one \(and just one\) of your references[^17]. First t
 }
 ```
 
-Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. The one with the LaTeX file, the one with the BibTeX file we are currently working on, one console window for messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. 
+Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. The one with the LaTeX file, the one with the BibTeX file we are currently working on, one console window for messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. The `Window` menu has a list of the currently open windows at the bottom.
 
-Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the 4-step BibTex shuffle:
+Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the **4-step BibTex shuffle**:
 
-1. Run `Typeset`. Watch the console, the usual mumble should scroll by. If it says "Error", doublecheck your citation.
-2. Switch the dropdown menu to BibTeX. Run `Typeset.`
-3. Switch the dropdown menu back to LaTeX. Run `Typeset. `  
+1. Run `Typeset`. Watch the console. The usual mumbojumbo should scroll by. If it says "Error", doublecheck your citation.
+2. Switch the dropdown menu to BibTeX \(see picture below\). Run `Typeset.`
+3. Switch the dropdown menu back to LaTeX. Run `Typeset.`
 
 4. Run `Typeset` again. Yes you are reading correctly[^19].
 
-![](/assets/Screen Shot 2017-05-05 at 14.56.24.png)
+![](/assets/Screen Shot 2017-05-05 at 20.42.44.png)
+
+In Step 2, the console window should look similiar to this one:
+
+![](/assets/Screen Shot 2017-05-04 at 23.45.04.png)
+
+If you get warnings instead
 
 
 
