@@ -158,17 +158,15 @@ Instead check your paper to figure out the parts you do need for your draft. A m
 4. sections of text
 5. a bibliography with citations in the text and list of references at the end
 
-We focus on the first four now.
+We focus on the first four for now.
 
 #### Title
 
-You already located the title element in TexShop. Replace the text between curly braces `{ }` with your actual title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit-&gt; Undo \( `cmd-Z)`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\).
+You already located the title element in TexShop. Replace the text between curly braces `{ }` with your actual title and run `Typeset` again. At the beginning I would recommend to do this after each change. You can see if the results are as expected and spot potential problems. Use Edit -&gt; Undo \(`cmd-Z`\) to undo a change and save the LaTeX file with Edit-&gt;Save \(`cmd-S`\).
 
 Does it work? Do you see your title in the PDF? Congratulations.
 
-_A journey of a thousand miles begins with a single step _\(Lao-Tse\).
-
-You just have taken that step. Let's move on.
+_A journey of a thousand miles begins with a single step _\(Lao-Tse\). You just have taken that step. Let's move on.
 
 #### Name\(s\) and Institution\(s\)
 
@@ -487,15 +485,15 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 
 Take a deep breath and get familiar with your entries. They will have different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional like `kwds` above, which is a list of keywords that does not show up in the output.
 
-You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew[ at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists required and optional fields for each type of entry.
+You can probably see types like `@book`, `@inbook` \(a book chapter\) and `@article` \(a journal article\). If you do not find the ones that you need in your example, there is an overwiew [at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists required and optional fields for each type of entry.
 
 The next step depends on one question: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
+Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. One with the LaTeX file, one with the BibTeX file we are working with right now, one console window for messages and the one with the PDF output. Sometimes these windows overlap or are minimized.  
+
 #### Bibliography the Manual Way
 
-Ok, time to prepare. Start with your first reference, lets say it is a book.
-
-
+Ok, time to prepare the bibliography. Make a list of your references \(lets say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Insert the respective number of empty entries \(you can copy them from here\) into your BibTeX file. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for these and other types and possible fields. Finally delete the example entries that are still in the file and save it. You should have one empty template for each reference at this point. 
 
 ```bibtex
 @book{,
@@ -507,9 +505,11 @@ Ok, time to prepare. Start with your first reference, lets say it is a book.
     year = ""
 }
 
-@inbook{,
+@incollection{,
     author = "",
     title = "",
+    booktitle = "",
+    editor = "",
     series = "",
     pages = "",
     publisher = "",
@@ -522,27 +522,33 @@ Ok, time to prepare. Start with your first reference, lets say it is a book.
     title = "",
     journal = "",
     volume = "",
+    number = "",
     pages = "",
     year = ""
 }
 
-@article{,
+@inproceedings{,
     author = "",
     title = "",
-    journal = "",
+    booktitle = "",
     volume = "",
     pages = "",
     year = ""
 }
+
+@phdthesis{,
+    author = "",
+    title = "",
+    school = "",
+    year = ""
+}
 ```
 
+Now complete your first reference. First make a citation key You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989`. Now fill out the field values.
 
 
 
 
-and replace the citation key and the field entries.  You can name the key as you like. I recommend going with something like first author and year, which helps to stay consistent. In my example this would be `golub1989`
-
-What happens? Nothing.
 
 #### Bibliography with a Reference Manager
 
