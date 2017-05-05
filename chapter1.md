@@ -577,7 +577,7 @@ You should now have one reference at the end of your doucument, like mine here:
 
 If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX.
 
-You know what? Almost at the end. Almost. All you have to do now is to diligently copy the other references. Do it one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right. At the end you have a complete and good looking citations and references. Without any effort \(Ahem\).
+You know what? Almost at the end. Almost. All you have to do now is to diligently copy the other references. Do it one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right. At the end you have complete and good looking citations and references. Without any effort \(Ahem\).
 
 #### Bibliography with a Reference Manager
 
