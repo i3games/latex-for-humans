@@ -438,7 +438,7 @@ Let's take a look at the bibliography in my example:![](/assets/Screen Shot 2017
 
 Now, in your PDF file you should still see the example bibliograpy that came with your template. Maybe you have wondered where those entries come from. You can't find them in your LaTeX file. Where are they 🤔?
 
-Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file with the name `aisb.bib` \(called a "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of them out\):
+Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file in the same directory with the name `aisb.bib` \(I will call it "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of them out\):
 
 ```bibtex
 @book{kn:Golub89,
@@ -571,11 +571,21 @@ In Step 2, the console window should look similiar to this one:
 
 ![](/assets/Screen Shot 2017-05-04 at 23.45.04.png)
 
-If you get warnings instead
+You should now have one reference at the end of your doucument, like mine here:
 
+![](/assets/Screen Shot 2017-05-05 at 21.58.39.png)
 
+If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX.
+
+You know what? Almost at the end. Almost. All you have to do now is to diligently copy the other references. Do it one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right. At the end you have a complete and good looking citations and references. Without any effort \(Ahem\). 
 
 #### Bibliography with a Reference Manager
+
+
+
+#### If you Need to Include Literature Without Citations
+
+
 
 ### Step 7: Proofread and Submit
 
