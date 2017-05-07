@@ -428,17 +428,17 @@ Time for a coffee break. One more to go.
 
 ### Step 6: Bibliography
 
-Everyone in academia loves bibliography. Without it, nobody would be able to trust what you write. It could be your own ideas! Ok, back to work. A bibliography consists of:
+In academia everyone loves bibliography. Without it, nobody would be able to trust what you write. It could be your own ideas! Ok, back to work. A bibliography usually consists of:
 
 1. a list of references at the end of your paper
-2. citations in the text which point to references
-3. a style which is applied to citations and references. The style determines for example if the citations are numbers or name and year, if first names are abbreviated and in which order the elements of the reference appear. You may have heard about APA, Chicago, ACM, or Harvard referencing style. Truth is there are a few thousand styles out there, "Harvard style" can mean anything under the sun, and formatting the bibliography can be a pain. The good news: you don't need to care. LaTeX does this for you.    
+2. citations in the text which point to the references
+3. a style which is applied to citations and references. The style determines for example if the citations consist of numbers or name and year entries, if first names are abbreviated and in which order some of the elements of the reference appear. You may have heard about APA, Chicago, ACM, or Harvard referencing style. Truth is there are a few thousand styles out there, "Harvard style" can mean anything under the sun, and formatting the bibliography can be a major pain. The good news: you don't need to care. LaTeX does this for you, with a little bit of preparation.    
 
 Let's take a look at the bibliography in my example:![](/assets/Screen Shot 2017-05-04 at 21.50.54.png)
 
 Now, in your PDF file you should still see the example bibliograpy that came with your template. Maybe you have wondered where those entries come from. You can't find them in your LaTeX file. Where are they 🤔?
 
-Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have a similar entry. The parameter `aisb` means that there is a file in the same directory with the name `aisb.bib` \(I will call it "BibTeX file"\)** **that has the bibliographical entries. Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of them out\):
+Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have the same command with a different parameter. The parameter `aisb` means that there is a file \(in the same directory as the LaTeX file\) with the name `aisb.bib` \(I will call it "BibTeX file"\). Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of mine out for clarity\):
 
 ```bibtex
 @book{kn:Golub89,
@@ -483,7 +483,7 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 }
 ```
 
-Take a deep breath and get familiar with your entries. They will contain different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional, like `kwds` above, which is a list of keywords that does not show up in the output.
+Take a deep breath and get familiar with it. Yours will contain different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional, like `kwds` above, which is a list of keywords that does not show up in the output.
 
 You can probably see types like `@book`, `@inbook` \(a book chapter\), `@article` \(a journal article\), and others. If you do not find the ones that you need in your example, there is an overwiew [at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields for each type of entry.
 
@@ -491,7 +491,7 @@ The next step depends on this: Are you already using a reference manager softwar
 
 #### Bibliography the Manual Way
 
-Ok, time to do the bibliography. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Prepare a number of empty entries accordingly \(you can copy them from here or remove content from the examples in your templates\)[^18]. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for different  entry types and possible fields. Finally delete the example entries that are still in the file and save it. You should have exactly one empty template for each ouf your references at this point.
+Ok, time to do the bibliography. Maybe you have the information already in your Word file. Make a list of your references \(let's say you have 2 books, 2 chapters in a collection, 5 journal articles, 2 conference talks that are published in proceedings and a phd thesis\). Prepare a number of empty entries accordingly \(you can copy them from here or remove content from the examples in your templates\)[^18]. Check the [Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) entry for different  entry types and possible fields. Finally delete the example entries that are still in the file and save it. You should have exactly one empty template for each ouf your references at this point.
 
 ```bibtex
 @book{,
@@ -542,10 +542,10 @@ Ok, time to do the bibliography. Make a list of your references \(let's say you 
 }
 ```
 
-Now insert information for one \(and just one\) of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989` and it comes between the opening curly brace and the first comma. Fill in the field values between the quotation marks. Finally you have something like this:
+Now insert the information for one \(and just one\) of your references[^17]. First the citation key. You can name the key as you like. I recommend going with something like first author in lowercase and year, which helps to stay consistent. For example this would be `golub1989` and it comes between the opening curly brace and the first comma. Then fill in the field values between the quotation marks. Finally you have something like this:
 
 ```bibtex
-@book{golub89,
+@book{golub1989,
     author = "Golub, G.H. and {Van Loan}, C.F.",
     title = "Matrix Computations",
     edition = "2nd",
@@ -555,7 +555,7 @@ Now insert information for one \(and just one\) of your references[^17]. First t
 }
 ```
 
-Just a quick reminder for orientation. At this point you have 4 different windows open in `TexShop`. The one with the LaTeX file, the one with the BibTeX file we are currently working on, one console window for messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. The `Window` menu has a list of the currently open windows at the bottom.
+Just a quick reminder for orientation. At this point you will have 4 different windows open in TexShop. The one with the LaTeX file, the one with the BibTeX file you are currently working on, one console window with messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. You can always switch them in the  `Window` menu in TexShop. It has a list of the currently open windows at the bottom.
 
 Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the **4-step BibTex shuffle**:
 
@@ -577,7 +577,7 @@ You should now have one reference at the end of your doucument, like mine here:
 
 If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations).
 
-You know what? Almost at the end. Almost. All you have to do now is to do the same with your other references, one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right and fix problems. 
+You know what? Almost at the end. Almost. All you have to do now is to do the same with your other references, one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right and fix problems.
 
 At the end you have complete and good looking citations and references. Without any effort \(Ahem\). Go to [Step 7: Proofread and Submit](#step-7-proofread-and-submit).
 
@@ -585,7 +585,7 @@ At the end you have complete and good looking citations and references. Without 
 
 #### If you Need to Include Literature Without Citations
 
-LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If your paper does not cite at all, you will have a literature list instead of references. Two steps are necessary:  
+LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If your paper does not cite at all, you will have a literature list instead of references. Two steps are necessary:
 
 1. In the line before the `\bibliography{...}` command, insert `\nocite{*}`. Now all entries in the BibTeX file will show up.
 2. Your editor might be picky/precise and insist that a list of "References" means that the sources are cited in the text. To rename the heading of your bibliography, insert `\renewcommand{\refname}{Literature}`  at the top of your document between the `\usepackage{...}` and the `\begin{document}` commands. The new heading will now be "Literature" and your editor will be happy. 
