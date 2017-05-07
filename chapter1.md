@@ -557,7 +557,7 @@ Now insert the information for one \(and just one\) of your references[^17]. Fir
 
 Just a quick reminder for orientation. At this point you will have 4 different windows open in TexShop. The one with the LaTeX file, the one with the BibTeX file you are currently working on, one console window with messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. You can always switch them in the  `Window` menu in TexShop. It has a list of the currently open windows at the bottom.
 
-Save the BibTeX file. Now head over to your LaTeX file and insert the citation at the location where you want the mark to appear. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the **4-step BibTex shuffle**:
+Now save the BibTeX file. Head over to your LaTeX file and insert the citation. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the **4-step BibTeX shuffle**:
 
 1. Run `Typeset`. Watch the console. The usual mumbojumbo should scroll by. If it says "Error", doublecheck your citation.
 2. Switch the dropdown menu to BibTeX \(see picture below\). Run `Typeset.`
@@ -567,21 +567,19 @@ Save the BibTeX file. Now head over to your LaTeX file and insert the citation a
 
 ![](/assets/Screen Shot 2017-05-05 at 20.42.44.png)
 
-In Step 2, the console window should look similiar to this one:
+In Step 2, the console window should look similiar to this one below. If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations). 
 
 ![](/assets/Screen Shot 2017-05-04 at 23.45.04.png)
 
-You should now have one reference at the end of your doucument, like mine here:
+In the PDF, you now should see one reference at the end of your doucument, like mine here:
 
 ![](/assets/Screen Shot 2017-05-05 at 21.58.39.png)
 
-If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations).
-
-You know what? Almost at the end. Almost. All you have to do now is to do the same with your other references, one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right and fix problems.
-
-At the end you have complete and good looking citations and references. Without any effort \(Ahem\). Go to [Step 7: Proofread and Submit](#step-7-proofread-and-submit).
+You know what? Almost at the end. Almost. All you have to do now is to do the same with your other references, one after the other. You can do the 4-step BibTeX shuffle in between to make sure things are going right and fix problems. Make sure to make it at the end. Congratulations. You have complete and good looking citations and references. Without any effort \(Ahem\). Go to [Step 7: Proofread and Submit](#step-7-proofread-and-submit).
 
 #### Bibliography with a Reference Manager
+
+
 
 #### If you Need to Include Literature Without Citations
 
