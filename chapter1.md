@@ -575,13 +575,20 @@ You should now have one reference at the end of your doucument, like mine here:
 
 ![](/assets/Screen Shot 2017-05-05 at 21.58.39.png)
 
-If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX.
+If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations).
 
-You know what? Almost at the end. Almost. All you have to do now is to diligently copy the other references. Do it one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right. At the end you have complete and good looking citations and references. Without any effort \(Ahem\).
+You know what? Almost at the end. Almost. All you have to do now is to do the same with your other references, one after the other. You can do the 4-step BibTex shuffle in between to make sure things are going right and fix problems. 
+
+At the end you have complete and good looking citations and references. Without any effort \(Ahem\). Go to [Step 7: Proofread and Submit](#step-7-proofread-and-submit).
 
 #### Bibliography with a Reference Manager
 
 #### If you Need to Include Literature Without Citations
+
+LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If your paper does not cite at all, you will have a literature list instead of references. Two steps are necessary:  
+
+1. In the line before the `\bibliography{...}` command, insert `\nocite{*}`. Now all entries in the BibTeX file will show up.
+2. Your editor might be picky/precise and insist that a list of "References" means that the sources are cited in the text. To rename the heading of your bibliography, insert `\renewcommand{\refname}{Literature}`  at the top of your document between the `\usepackage{...}` and the `\begin{document}` commands. The new heading will now be "Literature" and your editor will be happy. 
 
 ### Step 7: Proofread and Submit
 
@@ -621,5 +628,5 @@ You know what? Almost at the end. Almost. All you have to do now is to diligentl
 
 [^18]:  You are more like to make a mistake if you copy your information directly into the example entries. That's why we use empty ones.  
 
-[^19]:  At this point you might be asking yourself what you have gotten into, but it's too late. Sorry. The good news is we ara almost done.
+[^19]:  This crazy-sounding process makes sure that LaTeX has a clue about all citations and references and is able to format them correctly. I would prefer a button that says "make bibliography" 😬. 
 
