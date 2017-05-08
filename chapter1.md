@@ -567,7 +567,7 @@ Now save the BibTeX file. Head over to your LaTeX file and insert the citation. 
 
 ![](/assets/Screen Shot 2017-05-05 at 20.42.44.png)
 
-In Step 2, the console window should look similiar to this one below. If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations). 
+In Step 2, the console window should look similiar to this one below. If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations).
 
 ![](/assets/Screen Shot 2017-05-04 at 23.45.04.png)
 
@@ -579,14 +579,16 @@ You know what? Almost at the end. Almost. All you have to do now is to do the sa
 
 #### Bibliography with a Reference Manager
 
+If you are have your references in a reference manager software, things will be. Select the literature for your paper. Export to a file in BibTeX format. Replace the BibTeX file. Do the **4-step BibTeX shuffle.**.  
 
+#### Literature Without Citations
 
-#### If you Need to Include Literature Without Citations
+LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If you have literature that you don't cite, put `\nocite{key1,key2,...,keyn} ` in the line before the `\bibliography{...}` command. Replace `key1,key2,...,keyn` with the list of citation keys that you don't cite but that you want to show up in the reference list[^20].
 
-LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If your paper does not cite at all, you will have a literature list instead of references. Two steps are necessary:
+If your paper has a literature list instead of references, i.e. you do not cite anything, I recommend two steps:
 
-1. In the line before the `\bibliography{...}` command, insert `\nocite{*}`. Now all entries in the BibTeX file will show up.
-2. Your editor might be picky/precise and insist that a list of "References" means that the sources are cited in the text. To rename the heading of your bibliography, insert `\renewcommand{\refname}{Literature}`  at the top of your document between the `\usepackage{...}` and the `\begin{document}` commands. The new heading will now be "Literature" and your editor will be happy. 
+1. In the line before the `\bibliography{...}` command, insert `\nocite{*}`. Now all entries in the BibTeX file will show up without any citations.
+2. Your editor might be picky/precise and insist that "References" means that the sources are cited in the text. To rename the heading of your bibliography, insert `\renewcommand{\refname}{Literature}`  at the top of your document between the `\usepackage{...}` and the `\begin{document}` commands. The new heading of your bibliography will now be "Literature" and your editor will be happy. 
 
 ### Step 7: Proofread and Submit
 
@@ -627,4 +629,6 @@ LaTeX assumes per default that every bibliographical source has a citation in th
 [^18]:  You are more like to make a mistake if you copy your information directly into the example entries. That's why we use empty ones.  
 
 [^19]:  This crazy-sounding process makes sure that LaTeX has a clue about all citations and references and is able to format them correctly. I would prefer a button that says "make bibliography" 😬. 
+
+[^20]:  Please note that depending on your discipline and publication, your editor might frown upon this practice.
 
