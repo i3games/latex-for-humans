@@ -2,7 +2,7 @@
 
 _Based on a true story._
 
-Picture yourself in this situation: You have to submit a paper or draft to this fancy conference \(or prestigous journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity has only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
+Picture yourself in this situation: You have to submit a paper or draft to this fancy conference \(or prestigious journal\) and the deadline is **tonight**. Yes, you had three months time, but for some reason creativity has only kicked in last minute. You finally managed to write your thing but now it comes down to "please provide a camera ready version" / "please format in HUMBLEMUMBLE style". The clock is ticking[^1] [^2].
 
 ## Pest or Cholera?
 
@@ -10,9 +10,9 @@ When you submit some academic stuff, you usually get a choice between Microsoft 
 
 ![](/assets/Screen Shot 2017-04-13 at 14.23.14.png)
 
-The choice is obvious: they have given you **one** Word template versus **seven** strangely named files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have laid down your thoroughly crafted thoughts in Word already[^3]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do according to the authors of these files[^4]. Sure there are pesky looking things like foootnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
+The choice is obvious: they have given you **one** Word template versus **seven** strangely named files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have laid down your thoroughly crafted thoughts in Word already[^3]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do according to the authors of these files[^4]. Sure there are pesky looking things like footnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start going... until something weird happens.
 
-You have just copied some piece of text when you realize the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and copy your image in, but is too large and now it is half on the bottom of page 3 and half outside the page. Also, some of your footnotes are suddenly gone. Attempts to fix this results in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes a paragraph on another page.
+You have just copied some piece of text when you realise the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and copy your image in, but is too large and now it is half on the bottom of page 3 and half outside the page. Also, some of your footnotes are suddenly gone. Attempts to fix this results in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes a paragraph on another page.
 
 By now your paper looks like this[^5]:
 
@@ -20,7 +20,7 @@ By now your paper looks like this[^5]:
 
 Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX", however the results did not look promising. Everything you gave a quick read sounded technical and confusing. That stuff seemed to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assumed that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^6] in addition to being an overworked student. This won't work.
 
-So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your single image through the text. Stuff appears and disappears at random. You also realize that you still have to change the appearence and order of the references one by one. Suddenly a shrill alarm sounds. Midnight!
+So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your single image through the text. Stuff appears and disappears at random. Then you remember that you still have to change the appearance and order of the references one by one. Suddenly a shrill alarm sounds. Midnight!
 
 **GAME OVER**
 
@@ -28,7 +28,7 @@ So you decide to start over with a fresh copy of the Word template. Two hours la
 
 Let's rewind the clock for a few hours and try again. This assumes:
 
-1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your harddisk. You should be on a fast internet and you must have the password for your account.
+1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your hard disk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
 3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. You also should have prepared your bibliography, either in Word, a reference manager, or on a piece of paper. 
 4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].
@@ -62,15 +62,17 @@ Note that the list it displays may be empty, says "No update available" or conta
 
 It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper?
 
-If the update fails: try again. Try closing Tex Live Utility and starting it again. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+If the update fails: try again. And agin. And again. Try closing Tex Live Utility and starting it again. Choose a different repository from the menu entry `Configure -> Manage Repositories`. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
-You can close `Tex Live Utility` for now, consume some sweets and get ready.
+Phew. You can close `Tex Live Utility` for now, consume some sweets and get ready.
+
+Hint: If you already have LaTeX installed and you haven't updated for a while, go through this step again. This way you always have the latest and greatest LaTeX on your machine.  
 
 ### Step 3: Check your Templates
 
-I assume you have already a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, do that  now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
+I assume that you have a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, do that  now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
 
 Let's look at the LaTeX files.
 
@@ -105,7 +107,7 @@ See the `Goto Error` button? It brings you to the location in the LaTeX file whe
 
 ![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
 
-and the error says "Unknown graphics extension: .ps". It does not recognize the image file 🤔. Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you do have this error in your template, feel in the mood for experimentation, and you want to get rid of this error, do the following:
+and the error says "Unknown graphics extension: .ps". It does not recognise the image file 🤔. Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you do have this error in your template, feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
 Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save the PDF in the same directory with the other files.
 
@@ -170,7 +172,7 @@ _A journey of a thousand miles begins with a single step _\(Lao-Tse\). You just 
 
 #### Name\(s\) and Institution\(s\)
 
-Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail adresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^15]
+Now replace the names and institutions of the author\(s\). Check carefully what to replace. In my paper the names are put below the title and the institutions and e-mail addresses are set in a footnote. This is done automatically by the template. I did not have to say "put them in the footnote". When we work with a template that has been provided to us, we only need to replace the content, we do not need to layout the paper. This has been done for us already[^15]
 
 #### Abstract
 
@@ -196,7 +198,7 @@ Now to the main text. It will have a number of sections with headings. For a sec
 \section{HEADING TEXT}
 ```
 
-Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the nect section. Go through your paper like this, section by section. Run `Typeset` after each section, look at the PDF,  and save the file if it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
+Then, starting immediately on the next line, add the paragraph\(s\) of text that go into the section. Leave an empty line between paragraphs and one before the next section. Go through your paper like this, section by section. Run `Typeset` after each section, look at the PDF,  and save the file if it looks good. If you have subsections, put in `\subsection`  commands and if you have even more deeper levels of headings,  `\subsubsection`.
 
 If you encounter problems after inserting a block of text, look at the content. It is likely that your text contains
 
@@ -209,7 +211,7 @@ Another potential source for problems is that LaTeX creates some additional file
 
 When you are done and without errors, you have the complete text of your paper in the LaTeX file, still followed by the example stuff.
 
-If you have any of the elements: acknowledgement, crossreferences, emphasized text, enumerations, figures, footnotes, international languages, line breaks, special characters, or tables, please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
+If you have any of the elements: acknowledgement, crossreferences, emphasised text, enumerations, figures, footnotes, international languages, line breaks, special characters, or tables, please continue below. Just pick the ones that you need. When finished, head to [Clean up](#clean-up).
 
 #### Acknowledgement
 
@@ -555,11 +557,11 @@ Now insert the information for one \(and just one\) of your references[^17]. Fir
 }
 ```
 
-Just a quick reminder for orientation. At this point you will have 4 different windows open in TexShop. The one with the LaTeX file, the one with the BibTeX file you are currently working on, one console window with messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimized. You can always switch them in the  `Window` menu in TexShop. It has a list of the currently open windows at the bottom.
+Just a quick reminder for orientation. At this point you will have 4 different windows open in TexShop. The one with the LaTeX file, the one with the BibTeX file you are currently working on, one console window with messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimised. You can always switch them in the  `Window` menu in TexShop. It has a list of the currently open windows at the bottom.
 
-Now save the BibTeX file. Head over to your LaTeX file and insert the citation. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now comes what I call the **4-step BibTeX shuffle**:
+Save the BibTeX file. Head over to your LaTeX file and insert the citation. The citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. Save this file as well. Now you have to do what I call the **4-step BibTeX shuffle**:
 
-1. Run `Typeset`. Watch the console. The usual mumbojumbo should scroll by. If it says "Error", doublecheck your citation.
+1. Run `Typeset`. Watch the console. The usual mumbojumbo should scroll by. If it says "Error", double check your citation.
 2. Switch the dropdown menu to BibTeX \(see picture below\). Run `Typeset.`
 3. Switch the dropdown menu back to LaTeX. Run `Typeset.`
 
@@ -567,11 +569,11 @@ Now save the BibTeX file. Head over to your LaTeX file and insert the citation. 
 
 ![](/assets/Screen Shot 2017-05-05 at 20.42.44.png)
 
-In Step 2, the console window should look similiar to this one below. If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations).
+In Step 2, the console window should look similar to this one below. If you get warnings like `Warning--I didn't find a database entry for...`, it is likely that you still have some example content with citations in them. In the PDF those citations appear as `[?]`. Or you might have misspelt the citation key. Check the LaTeX file for these problems and fix them. If there is an error like this: `I couldn't open file name ... .aux` something more sinister is going on. In the console window, `Thrash Aux Files`. Run `Typeset` again with LaTeX.  Then with BibTeX. Error gone? Good. Run `Typeset` twice with LaTeX. If your reference does not show up, see [If you Need to Include Literature Without Citations](#if-you-need-to-include-literature-without-citations).
 
 ![](/assets/Screen Shot 2017-05-04 at 23.45.04.png)
 
-In the PDF, you now should see one reference at the end of your doucument, like mine here:
+In the PDF, you now should see one reference at the end of your document, like mine here:
 
 ![](/assets/Screen Shot 2017-05-05 at 21.58.39.png)
 
@@ -579,11 +581,11 @@ You know what? Almost at the end. Almost. All you have to do now is to do the sa
 
 #### Bibliography with a Reference Manager
 
-If you are have your references in a reference manager software, things will be. Select the literature for your paper. Export to a file in BibTeX format. Replace the BibTeX file. Do the **4-step BibTeX shuffle.**.  
+If you are have your references in a reference manager software, things will be. Select the literature for your paper. Export to a file in BibTeX format. Replace the BibTeX file. Do the **4-step BibTeX shuffle.**.
 
 #### Literature Without Citations
 
-LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If you have literature that you don't cite, put `\nocite{key1,key2,...,keyn} ` in the line before the `\bibliography{...}` command. Replace `key1,key2,...,keyn` with the list of citation keys that you don't cite but that you want to show up in the reference list[^20].
+LaTeX assumes per default that every bibliographical source has a citation in the text. If there is no citation, the entry will not show up at all. If you have literature that you don't cite, put `\nocite{key1,key2,...,keyn}` in the line before the `\bibliography{...}` command. Replace `key1,key2,...,keyn` with the list of citation keys that you don't cite but that you want to show up in the reference list[^20].
 
 If your paper has a literature list instead of references, i.e. you do not cite anything, I recommend two steps:
 
@@ -620,7 +622,7 @@ If your paper has a literature list instead of references, i.e. you do not cite 
 
 [^15]:  This goes for other things as well like a table of contents. LaTeX must run twice through the source to create these things and the greybeards haven't figured out yet how to automate this.
 
-[^15]:  My \(crude\) reasoning is that if you would have formulas in your paper, you would know LaTeX already. I willl cover formulas in [How to Write a Thesis](/how-to-write-a-thesis.md)
+[^15]:  My \(crude\) reasoning is that if you would have formulas in your paper, you probably would know LaTeX already. I will cover formulas in [How to Write a Thesis](/how-to-write-a-thesis.md)
 
 [^16]:  There is a joke in the choice of this key, but I can't tell it here.
 
