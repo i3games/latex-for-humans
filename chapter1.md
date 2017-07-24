@@ -68,7 +68,7 @@ If the update fails: try again. And agin. And again. Try closing Tex Live Utilit
 
 Phew. You can close `Tex Live Utility` for now, consume some sweets and get ready.
 
-Hint: If you already have LaTeX installed and you haven't updated for a while, go through this step again. This way you always have the latest and greatest LaTeX on your machine.  
+Hint: If you already have LaTeX installed and you haven't updated for a while, go through this step again. This way you always have the latest and greatest LaTeX on your machine.
 
 ### Step 3: Check your Templates
 
@@ -76,7 +76,7 @@ I assume that you have a folder with the LaTeX templates / example files from yo
 
 Let's look at the LaTeX files.
 
-![](/assets/Untitled.png)
+![](/assets/Screen Shot 2017-04-13 at 14.23.14.png)
 
 Yours will have different names and some different symbols. There might be more or less of them. But you should have in any case[^10]:
 
@@ -298,6 +298,8 @@ Do this with your other images and don't forget to delete leftovers of the examp
 You will find at least one footnote in your example LaTeX file, and it looks like this  `\footnote{Text of the footnote.}` Insert this command right after the word or sente nce where the footnote sign should appear. Write the text of your footnote between the curly braces. LaTeX will automatically enumerate, layout and place your footnotes, and it will work.
 
 #### International Languages
+
+_**tbd.**_
 
 #### Line Breaks
 
@@ -606,7 +608,7 @@ If your paper has a literature list instead of references, i.e. you do not cite 
 
 [^6]: I made this up, there are no "Ligaturists". But it feels like there could be.
 
-[^7]: That's for now. Ping me if you want this written for other choices. 
+[^7]: That's for now. Ping me [@crcdng](https://twitter.com/crcdng) if you want this thing written for other choices. 
 
 [^8]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
 
