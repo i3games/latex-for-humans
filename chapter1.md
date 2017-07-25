@@ -12,13 +12,13 @@ When you submit some academic stuff, you usually get a choice between Microsoft 
 
 The choice is obvious: they have given you **one** Word template versus **seven** strangely named files. You don't even want to know what these bib, bbl, blg, bst... things are. It is also likely that you have laid down your thoroughly crafted thoughts in Word already[^3]. So the sensible thing to do is to open the Word template and copy/paste your content over piece by piece, heading by heading, paragraph by paragraph. Actually this is what you are supposed to do according to the authors of these files[^4]. Sure there are pesky looking things like footnotes, tables and images. And the citations and reference list have to be formatted in a certain HUMBLEMUMBLE style. Still easy enough, just keep calm and copy/paste. You start, you keep going ... until something weird happens.
 
-You have just copied some piece of text into the Word template when you realise the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and paste your image into the file, but is too large and now half of it is stuck on the bottom of page 3 and the other half is outside the page. Also, some of your footnotes have suddenly vanished. Attempts to fix these problems results in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes a paragraph on another page.
+You have just copied some piece of text into the Word template when you realise the whole paragraph now looks like the heading. You try to undo it and try again. Some text still looks strange. You look into the formats, but there are 35 of them, labelled "standard", "default text" and "paragraph". Which one? You delete the example image and paste your image into the file, but is too large and now half of it is stuck on the bottom of page 3 and the other half is outside the page. Also, some of your footnotes have suddenly vanished. Attempts to fix these problems results in more chaos. Some text is behind the picture, and trying to delete the table that you don't need also removes one or two paragraphs on another page.
 
 By now your paper looks like this[^5]:
 
 ![](/assets/Pablo_Picasso,_1911,_The_Poet_%28Le_poète%29,_Céret,_oil_on_linen,_131.2_×_89.5_cm,_The_Solomon_R._Guggenheim_Foundation,_Peggy_Guggenheim_Collection,_Venice.jpg)
 
-Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You googled "LaTeX", however the results did not look promising. Everything you gave a quick read sounded technical and confusing. That stuff seemed to have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assumed that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^6] in addition to being an overworked student. This won't work.
+Rest assured: This is not your fault. Also, there is no time for guilt or blame. You need to submit your paper, nothing else. Yet by now you are already going through the [five stages of grief](https://en.wikipedia.org/wiki/Kübler-Ross_model): denial, anger, bargaining, depression, acceptance. Probably during the bargaining phase, you were tempted to look at the other alternative. You have googled "LaTeX"; however the results did not look promising. Everything you gave a quick read sounds technical and confusing. That stuff must have been written by a bunch of greybeards educating people about typesetting practices while celebrating themselves for enabling Umlauts like it's 1999. They apparently assume that you want to spend months learning their noble craft and join the obscure guild of Ligaturists[^6] in addition to being an overworked student. This won't work.
 
 So you decide to start over with a fresh copy of the Word template. Two hours later the second one looks like the first. You are chasing your single image through the text. Stuff appears and disappears at random. Then you remember that you still have to change the appearance and order of the references one by one. Suddenly a shrill alarm sounds. Midnight!
 
@@ -30,11 +30,11 @@ Let's rewind the clock for a few hours and try again. This assumes:
 
 1. You are on a \(fairly recent\) Mac[^7]. You have 10 Gigabyte \(GB\) of free space on your hard disk. You should be on a fast internet and you must have the password for your account.
 2. You have to submit a formatted paper \(draft, proposal\) and you are on a tight deadline.
-3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. You also should have prepared your bibliography, either in Word, a reference manager, or on a piece of paper. 
-4. Your work is not too complicated, mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].
+3. You have written your paper already, probably in Word, Libre Office, Pages or another editor. You also should have prepared your bibliography, either in Word, in a reference manager, or on a piece of paper. 
+4. Your work is not too complicated: mainly text, maybe a table, a few images, a handful of references and stuff. Also, no formulas[^15].
 5. **You have received LaTeX templates / example files from the journal or conference like the ones pictured above. If you don't, now is the time to get them / look for them on their website. This guide assumes that you have them !1!! **
 
-Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-5 hours for a 6-10 page paper if all goes well. Roughly 1 1/2 hour will be spent installing and updating LaTeX \(while you can do other things in between, like proofreading your paper once again\).
+Our goal is to submit a PDF which is typeset in LaTeX. We will go through a number of steps: first install LaTeX, update it, check the template files, prepare the document, copy the text, format images and tables, and finally do the citations and bibliography. We will do the same copy-and-paste approach as with Word, so you don't have to grow a grey beard and learn LaTeX. It should take 3-5 hours for a 6-10 page paper if all goes well. Roughly 1 1/2 hour will be spent installing and updating LaTeX \(while you can do other things in between, like ~~proofreading your paper once again~~ watching another episode of GoT\).
 
 ### Step 1: Install LaTeX
 
@@ -60,9 +60,9 @@ Note that the list it displays may be empty, says "No update available" or conta
 
 .. and wait. Then there should be a list of entries. The program might tell you again that it needs to update itself and ask for your password, etc. Confirm everything. Then in the Menu select `Actions -> Update all Packages`.
 
-It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper?
+It will take a significant amount of time to download and update everything. Up to an hour, maybe. Time to re-read your paper? No more binge-watching from here.
 
-If the update fails: try again. And agin. And again. Try closing Tex Live Utility and starting it again. Choose a different repository from the menu entry `Configure -> Manage Repositories`. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
+If the update fails: try again. And again. And again. Try closing Tex Live Utility and starting it again. Choose a different repository from the menu entry `Configure -> Manage Repositories`. Check if you are connected to the internet. If you have a hundred programs open on your Mac, you want to close them down, restart your Mac and focus. What you finally want to see is this:
 
 ![](/assets/Screen Shot 2017-04-13 at 18.44.25.png)
 
@@ -72,7 +72,7 @@ Hint: If you already have LaTeX installed and you haven't updated for a while, g
 
 ### Step 3: Check your Templates
 
-I assume that you have a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, do that  now. Make a copy of the folder in case things go wrong. You also have your text somewhere, in Word for example.
+I assume that you have a folder with the LaTeX templates / example files from your conference or journal[^9]. If not, do that  now. Make a copy of the folder in case things go wrong. You also have your paper somewhere, in Word for example.
 
 Let's look at the LaTeX files.
 
@@ -107,7 +107,9 @@ See the `Goto Error` button? It brings you to the location in the LaTeX file whe
 
 ![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
 
-and the error says "Unknown graphics extension: .ps". It does not recognise the image file 🤔. Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you do have this error in your template, feel in the mood for experimentation, and you want to get rid of this error, do the following:
+and the error says "Unknown graphics extension: .ps". It does not recognise the image file 🤔. 
+
+Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you do have this error in your template, feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
 Find the culprit image file with the  `.ps` ending in the directory with your template and double click. It will be opened in Preview. Now if you save the file, it will be saved automagically as a `.pdf` It seems that Apple also thinks that `.ps`  is outdated. Make sure you save the PDF in the same directory with the other files.
 
@@ -146,9 +148,9 @@ PDF file is available for all.
 \end{abstract}
 ```
 
-You will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and a `\end{document}` at the end. Notice also how the coloring in TexShop \(which might have slightly different colors than the ones shown here\) helps to spot the commands.
+You will find the same or similar elements. You can see some text, commands that begin with a backslash `\` , and parameters to those commands that are between curly braces `{ }`. There will be a `\begin{document}` near the top and an `\end{document}` at the end. Notice also how the coloring in TexShop \(which might have slightly different colors than the ones shown here\) helps you to spot the commands.
 
-Study your LaTeX source and the PDF it generated to identify these elements. The people who prepared the example usually want to demonstrate everything which may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. You might not need all of them. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
+Study your LaTeX source and the PDF it has generated to identify these elements. The people who prepared the example usually want to demonstrate everything that may possibly appear in a paper: title, author\(s\), abstract, sections with headings at different levels, enumerations, footnotes, tables, formulas, code listings, images, acknowledgement, citations and references. Most probably, you do not need all of those. Maybe you don't have formulas or tables. Maybe you don't need footnotes. Or you don't want to acknowledge anyone.
 
 For now just ignore the parts you don't need. We will delete them later. The rule of thumb is: you can always safely delete a complete paragraph, that is the content between two empty lines, if you don't need it. This is different from the situation in Word \(see [Pest or Cholera?](#pest-vs-cholera)\). Just don't delete anything now.
 
@@ -610,7 +612,7 @@ If your paper has a literature list instead of references, i.e. you do not cite 
 
 [^7]: That's for now. Ping me [@crcdng](https://twitter.com/crcdng) if you want this thing written for other choices. 
 
-[^8]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) 
+[^8]: I am aware that this is a dubious instruction but we are on a deadline \(you still have time to read the footnotes here?\) The reason I give this advice is that the brave and talented people who write this kind of software usually have a blind spot when it comes to documentation.
 
 [^9]: "What if not?" you might ask. "Then we are in trouble", I answer. Time to contact the chair of your conference and ask for the LaTeX templates.
 
