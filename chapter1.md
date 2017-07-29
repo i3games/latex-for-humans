@@ -420,7 +420,7 @@ Note that in LaTeX a percentage sign must be written as `\%`. To learn about thi
 
 ### Step 5: Clean up
 
-At this point your complete paper, possibly including illustrations, tables, footnotes etc. should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the sections above and finish the work. At the end you might still have some of the example content in the paper. Now it is time to delete it, except for the bibliography. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the `\bibliography` command. In my file the ones to keep look like this:
+At this point your complete paper, possibly including illustrations, tables, footnotes etc. should be typeset in LaTeX. Congratulations. If it isn't yet, go back to the sections above and finish the work. At the end you might still have some of the example content in the paper. Now it is time to delete it, except for the bibliography. Be careful - **don't just delete the rest of the file**. At the end there are some lines you must keep. Those usually start with the bibliography command - either  `\bibliography` or `\printbibliography`. In my file the lines to keep look like this:
 
 ```latex
 \bibliography{aisb}
@@ -446,11 +446,11 @@ Now, in your PDF file you should still see the example bibliography that came wi
 
 Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. There are two options here.
 
-* Option A: 
+**Option A**: you have the same command with a different parameter. The parameter here is  `aisb` and it tells me that there is a file \(in the same directory as the LaTeX file\) with the name `aisb.bib` \(I will call it "BibTeX file"\). Your file is named differently but has the same extension `.bib`. 
 
+**Option B**: your command is `\printbibliography`. In this case there is an another command near the **top** of your document which looks like this `\addbibresource{literature.bib}`. This points to the name of the BibTeX file.   
 
-
-You will have the same command with a different parameter. The parameter `aisb` means that there is a file \(in the same directory as the LaTeX file\) with the name `aisb.bib` \(I will call it "BibTeX file"\). Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of mine out for clarity\):
+Make a note which option it is in your case. We will need that below. For now open the BibTeX file in TeXShop with File -&gt; Open. Ok, here are the entries \(I left most of mine out for clarity\):
 
 ```bibtex
 @book{kn:Golub89,
