@@ -448,9 +448,15 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 
 **Option A**: you see the same command with a different parameter. The parameter here is  `aisb` and it tells me that there is a file named `aisb.bib`  in the same directory as the LaTeX file \(I will call it "BibTeX file"\). Your file is named differently but has the same extension `.bib`.
 
-**Option B**: your command is `\printbibliography`. In this case there is an another command near the **top** of your document which looks like this: `\addbibresource{literature.bib}`. This points to the BibTeX file, `literature.bib` in this case.
+**Option B**: your command is `\printbibliography`. In this case there is an another command near the **top** of your document which looks like this: `\addbibresource{literature.bib}`. This points to the BibTeX file, `literature.bib` in this case. 
 
-Make a note which option it is. We will need that below. For now open the BibTeX file in TeXShop with File -&gt; Open. Ok, here are the entries \(I left most of mine out for clarity\):
+Make a note which option it is. 
+
+If you are with **Option B**, select `TeXShop -> Preferences... -> Engine` and look for the BibTeX Engine entry. Change it to `biber` then confirm with `OK`.
+
+![](/assets/Screen Shot 2017-07-29 at 18.42.48.png)
+
+Open the BibTeX file in TeXShop with `File -> Open`. Here is how it looks like \(I left out most entries for clarity\):
 
 ```bibtex
 @book{kn:Golub89,
@@ -569,11 +575,11 @@ Now insert the information for one \(and just one\) of your references[^17]. Fir
 
 Just a quick reminder for orientation. At this point you will have 4 different windows open in TexShop. The one with the LaTeX file, the one with the BibTeX file you are currently working on, one console window with messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimised. You can always switch them in the  `Window` menu in TexShop. It has a list of the currently open windows at the bottom.
 
-Save the BibTeX file. Head over to your LaTeX file and insert the citation. 
+Save the BibTeX file. Head over to your LaTeX file and insert the citation.
 
-#### How to Insert a Citation 
+#### How to Insert a Citation
 
-For** Option A**: a citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. 
+For** Option A**: a citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`.
 
 #### Bibliography with a Reference Manager
 
@@ -585,7 +591,7 @@ If you are have your references in a reference manager software, things will be 
 
 Gummerum and Denham \(2014\)
 
-Save this file as well. 
+Save this file as well.
 
 #### The **4-step BibTeX shuffle**
 
@@ -594,6 +600,7 @@ Now you have to do what I call the **4-step BibTeX shuffle**:
 1. Run `Typeset`. Watch the console. The usual mumbojumbo should scroll by. If it says "Error", double check your citation.
 
 2. Switch the dropdown menu to BibTeX \(see picture below\). Run `Typeset.`
+
 3. Switch the dropdown menu back to LaTeX. Run `Typeset.`
 
 4. Run `Typeset` again. Yes you are reading correctly[^19].
@@ -608,7 +615,7 @@ In the PDF, you now should see one reference at the end of your document, like m
 
 ![](/assets/Screen Shot 2017-05-05 at 21.58.39.png)
 
-... and in your text you should see a citation like this: "\[7\]", or this "\(Golub and Van Loan 1989\)", or this "Golub and Van Loan \(1989\)"[^21]. 
+... and in your text you should see a citation like this: "\[7\]", or this "\(Golub and Van Loan 1989\)", or this "Golub and Van Loan \(1989\)"[^21].
 
 You know what? Almost at the end. Almost. All you have to do now is to do the same with your other references, one after the other. You can do the 4-step BibTeX shuffle in between to make sure things are going right and fix problems. Make sure to make it at the end. Congratulations. You have complete and good looking citations and references. Without any effort \(Ahem\). Go to [Step 7: Proofread and Submit](#step-7-proofread-and-submit).
 
@@ -622,8 +629,6 @@ If your paper has a literature list instead of references, i.e. you do not cite 
 2. Your editor might be picky/precise and insist that "References" means that the sources are cited in the text. To rename the heading of your bibliography, insert `\renewcommand{\refname}{Literature}`  at the top of your document between the `\usepackage{...}` and the `\begin{document}` commands. The new heading of your bibliography will now be "Literature" and your editor will be happy. 
 
 ### Step 7: Proofread and Submit
-
-
 
 [^1]: Some conferences or journals have friendly editors that accept your late and half-formatted contribution by e-mail but some have automated systems that SHUT. DOWN. AT. MIDNIGHT.  
 
