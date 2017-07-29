@@ -107,7 +107,7 @@ See the `Goto Error` button? It brings you to the location in the LaTeX file whe
 
 ![](/assets/Screen Shot 2017-04-14 at 01.58.07.png)
 
-and the error says "Unknown graphics extension: .ps". It does not recognise the image file 🤔. 
+and the error says "Unknown graphics extension: .ps". It does not recognise the image file 🤔.
 
 Now let's say you have this error and you don't even have images in your paper then the best solution is to simply delete this part and try  `Typeset` again. Problem solved. Otherwise, we need to dig deeper. The reason for this error is that the template is quite old, and `.ps`  files are a bit out of fashion. You probably won't use a `.ps`. If you include images, use  `.pdf`, `.png` or `.jpg`. If you do have this error in your template, feel in the mood for experimentation, and you want to get rid of this error, do the following:
 
@@ -442,9 +442,15 @@ In academia everyone loves bibliography. Without it, nobody would be able to tru
 
 Let's take a look at the bibliography in my example:![](/assets/Screen Shot 2017-05-04 at 21.50.54.png)
 
-Now, in your PDF file you should still see the example bibliograpy that came with your template. Maybe you have wondered where those entries come from. You can't find them in your LaTeX file. Where are they 🤔?
+Now, in your PDF file you should still see the example bibliography that came with your template. Maybe you have wondered where those entries come from. They are not in your LaTeX file. Where are they 🤔?
 
-Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. You will have the same command with a different parameter. The parameter `aisb` means that there is a file \(in the same directory as the LaTeX file\) with the name `aisb.bib` \(I will call it "BibTeX file"\). Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of mine out for clarity\):
+Let's look at the bibliography command again, in my case  `\bibliography{aisb}`. There are two options here.
+
+* Option A: 
+
+
+
+You will have the same command with a different parameter. The parameter `aisb` means that there is a file \(in the same directory as the LaTeX file\) with the name `aisb.bib` \(I will call it "BibTeX file"\). Let's open the BibTeX file in TeXShop with `File -> Open`. Ok, here are the entries \(I left most of mine out for clarity\):
 
 ```bibtex
 @book{kn:Golub89,
