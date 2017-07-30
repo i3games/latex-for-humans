@@ -448,9 +448,9 @@ Let's look at the bibliography command again, in my case  `\bibliography{aisb}`.
 
 **Option A**: you see the same command with a different parameter. The parameter here is  `aisb` and it tells me that there is a file named `aisb.bib`  in the same directory as the LaTeX file \(I will call it "BibTeX file"\). Your file is named differently but has the same extension `.bib`.
 
-**Option B**: your command is `\printbibliography`. In this case there is an another command near the **top** of your document which looks like this: `\addbibresource{literature.bib}`. This points to the BibTeX file, `literature.bib` in this case. 
+**Option B**: your command is `\printbibliography`. In this case there is an another command near the **top** of your document which looks like this: `\addbibresource{literature.bib}`. This points to the BibTeX file, `literature.bib` in this case.
 
-Make a note which option it is. 
+Make a note which option it is.
 
 If you are with **Option B**, select `TeXShop -> Preferences... -> Engine` and look for the BibTeX Engine entry. Change it to `biber` then confirm with `OK`.
 
@@ -501,11 +501,13 @@ Open the BibTeX file in TeXShop with `File -> Open`. Here is how it looks like \
 }
 ```
 
-Take a deep breath and get familiar with it. Yours will contain different information but the structure is similar to mine. The type of the reference, like `@article` is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional, like `kwds` above, which is a list of keywords that does not show up in the output.
+Take a deep breath and get familiar with it. Yours will contain different information but the structure is similar to mine. The type of the reference, like `@article` , is followed by a structure inside curly braces `{}`, with a citation key \(`kn:Saad85`[^16]\) and a number of fields like \( `author = "Saad, Y."`\). Field entries are between quotation marks, or alternatively between curly braces. Some fields are optional, like `kwds` above, which is a list of keywords that does not show up in the output.
 
 You can probably see types like `@book`, `@inbook` \(a book chapter\), `@article` \(a journal article\), and others. If you do not find the ones that you need in your example, there is an overwiew [at Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Entry_types) that also lists the required and optional fields for each type of entry.
 
-The next step depends on this: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier; please skip to [Bibliography with a Reference Manager](#bibliography-with-a-reference-manager). If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
+The next step depends on this: Are you already using a reference manager software such as [Zotero](https://www.zotero.org/), [Mendeley](https://www.mendeley.com/), or [Endnote](http://endnote.com/)? If you do, this will make things easier. First select the literature for your paper. Export them to a file in BibTeX format. Replace the BibTeX file with your file. Go to [How to Insert a Citation.](#how-to-insert-a-citation)
+
+If you don't, I would recommend to do so in the future \(chapter [How to Write a Thesis](/how-to-write-a-thesis.md) will describe this\), but for now let's stay with the manual option.
 
 #### Bibliography the Manual Way
 
@@ -575,23 +577,15 @@ Now insert the information for one \(and just one\) of your references[^17]. Fir
 
 Just a quick reminder for orientation. At this point you will have 4 different windows open in TexShop. The one with the LaTeX file, the one with the BibTeX file you are currently working on, one console window with messages from LaTeX and the one with the PDF output. Sometimes these windows overlap or are minimised. You can always switch them in the  `Window` menu in TexShop. It has a list of the currently open windows at the bottom.
 
-Save the BibTeX file. Head over to your LaTeX file and insert the citation.
+Save the BibTeX file. Head over to your LaTeX file and insert the citations.
 
 #### How to Insert a Citation
 
-For** Option A**: a citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`.
+For** Option A**: a citation consists of the `\cite{}` command with the citation key inside the curly braces. In my case this is  `\cite{golub1989}`. This yields something like "\(Golub and Van Loan 1989\)".
 
-#### Bibliography with a Reference Manager
+For** Option B**: a citation consists of the \parencite`{golub1989}` which yields something like "\(Golub and Van Loan 1989\)", or the in-text version with `\textcite{golub1989}` which gives "Golub and Van Loan \(1989\)"
 
-If you are have your references in a reference manager software, things will be easier. Select the literature for your paper. Export them to a file in BibTeX format. Replace the BibTeX file with your file. Insert the citations and do the **4-step BibTeX shuffle.**.
-
-\textcite{Gummerum2014}
-
-\parencite{Denham2014}
-
-Gummerum and Denham \(2014\)
-
-Save this file as well.
+Insert the citations and do the **4-step BibTeX shuffle.**.
 
 #### The **4-step BibTeX shuffle**
 
