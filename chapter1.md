@@ -305,7 +305,7 @@ _**tbd.**_
 
 #### Line Breaks
 
-Unlike Word, LaTeX does not create a linebreak where it finds one in the input file. So you have to say explicitely if you want a linebreak with: `\\`. Separate paragraphs with a empty line.
+Unlike Word, LaTeX does not create a line break where it finds one in the input file. So you have to say explicitly if you want a line break with: `\\`. Separate paragraphs with a empty line.
 
 #### Special Characters
 
